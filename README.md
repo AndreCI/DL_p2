@@ -55,3 +55,4 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
     - [ ] regularization
     - [ ] diverse data set generation
     - [ ] data set and prediction visualization
+    - [ ] initializers

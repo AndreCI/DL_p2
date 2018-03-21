@@ -1,10 +1,9 @@
 from framework.modules.module import Module
-import torch.Tensor as T
-
+from torch import Tensor as T
 
 class TanhLayer(Module):
 
-    def forward(self, *input):
+    def forward(self, input):
         return T.tanh(input)
 
     def backward(self, *gradwrtoutput):

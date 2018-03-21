@@ -1,8 +1,19 @@
 import framework.modules.dense_layer
+import framework.modules.tanh_layer
 import util.data_generation
 
 
 import torch
+
+d = framework.modules.dense_layer.DenseLayer(2, 8, False)
+t = framework.modules.tanh_layer.TanhLayer()
+jack = torch.randn(1, 2)
+print(jack)
+k = d.forward(jack)
+print("k", k)
+j = t.forward(k)
+print("j",j)
+exit()
 
 
 dtype = torch.FloatTensor

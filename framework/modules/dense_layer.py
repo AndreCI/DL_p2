@@ -1,5 +1,7 @@
 from framework.modules.module import Module
-import torch.Tensor as T
+import torch
+from torch import Tensor as T
+from ..network_util.math_util import linear
 
 class DenseLayer(Module):
     def __init__(self, in_features, out_features, use_bias=True):
@@ -13,13 +15,14 @@ class DenseLayer(Module):
         self.units = out_features
         self.use_bias = use_bias
 
-        self.weights = T(in_features, out_features)
+        self.weights = torch.randn(in_features, out_features)#T(in_features, out_features)
         if use_bias:
             self.bias = T(out_features)
+        else:
+            self.bias = None
 
     def forward(self, input):
-        if self.use_bias:
-            return F.linear(input, self.weights, self.bias)
+        return linear(input, self.weights, self.bias)
 
     def backward(self, *gradwrtoutput):
         pass
