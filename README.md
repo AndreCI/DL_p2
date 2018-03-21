@@ -17,3 +17,27 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
     - [ ] trains it with MSE, logging the loss,
     - [ ] computes and prints the final train and the test errors.
 
+## Ideas
+- [ ] structure:
+    - [ ] framework
+        - [ ] network/math_util
+            - [ ] tanh,
+            - [ ] relu,
+            - [ ] other math util functions
+        - [ ] fully_connected
+            - [ ] ???
+            - [ ] forward
+            - [ ] backward
+        - [ ] loss_util (?)
+            - [ ] SGD
+            - [ ] MSE
+            - [ ] ???
+    - [ ] util
+        - [ ] data_generation
+        - [ ] ???
+    - [ ] test
+        - [ ] generate data
+        - [ ] builds a network
+        - [ ] trains it with MSE, logging loss
+        - [ ] computes and print final errors (test and train)
+    - [ ] ???
