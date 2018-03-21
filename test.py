@@ -1,18 +1,25 @@
 import framework.modules.dense_layer
 import framework.modules.tanh_layer
+import framework.modules.mse_layer
+import framework.modules.relu_layer
 import util.data_generation
 
 
 import torch
 
-d = framework.modules.dense_layer.DenseLayer(2, 8, False)
+d = framework.modules.dense_layer.DenseLayer(2, 2, False)
 t = framework.modules.tanh_layer.TanhLayer()
+m = framework.modules.mse_layer.MSELayer()
+r = framework.modules.relu_layer.ReLuLayer()
 jack = torch.randn(1, 2)
+daniel = torch.randn(1, 2)
 print(jack)
 k = d.forward(jack)
 print("k", k)
-j = t.forward(k)
+j = r.forward(k)
 print("j",j)
+i = m.forward(j, daniel)
+print("i",i)
 exit()
 
 

@@ -42,7 +42,7 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
             - [ ] other activation fct?
             - [ ] other math util functions
     - [ ] util
-        - [ ] data_generation
+        - [x] data_generation
         - [ ] ???
     - [ ] test
         - [ ] generates data

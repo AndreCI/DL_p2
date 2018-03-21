@@ -1,6 +1,6 @@
 class Module(object):
     '''
-    A simple class to implement other modules
+    A simple class to implement and combine layers.
     '''
     def forward(self, *input):
         raise NotImplementedError()
