@@ -19,12 +19,27 @@ class DenseLayer(Module):
 
         self.weights = torch.randn(in_features, out_features) #T(in_features, out_features)
         if use_bias:
-            self.bias = torch.randn(out_features) #T(out_features)
+            self.bias = torch.randn(1, out_features) #T(out_features)
         else:
             self.bias = None
 
     def forward(self, input):
+        '''
+        Compute the forward pass without an activation function, i.e. XW + B if use_bias is True
+        :param input: the current example or output of the previous layer
+        :return: XW (+ B)
+        '''
         return linear(input, self.weights, self.bias)
 
-    def backward(self, *gradwrtoutput):
-        pass
+    def backward(self, gradient):
+        '''
+        Compute the backward pass for this dense layer.
+        :param gradient:
+        :return:
+        '''
+        temp = torch.t(self.weights)
+        return gradient.mm(temp)
+
+    def apply_gradient(self, w_grads, b_grads, learning_rate):
+        self.weights -= w_grads * learning_rate
+        self.bias -= b_grads * learning_rate

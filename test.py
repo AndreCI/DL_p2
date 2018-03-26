@@ -6,22 +6,55 @@ import util.data_generation
 
 
 import torch
+import numpy as np
 
-d = framework.modules.dense_layer.DenseLayer(2, 2, False)
-t = framework.modules.tanh_layer.TanhLayer()
-m = framework.modules.mse_layer.MSELayer()
-r = framework.modules.relu_layer.ReLuLayer()
-jack = torch.randn(1, 2)
-daniel = torch.randn(1, 2)
-print(jack)
-k = d.forward(jack)
-print("k", k)
-j = r.forward(k)
-print("j",j)
-i = m.forward(j, daniel)
-print("i",i)
+#Construct a simple model.
+dense_layer = framework.modules.dense_layer.DenseLayer(4, 3, True)
+relu_layer = framework.modules.relu_layer.ReLuLayer()#tanh_layer.TanhLayer()
+dense_layer_out = framework.modules.dense_layer.DenseLayer(3, 1, True)
+relu_layer_out = framework.modules.relu_layer.ReLuLayer()#tanh_layer.TanhLayer()#relu_layer.ReLuLayer()
+mse_layer = framework.modules.mse_layer.MSELayer()
+
+x=np.array([[1,0,1,0],[1,0,1,1],[0,1,0,1]])
+
+#Output
+y=np.array([[1],[1],[0]])
+
+
+X = torch.from_numpy(x)
+X = X.type(torch.FloatTensor)
+Y = torch.from_numpy(y)
+Y = Y.type(torch.FloatTensor)
+epoch = 20
+
+for i in range(epoch):
+    hid_l = dense_layer.forward(X)
+    hid_l_a = relu_layer.forward(hid_l)
+
+    out_l = dense_layer_out.forward(hid_l_a)
+    out_l_a = relu_layer_out.forward(out_l)
+
+    loss = mse_layer.forward(out_l_a, Y)
+
+    E = mse_layer.backward(out_l_a, Y)
+    slope_out = relu_layer.backward(out_l_a)
+    d_out = E * slope_out
+
+    E_hid = dense_layer_out.backward(d_out)
+    slope_hid = relu_layer.backward(hid_l_a)
+    d_hid = E_hid * slope_hid
+
+    wo_grad = hid_l_a.mm(d_out)
+    bo_grad = torch.sum(d_out)
+    wh_grad = torch.t(X).mm(d_hid)
+    bh_grad = torch.sum(d_hid)
+
+
+    dense_layer_out.apply_gradient(wo_grad, bo_grad, 0.1)
+    dense_layer.apply_gradient(wh_grad, bh_grad, 0.1)
+
+    print(loss)
 exit()
-
 
 dtype = torch.FloatTensor
 # dtype = torch.cuda.FloatTensor # Uncomment this to run on GPU

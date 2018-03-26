@@ -9,5 +9,5 @@ class TanhLayer(Module):
     def forward(self, input):
         return T.tanh(input)
 
-    def backward(self, *gradwrtoutput):
-        pass
+    def backward(self, gradient):
+        return 1.0/(T.cosh(gradient)**2)
