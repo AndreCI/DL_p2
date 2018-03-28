@@ -2,6 +2,7 @@ import framework.modules.dense_layer
 import framework.modules.tanh_layer
 import framework.modules.mse_layer
 import framework.modules.relu_layer
+import framework.network_util.model
 import util.data_generation
 
 
@@ -9,12 +10,18 @@ import torch
 import numpy as np
 
 #Construct a simple model.
+layers = []
 dense_layer = framework.modules.dense_layer.DenseLayer(4, 3, True)
 relu_layer = framework.modules.relu_layer.ReLuLayer()#tanh_layer.TanhLayer()
 dense_layer_out = framework.modules.dense_layer.DenseLayer(3, 1, True)
 relu_layer_out = framework.modules.relu_layer.ReLuLayer()#tanh_layer.TanhLayer()#relu_layer.ReLuLayer()
 mse_layer = framework.modules.mse_layer.MSELayer()
-
+layers.append(dense_layer)
+layers.append(relu_layer)
+layers.append(dense_layer_out)
+layers.append(relu_layer_out)
+layers.append(mse_layer)
+model = framework.network_util.model.Model(layers)
 x=np.array([[1,0,1,0],[1,0,1,1],[0,1,0,1]])
 
 #Output
@@ -28,13 +35,17 @@ Y = Y.type(torch.FloatTensor)
 epoch = 20
 
 for i in range(epoch):
-    hid_l = dense_layer.forward(X)
-    hid_l_a = relu_layer.forward(hid_l)
+    #hid_l = dense_layer.forward(X)
+    #hid_l_a = relu_layer.forward(hid_l)
 
-    out_l = dense_layer_out.forward(hid_l_a)
-    out_l_a = relu_layer_out.forward(out_l)
+    #out_l = dense_layer_out.forward(hid_l_a)
+    #out_l_a = relu_layer_out.forward(out_l)
 
-    loss = mse_layer.forward(out_l_a, Y)
+    #loss = mse_layer.forward(out_l_a, Y)
+
+    loss = model.forward(X, Y)
+    out_l_a = model.memory[3]
+    hid_l_a = model.memory[1]
 
     E = mse_layer.backward(out_l_a, Y)
     slope_out = relu_layer.backward(out_l_a)

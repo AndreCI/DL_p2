@@ -4,6 +4,16 @@ repo for the second mini project of deep learning
 Your framework should import only torch.FloatTensor and torch.LongTensor from pytorch, and
 use no pre-existing neural-network python toolbox.
 
+
+## Question
+Should the user be able to stack multiples dense layers without activations layers?
+Should the user be able to produce a model without a criterion layers?
+Is the architecture separated in trainable/activation/criterion module a good idea?
+Why two outputs units, as the output is binary?
+backward>accumulate the gradient wrt the parameters... wrt??
+params???
+Can we rename modules?
+
 ## Short TODO
 
 - [ ] Your framework should provide the tools to:
@@ -62,3 +72,4 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
     - [ ] diverse data set generation
     - [ ] data set and prediction visualization
     - [ ] initializers
+    - [ ] other activation functions: leaky relu, sigmoid, etc.

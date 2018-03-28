@@ -37,8 +37,7 @@ class DenseLayer(Module):
         :param gradient:
         :return:
         '''
-        temp = torch.t(self.weights)
-        return gradient.mm(temp)
+        return gradient.mm(torch.t(self.weights))
 
     def apply_gradient(self, w_grads, b_grads, learning_rate):
         self.weights -= w_grads * learning_rate
