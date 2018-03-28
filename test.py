@@ -9,19 +9,21 @@ import numpy as np
 
 #Construc a simple model (D->D->A->M)
 layers = []
-dense_layer = framework.modules.trainable_modules.dense_layer.DenseLayer(4, 3, True)
-dense_layer_2 = framework.modules.trainable_modules.dense_layer.DenseLayer(3, 1, True)
+dense_layer = framework.modules.trainable_modules.dense_layer.DenseLayer(4, 2, True)
+dense_layer_2 = framework.modules.trainable_modules.dense_layer.DenseLayer(2, 1, True)
 
-dense_layerS = framework.modules.trainable_modules.dense_layer.DenseLayer(2, 1, True)
+dense_layerS = framework.modules.trainable_modules.dense_layer.DenseLayer(3, 1, True)
 dense_layer_2S = framework.modules.trainable_modules.dense_layer.DenseLayer(1, 1, True)
 
-relu_layer = framework.modules.activation_modules.relu_layer.ReLuLayer()#tanh_layer.TanhLayer()
+tanh_layer = framework.modules.activation_modules.tanh_layer.TanhLayer()
 dense_layer_out = framework.modules.trainable_modules.dense_layer.DenseLayer(3, 1, True)
-relu_layer_out = framework.modules.activation_modules.relu_layer.ReLuLayer()#tanh_layer.TanhLayer()#relu_layer.ReLuLayer()
+relu_layer = framework.modules.activation_modules.relu_layer.ReLuLayer()#tanh_layer.TanhLayer()#relu_layer.ReLuLayer()
 mse_layer = framework.modules.criterion_modules.mse_layer.MSELayer()
-x=np.array([[1,0,0,0],[1,0,0,0],[0,0,0,0]])
+x=np.array([[1,0,1,0],[1,0,1,1],[0,1,0,1]])
 layers.append(dense_layer)
+layers.append(tanh_layer)
 layers.append(dense_layer_2)
+layers.append(tanh_layer)
 layers.append(mse_layer)
 seq = framework.modules.sequential.Sequential(layers)
 #Output
@@ -32,13 +34,14 @@ X = torch.from_numpy(x)
 X = X.type(torch.FloatTensor)
 Y = torch.from_numpy(y)
 Y = Y.type(torch.FloatTensor)
-epoch = 50
+epoch = 5000
 for i in range(epoch):
     memory = []
-    #loss = seq.forward(X, Y)
-    #print("seq loss", loss)
-    #seq.backward(X, Y)
-#exit()
+    loss = seq.forward(X, Y)
+    seq.backward(Y)
+print("seq loss", loss)
+print(seq.memory[-1])
+exit()
 
 
 #Construct a simple model. (D->A->D->A->M)
