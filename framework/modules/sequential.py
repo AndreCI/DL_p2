@@ -20,11 +20,11 @@ class Sequential(Module):
         return fwd
 
     def backward(self, prediction, target):
-        errors = [self.layers[-1].backward(self.memory[-1], target)]
+        error = self.layers[-1].backward(self.memory[-1], target)
         for i in range(len(self.layers) - 2, -1, -1):
-            error = self.layers[i].backward(errors[-1]) #Assuming D->...D->M
-            errors.append(error)
-            w_grad, b_grad = self.layers[i].compute_gradient(self.memory[i], errors[-2])
+            next_error = self.layers[i].backward(error) #Assuming D->...D->M
+            w_grad, b_grad = self.layers[i].compute_gradient(self.memory[i], error)
+            error = next_error
             self.layers[i].apply_gradient(w_grad, b_grad, 0.1)
 
     def add_layer(self, layer):
