@@ -27,25 +27,24 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
 - [ ] structure:
     - [ ] framework
         - [ ] modules
-            - [ ] fully_connected:
-                - [ ] init
+            - [x] fully_connected:
+                - [x] init
                 - [x] forward
-                - [ ] backward
+                - [X] backward
+                - [x] compute gradient
+                - [x] apply gradient
             - [ ] tanh_module
-                - [ ] init
                 - [x] forward
                 - [ ] backward
             - [ ] relu_module
-                - [ ] init
                 - [x] forward
                 - [ ] backward
             - [ ] fully connected handler, i.e. handles multiple layers ???
-                - [ ] init
-                - [ ] fwd
-                - [ ] bwd
+                - [x] dense layer handler
+                - [ ] activation handler
             - [ ] loss layers: criterion
                 - [x] fwd: loss computation
-                - [ ] bwd: gradient computation
+                - [x] bwd: gradient computation
         - [ ] network/math_util
             - [ ] Parameter: used for initalization, etc. ?
             - [ ] Linear computation
