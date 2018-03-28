@@ -22,8 +22,6 @@ mse_layer = framework.modules.criterion_modules.mse_layer.MSELayer()
 x=np.array([[1,0,0,0],[1,0,0,0],[0,0,0,0]])
 layers.append(dense_layer)
 layers.append(dense_layer_2)
-layers.append(dense_layerS)
-layers.append(dense_layer_2S)
 layers.append(mse_layer)
 seq = framework.modules.sequential.Sequential(layers)
 #Output
@@ -37,7 +35,7 @@ Y = Y.type(torch.FloatTensor)
 epoch = 50
 for i in range(epoch):
     memory = []
-#    loss = seq.forward(X, Y)
+    #loss = seq.forward(X, Y)
     #print("seq loss", loss)
     #seq.backward(X, Y)
 #exit()
@@ -49,11 +47,16 @@ dense_layer = framework.modules.trainable_modules.dense_layer.DenseLayer(4, 3, T
 relu_layer = framework.modules.activation_modules.tanh_layer.TanhLayer() #relu_layer.ReLuLayer()#
 dense_layer_out = framework.modules.trainable_modules.dense_layer.DenseLayer(3, 1, True)
 relu_layer_out = framework.modules.activation_modules.tanh_layer.TanhLayer()#relu_layer.ReLuLayer()
+
+dense_layerS = framework.modules.trainable_modules.dense_layer.DenseLayer(4, 3, True)
+relu_layerS = framework.modules.activation_modules.tanh_layer.TanhLayer() #relu_layer.ReLuLayer()#
+dense_layer_outS = framework.modules.trainable_modules.dense_layer.DenseLayer(3, 1, True)
+relu_layer_outS = framework.modules.activation_modules.tanh_layer.TanhLayer()#relu_layer.ReLuLayer()
 mse_layer = framework.modules.criterion_modules.mse_layer.MSELayer()
-layers.append(dense_layer)
-layers.append(relu_layer)
-layers.append(dense_layer_out)
-layers.append(relu_layer_out)
+layers.append(dense_layerS)
+layers.append(relu_layerS)
+layers.append(dense_layer_outS)
+layers.append(relu_layer_outS)
 layers.append(mse_layer)
 model = framework.modules.sequential.Sequential(layers)
 x=np.array([[1,0,0,0],[0,0,0,1],[0,0,0,0]])
@@ -79,7 +82,10 @@ for i in range(epoch):
 
     loss = mse_layer.forward(a_m2, Y) #M
     print("n loss:", loss)
-    print(a_m2)
+    loss = model.forward(m0, Y)
+    print("s loss:", loss)
+    print("---")
+
     e0 = mse_layer.backward(a_m2, Y) #M
 
     slope_out = relu_layer_out.backward(m2) #A
@@ -97,6 +103,7 @@ for i in range(epoch):
     w = torch.t(m0).mm(c_e1)
     b = torch.sum(c_e1) #sum bias??? on error? Dimension msimactch
     dense_layer.apply_gradient(w, b, 0.2)
+    model.backward(a_m2, Y)
 
 exit()
 
