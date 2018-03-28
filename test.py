@@ -8,10 +8,10 @@ import numpy as np
 
 #Construc a simple model (D->D->A->M)
 layers = []
-dense_layer = framework.modules.trainable_modules.dense_layer.DenseLayer(4, 1, True)
-dense_layer_2 = framework.modules.trainable_modules.dense_layer.DenseLayer(1, 1, True)
+dense_layer = framework.modules.trainable_modules.dense_layer.DenseLayer(4, 3, True)
+dense_layer_2 = framework.modules.trainable_modules.dense_layer.DenseLayer(3, 2, True)
 
-dense_layerS = framework.modules.trainable_modules.dense_layer.DenseLayer(4, 1, True)
+dense_layerS = framework.modules.trainable_modules.dense_layer.DenseLayer(2, 1, True)
 dense_layer_2S = framework.modules.trainable_modules.dense_layer.DenseLayer(1, 1, True)
 
 relu_layer = framework.modules.activation_modules.relu_layer.ReLuLayer()#tanh_layer.TanhLayer()
@@ -21,6 +21,8 @@ mse_layer = framework.modules.criterion_modules.mse_layer.MSELayer()
 x=np.array([[1,0,0,0],[1,0,0,0],[0,0,0,0]])
 layers.append(dense_layer)
 layers.append(dense_layer_2)
+layers.append(dense_layerS)
+layers.append(dense_layer_2S)
 layers.append(mse_layer)
 seq = framework.modules.sequential.Sequential(layers)
 #Output
@@ -31,12 +33,14 @@ X = torch.from_numpy(x)
 X = X.type(torch.FloatTensor)
 Y = torch.from_numpy(y)
 Y = Y.type(torch.FloatTensor)
-epoch = 20
+epoch = 50
 for i in range(epoch):
     memory = []
     loss = seq.forward(X, Y)
     print("seq loss", loss)
-
+    seq.backward(X, Y)
+exit()
+if True:
     memory.append(X)
     m1 = dense_layerS.forward(X)
     memory.append(m1)
