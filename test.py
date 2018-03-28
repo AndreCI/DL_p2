@@ -86,25 +86,27 @@ for i in range(epoch):
     print("s loss:", loss)
     print("---")
 
+    memory = [m0, m1, a_m1, m2, a_m2]
     e0 = mse_layer.backward(a_m2, Y) #M
 
     slope_out = relu_layer_out.backward(m2) #A
     c_e0 = e0 * slope_out
+
     e1 = dense_layer_2.backward(c_e0) #D
-
-    slope_hid = relu_layer.backward(m1) #A
-    c_e1 = e1 * slope_hid
-    e2 = dense_layer.backward(c_e1) #D -useless-
-
-    w = a_m1.mm(c_e0)
+    w = torch.t(a_m1).mm(c_e0)
     b = torch.sum(c_e0)
     dense_layer_2.apply_gradient(w, b, 0.2)
 
+    slope_hid = relu_layer.backward(m1) #A
+    c_e1 = e1 * slope_hid
+
+    e2 = dense_layer.backward(c_e1) #D -useless-
     w = torch.t(m0).mm(c_e1)
     b = torch.sum(c_e1) #sum bias??? on error? Dimension msimactch
     dense_layer.apply_gradient(w, b, 0.2)
-    model.backward(a_m2, Y)
 
+
+    model.backward(a_m2, Y)
 exit()
 
 dtype = torch.FloatTensor
