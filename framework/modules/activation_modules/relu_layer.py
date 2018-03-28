@@ -1,8 +1,8 @@
-from framework.modules.module import Module
+from framework.modules.activation_modules.activation_module import ActivationModule
 from torch import Tensor as T
 import torch
 
-class ReLuLayer(Module):
+class ReLuLayer(ActivationModule):
 
     def forward(self, input):
         '''

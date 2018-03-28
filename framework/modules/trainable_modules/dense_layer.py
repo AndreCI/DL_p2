@@ -1,9 +1,11 @@
 from framework.modules.module import Module
+from framework.modules.trainable_modules.trainable_module import TrainableModule
+
 import torch
 from torch import Tensor as T
-from ..network_util.math_util import linear
+from framework.network_util.math_util import linear
 
-class DenseLayer(Module):
+class DenseLayer(TrainableModule):
     def __init__(self, in_features, out_features, use_bias=True):
         '''
         A simple fully connected layer. There is no activation function, as we consider activation as a layer in and
@@ -17,9 +19,9 @@ class DenseLayer(Module):
         self.units = out_features
         self.use_bias = use_bias
 
-        self.weights = torch.randn(in_features, out_features) #T(in_features, out_features)
+        self.weights = T(in_features, out_features).fill_(0.5) #torch.randn(in_features, out_features) #
         if use_bias:
-            self.bias = torch.randn(1, out_features) #T(out_features)
+            self.bias = T(out_features).fill_(0.5) #torch.randn(1, out_features) #
         else:
             self.bias = None
 
@@ -39,6 +41,15 @@ class DenseLayer(Module):
         '''
         return gradient.mm(torch.t(self.weights))
 
+    def compute_gradient(self, input, error):
+        wh_grad = torch.t(input).mm(error)
+        bh_grad = torch.sum(error)
+        return wh_grad, bh_grad
+
     def apply_gradient(self, w_grads, b_grads, learning_rate):
         self.weights -= w_grads * learning_rate
         self.bias -= b_grads * learning_rate
+
+    def param(self):
+        raise NotImplementedError()
+        return []

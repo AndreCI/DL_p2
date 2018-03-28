@@ -1,7 +1,7 @@
-from framework.modules.module import Module
+from framework.modules.activation_modules.activation_module import ActivationModule
 from torch import Tensor as T
 
-class TanhLayer(Module):
+class TanhLayer(ActivationModule):
     '''
     A layer which allows the use of the activation function tanh. This is supposed to be called after an instance of a
     DenseLayer. See dense_layer.

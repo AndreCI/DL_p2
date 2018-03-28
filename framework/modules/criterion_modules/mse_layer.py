@@ -1,7 +1,7 @@
-from framework.modules.module import Module
+from framework.modules.criterion_modules.criterion_module import CriterionModule
 from torch import Tensor as T
 
-class MSELayer(Module):
+class MSELayer(CriterionModule):
     '''
     This layer takes care of the MSE (mean squared error) between the prediction and the target
     '''

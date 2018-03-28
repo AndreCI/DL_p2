@@ -6,13 +6,9 @@ use no pre-existing neural-network python toolbox.
 
 
 ## Question
-Should the user be able to stack multiples dense layers without activations layers?
-Should the user be able to produce a model without a criterion layers?
-Is the architecture separated in trainable/activation/criterion module a good idea?
-Why two outputs units, as the output is binary?
-backward>accumulate the gradient wrt the parameters... wrt??
-params???
-Can we rename modules?
+Should the user be able to stack multiples dense layers without activations layers? yes
+Should the user be able to produce a model without a criterion layers? yes
+backward>accumulate the gradient wrt the parameters... with rrespect to
 
 ## Short TODO
 
