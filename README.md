@@ -13,14 +13,14 @@ backward>accumulate the gradient wrt the parameters... with rrespect to
 ## Short TODO
 
 - [ ] Your framework should provide the tools to:
-    - [ ] build network combining fully connected layers, tanh and relu
-    - [ ] run the forward and backward passes
+    - [x] build network combining fully connected layers, tanh and relu
+    - [x] run the forward and backward passes
     - [ ] optimize parameters for SGD and MSE
 - [ ] implement a test.py that import your framework and:
     - [x] Generates a training and a test set of 1, 000 points sampled uniformly in \[0, 1\]², each with a
 label 0 if outside the disk of radius 1/√2π and 1 inside,
-    - [ ] builds a network with two input units, two output units, three hidden layers of 25 units
-    - [ ] trains it with MSE, logging the loss,
+    - [x] builds a network with two input units, two output units, three hidden layers of 25 units
+    - [x] trains it with MSE, logging the loss,
     - [ ] computes and prints the final train and the test errors.
 
 ## Detailed TODO
@@ -39,15 +39,16 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
             - [ ] relu_module
                 - [x] forward
                 - [ ] backward
-            - [ ] fully connected handler, i.e. handles multiple layers ???
+            - [x] fully connected handler, i.e. handles multiple layers ???
                 - [x] dense layer handler
-                - [ ] activation handler
-            - [ ] loss layers: criterion
+                - [x] activation handler
+            - [x] loss layers: criterion
                 - [x] fwd: loss computation
                 - [x] bwd: gradient computation
         - [ ] network/math_util
             - [ ] Parameter: used for initalization, etc. ?
-            - [ ] Linear computation
+            - [x] Linear computation
+            - [x] Xavier init
             - [ ] tanh,
             - [ ] relu,
             - [ ] other activation fct?
@@ -57,8 +58,8 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
         - [ ] ???
     - [ ] test
         - [x] generates data
-        - [ ] builds a network
-        - [ ] trains it with MSE, logging loss
+        - [x] builds a network
+        - [x] trains it with MSE, logging loss
         - [ ] computes and print final errors (test and train)
     - [ ] ???
 - [ ] additional features ?
