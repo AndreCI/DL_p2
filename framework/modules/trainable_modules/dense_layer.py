@@ -3,7 +3,7 @@ from framework.modules.trainable_modules.trainable_module import TrainableModule
 
 import torch
 from torch import Tensor as T
-from framework.network_util.math_util import linear
+from framework.network_util.math_util import linear, xavier_initialization
 
 class DenseLayer(TrainableModule):
     def __init__(self, in_features, out_features, use_bias=True):
@@ -19,11 +19,12 @@ class DenseLayer(TrainableModule):
         self.units = out_features
         self.use_bias = use_bias
 
-        self.weights = T(in_features, out_features).fill_(0.5) #torch.randn(in_features, out_features) #
-        if use_bias:
-            self.bias = T(out_features).fill_(0.5) #torch.randn(1, out_features) #
-        else:
-            self.bias = None
+        self.weights, self.bias = xavier_initialization(in_features, out_features, use_bias)
+        #self.weights = torch.randn(in_features, out_features) * 3 #T(in_features, out_features).fill_(0.5) #
+        #if use_bias:
+        #    self.bias = torch.randn(1, out_features) * 3 #T(out_features).fill_(0.5) #
+        #else:
+        #    self.bias = None
 
     def forward(self, input):
         '''

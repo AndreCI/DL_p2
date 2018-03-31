@@ -33,7 +33,7 @@ class Sequential(Module):
                 next_error = c_layer.backward(error)
                 w_grad, b_grad = c_layer.compute_gradient(self.memory[i], error)
                 error = next_error
-                c_layer.apply_gradient(w_grad, b_grad, 0.1)
+                c_layer.apply_gradient(w_grad, b_grad, 0.05)
             elif isinstance(c_layer, Activation):
                 slope = c_layer.backward(self.memory[i])
                 error = error * slope
