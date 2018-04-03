@@ -10,18 +10,30 @@ Should the user be able to stack multiples dense layers without activations laye
 Should the user be able to produce a model without a criterion layers? yes
 backward>accumulate the gradient wrt the parameters... with rrespect to
 
+Why prediction uses 2 outputs neurons? As the problem is binary.
+
+Import only torch.FloatTensor: does that mean that we can't use torch.mm? or torch.from_numpy or torch.tanh?
+
+How well is the model suppose to perform? Are we supposed to add regularization and such?
+
+It is not specified wheter or not we can use softmax classifier, which should change the performance of the model tremendously
+
+Is the type of activation layer a kind of parameter to optimize?
+
+In what type of form must the rapport be? A documentation from the code, or rather an theoretical explanation of how it works?
+
 ## Short TODO
 
 - [ ] Your framework should provide the tools to:
     - [x] build network combining fully connected layers, tanh and relu
     - [x] run the forward and backward passes
     - [ ] optimize parameters for SGD and MSE
-- [ ] implement a test.py that import your framework and:
+- [x] implement a test.py that import your framework and:
     - [x] Generates a training and a test set of 1, 000 points sampled uniformly in \[0, 1\]², each with a
 label 0 if outside the disk of radius 1/√2π and 1 inside,
     - [x] builds a network with two input units, two output units, three hidden layers of 25 units
     - [x] trains it with MSE, logging the loss,
-    - [ ] computes and prints the final train and the test errors.
+    - [x] computes and prints the final train and the test errors.
 
 ## Detailed TODO
 - [ ] structure:
@@ -56,16 +68,16 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
     - [ ] util
         - [x] data_generation
         - [ ] ???
-    - [ ] test
+    - [x] test
         - [x] generates data
         - [x] builds a network
         - [x] trains it with MSE, logging loss
-        - [ ] computes and print final errors (test and train)
+        - [x] computes and print final errors (test and train)
     - [ ] ???
 - [ ] additional features ?
     - [ ] batch handling
     - [ ] regularization
     - [ ] diverse data set generation
-    - [ ] data set and prediction visualization
+    - [x] data set and prediction visualization
     - [ ] initializers
     - [ ] other activation functions: leaky relu, sigmoid, etc.

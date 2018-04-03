@@ -1,6 +1,4 @@
 from framework.modules.module import Module
-from framework.modules.activation_modules.activation_module import ActivationModule
-from framework.modules.criterion_modules.criterion_module import CriterionModule
 from framework.modules.trainable_modules.trainable_module import TrainableModule as Trainable
 from framework.modules.activation_modules.activation_module import ActivationModule as Activation
 from framework.modules.criterion_modules.criterion_module import CriterionModule as Criterion
@@ -15,7 +13,7 @@ class Sequential(Module):
         self.layers = layers
         self.memory = []
 
-    def forward(self, input, target):
+    def forward(self, input, target, mode='train'):
         self.memory = [input]
         fwd = self.layers[0].forward(input)
         for i in range(1, len(self.layers) - 1):

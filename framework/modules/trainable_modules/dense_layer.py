@@ -52,5 +52,4 @@ class DenseLayer(TrainableModule):
         self.bias -= b_grads * learning_rate
 
     def param(self):
-        raise NotImplementedError()
-        return []
+        return [self.weights, self.bias]
