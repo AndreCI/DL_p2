@@ -20,8 +20,8 @@ relu = ReLu()
 
 Mse = MSE()
 
-layers = [d1, tan, h1, relu, h2, relu, h3, relu, out, tan, Mse]
-model = framework.modules.sequential.Sequential(layers)
+layers = [d1, tan, h1, tan, h2, tan, h3, tan, out, tan, Mse]
+model = framework.modules.sequential.Sequential(layers=layers)
 
 train_data = util.data.generate_data()
 test_data = util.data.generate_data()
@@ -36,7 +36,7 @@ train_Y = torch.from_numpy(train_y)
 test_Y = torch.from_numpy(test_y)
 
 util.data.display_data_set(train_x, train_y[:, 0])
-epochs = 10
+epochs = 1
 for i in range(epochs):
     total_loss = 0.0
     for j in range(np.shape(train_y)[0]):
@@ -47,7 +47,7 @@ for i in range(epochs):
        # print(target)
         #print(data)
         loss = model.forward(train_data, target)
-        model.backward(target)
+        model.backward(target, learning_rate=0.05)
         total_loss+=float(loss)
     print(total_loss/(j+1))
             #print(model.memory[-1])

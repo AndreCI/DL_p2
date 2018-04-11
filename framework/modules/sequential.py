@@ -23,7 +23,7 @@ class Sequential(Module):
         fwd = self.layers[-1].forward(fwd, target)
         return fwd
 
-    def backward(self, target):
+    def backward(self, target, learning_rate=0.05):
         error = self.layers[-1].backward(self.memory[-1], target)
         for i in range(len(self.layers) - 2, -1, -1):
             c_layer = self.layers[i]
@@ -31,7 +31,7 @@ class Sequential(Module):
                 next_error = c_layer.backward(error)
                 w_grad, b_grad = c_layer.compute_gradient(self.memory[i], error)
                 error = next_error
-                c_layer.apply_gradient(w_grad, b_grad, 0.05)
+                c_layer.apply_gradient(w_grad, b_grad, learning_rate)
             elif isinstance(c_layer, Activation):
                 slope = c_layer.backward(self.memory[i])
                 error = error * slope

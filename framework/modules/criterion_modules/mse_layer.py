@@ -1,5 +1,4 @@
 from framework.modules.criterion_modules.criterion_module import CriterionModule
-from torch import Tensor as T
 
 class MSELayer(CriterionModule):
     '''
@@ -13,7 +12,7 @@ class MSELayer(CriterionModule):
         :return: the cost, or loss using MSE, i.e. 1/2 * (ŷ - y)**2
         '''
         #TODO: test if size of pred & target are the same.
-        return 1/2 * T.sum((prediction - target)**2)
+        return 1/2 * ((prediction - target)**2).sum()
 
     def backward(self, prediction, target):
         '''

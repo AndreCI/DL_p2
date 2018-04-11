@@ -10,17 +10,21 @@ Should the user be able to stack multiples dense layers without activations laye
 Should the user be able to produce a model without a criterion layers? yes
 backward>accumulate the gradient wrt the parameters... with rrespect to
 
-Why prediction uses 2 outputs neurons? As the problem is binary.
 
 Import only torch.FloatTensor: does that mean that we can't use torch.mm? or torch.from_numpy or torch.tanh?
+Ofc
 
 How well is the model suppose to perform? Are we supposed to add regularization and such?
+~10%. Not regu is asked, but we can add it.
 
 It is not specified wheter or not we can use softmax classifier, which should change the performance of the model tremendously
+You can, but not needed.
 
 Is the type of activation layer a kind of parameter to optimize?
+Not really. Display info for all possibilities or best one, whatever.
 
 In what type of form must the rapport be? A documentation from the code, or rather an theoretical explanation of how it works?
+Journal like, explain what I've done and why. Present examples on how to use the code
 
 ## Short TODO
 
@@ -47,10 +51,10 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
                 - [x] apply gradient
             - [ ] tanh_module
                 - [x] forward
-                - [ ] backward
+                - [x] backward
             - [ ] relu_module
                 - [x] forward
-                - [ ] backward
+                - [x] backward
             - [x] fully connected handler, i.e. handles multiple layers ???
                 - [x] dense layer handler
                 - [x] activation handler
@@ -60,12 +64,10 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
         - [ ] network/math_util
             - [ ] Parameter: used for initalization, etc. ?
             - [x] Linear computation
-            - [x] Xavier init
-            - [ ] tanh,
-            - [ ] relu,
+            - [ ] Xavier init: no "from_numpy"
             - [ ] other activation fct?
             - [ ] other math util functions
-    - [ ] util
+    - [x] util
         - [x] data_generation
         - [ ] ???
     - [x] test
@@ -81,3 +83,6 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
     - [x] data set and prediction visualization
     - [ ] initializers
     - [ ] other activation functions: leaky relu, sigmoid, etc.
+
+### Additional infos
+following the instructions and training setup from the exercises you should be able to get less than 10% error on the test set with an MLP with tanh activations (for the 2nd miniproject). (slack)

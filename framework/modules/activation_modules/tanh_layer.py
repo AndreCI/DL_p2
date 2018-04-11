@@ -1,5 +1,4 @@
 from framework.modules.activation_modules.activation_module import ActivationModule
-from torch import Tensor as T
 
 class TanhLayer(ActivationModule):
     '''
@@ -7,7 +6,7 @@ class TanhLayer(ActivationModule):
     DenseLayer. See dense_layer.
     '''
     def forward(self, input):
-        return T.tanh(input)
+        return input.tanh()
 
     def backward(self, gradient):
-        return 1.0/(T.cosh(gradient)**2)
+        return 1.0/(gradient.cosh()**2)

@@ -1,6 +1,5 @@
 from framework.modules.activation_modules.activation_module import ActivationModule
-from torch import Tensor as T
-import torch
+from torch import FloatTensor, LongTensor
 
 class ReLuLayer(ActivationModule):
 
@@ -12,8 +11,8 @@ class ReLuLayer(ActivationModule):
         '''
         #TODO: is this really the best way?
         mask = input > 0 #Compute mask
-        mask = mask.type(torch.FloatTensor) #Change type of mask to allow mul
-        return torch.mul(input, mask) #mask the input
+        mask = mask.type(FloatTensor) #Change type of mask to allow mul
+        return input.mul(mask) #mask the input
 
     def backward(self, gradient):
         '''
@@ -22,5 +21,5 @@ class ReLuLayer(ActivationModule):
         :return: the derivative of ReLu, i.e. R'(Z) = 0 if Z<0 else 1
         '''
         mask = gradient > 0
-        mask = mask.type(torch.FloatTensor)
+        mask = mask.type(FloatTensor)
         return mask
