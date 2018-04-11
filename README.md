@@ -64,7 +64,7 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
         - [ ] network/math_util
             - [ ] Parameter: used for initalization, etc. ?
             - [x] Linear computation
-            - [ ] Xavier init: no "from_numpy"
+            - [x] Xavier init
             - [ ] other activation fct?
             - [ ] other math util functions
     - [x] util

@@ -1,6 +1,7 @@
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+from torch import FloatTensor, LongTensor
 
 
 def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
@@ -9,32 +10,32 @@ def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
     and 1 if outside
     :param points_number: the number of points to sample
     :param disk_radius: the disk radius
-    :return: a dataset
+    :return: a tuple containing the examples and their associated labels
     '''
-    data_set = np.random.uniform(0, 1, (points_number, 4)) #TODO: not nice
-    for ex in data_set:
+    examples = FloatTensor(points_number, 2).uniform_(0, 1)
+    targets = LongTensor(points_number, 2).zero_()
+    for i,ex in enumerate(examples):
         dist = math.sqrt(ex[0]**2 + ex[1]**2)
         if dist>disk_radius:
-            ex[2] = 1
-            ex[3] = 0
+            targets[i,0] = 1
         else:
-            ex[2] = 0
-            ex[3] = 1
-    return data_set
+            targets[i,1] = 1
+    return examples, targets
 
 def generate_toy_data(points_number=1000):
-    data_set = np.random.uniform(0, 1, (points_number, 4))
-    for ex in data_set:
+    examples = FloatTensor(points_number, 2).uniform_(0, 1)
+    targets = LongTensor(points_number, 2).zero_()
+    for i, ex in enumerate(examples):
         dist = ex[0] + ex[1]
-        if dist>0.9:
-            ex[2] = 1
-            ex[3] = 0
+        if dist > 0.5:
+            targets[i, 0] = 1
         else:
-            ex[2] = 0
-            ex[3] = 1
-    return data_set
+            targets[i, 1] = 1
+    return examples, targets
 
 def display_data_set(examples, targets):
+    examples = examples.numpy()
+    targets = targets.numpy()
     f = plt.figure(figsize=(30, 30))
     ax = f.add_subplot(111)
     condition = targets == 1
