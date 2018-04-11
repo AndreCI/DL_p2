@@ -1,8 +1,5 @@
 from framework.modules.module import Module
 from framework.modules.trainable_modules.trainable_module import TrainableModule
-
-import torch
-from torch import Tensor as T
 from framework.network_util.math_util import linear, xavier_initialization
 
 class DenseLayer(TrainableModule):
@@ -40,11 +37,11 @@ class DenseLayer(TrainableModule):
         :param gradient:
         :return:
         '''
-        return gradient.mm(torch.t(self.weights))
+        return gradient.mm(self.weights.t())
 
     def compute_gradient(self, input, error):
-        wh_grad = torch.t(input).mm(error)
-        bh_grad = torch.sum(error)
+        wh_grad = input.t().mm(error)
+        bh_grad = error.sum()
         return wh_grad, bh_grad
 
     def apply_gradient(self, w_grads, b_grads, learning_rate):
