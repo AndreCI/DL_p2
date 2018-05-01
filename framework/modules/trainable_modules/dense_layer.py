@@ -17,6 +17,8 @@ class DenseLayer(TrainableModule):
         self.use_bias = use_bias
 
         self.weights, self.bias = xavier_initialization(in_features, out_features, use_bias)
+        self.weights_gradient = None
+        self.bias_gradient = None
         #self.weights = torch.randn(in_features, out_features) * 3 #T(in_features, out_features).fill_(0.5) #
         #if use_bias:
         #    self.bias = torch.randn(1, out_features) * 3 #T(out_features).fill_(0.5) #
@@ -40,13 +42,25 @@ class DenseLayer(TrainableModule):
         return gradient.mm(self.weights.t())
 
     def compute_gradient(self, input, error):
-        wh_grad = input.t().mm(error)
-        bh_grad = error.sum()
-        return wh_grad, bh_grad
+        '''
+        Compute the gradient for this dense layer
+        :param input: The input for the related error.
+        :param error: The backpropagated error until here.
+        '''
+        self.weights_gradient = input.t().mm(error)
+        self.bias_gradient = error.sum()
 
-    def apply_gradient(self, w_grads, b_grads, learning_rate):
-        self.weights -= w_grads * learning_rate
-        self.bias -= b_grads * learning_rate
+    def apply_gradient(self, learning_rate):
+        '''
+        Apply the gradient computed previously.
+        :param learning_rate: The weights to apply to the gradient.
+        '''
+        self.weights -= self.weights_gradient * learning_rate
+        self.bias -= self.bias_gradient * learning_rate
 
     def param(self):
-        return [self.weights, self.bias]
+        '''
+        Useful for debbuging.
+        :return: A list of couple, containing the parameters and their gradients.
+        '''
+        return [(self.weights, self.weights_gradient), (self.bias, self.bias_gradient)]

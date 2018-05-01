@@ -22,18 +22,30 @@ def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
             targets[i,1] = 1
     return examples, targets
 
-def generate_toy_data(points_number=1000):
+def generate_toy_data(points_number=1000, dist=0.5):
+    '''
+    Generate a data set of points sampled between [0, 1]² each with a label 0 if x + y < dist
+    and 1 if outside
+    :param points_number: the number of points to sample
+    :param dist: the value to cut the plane with
+    :return: a tuple containing the examples and their associated labels
+    '''
     examples = FloatTensor(points_number, 2).uniform_(0, 1)
     targets = LongTensor(points_number, 2).zero_()
     for i, ex in enumerate(examples):
-        dist = ex[0] + ex[1]
-        if dist > 0.5:
+        current_dist = ex[0] + ex[1]
+        if current_dist > dist:
             targets[i, 0] = 1
         else:
             targets[i, 1] = 1
     return examples, targets
 
-def display_data_set(examples, targets):
+def display_data_set(examples, targets, name='dataset'):
+    '''
+    Display the dataset. Save the fig under name
+    :param examples: The list of examples
+    :param targets: The list of their targets
+    '''
     examples = examples.numpy()
     targets = targets.numpy()
     f = plt.figure(figsize=(30, 30))
@@ -46,4 +58,5 @@ def display_data_set(examples, targets):
     false_y = np.extract(ncon, examples[:, 1])
     ax.plot(true_x, true_y, 'ro', false_x, false_y, 'bo')
     f.show()
-    plt.savefig("dataset.jpg")
+    sname = str(name + '.jpg')
+    plt.savefig(sname)

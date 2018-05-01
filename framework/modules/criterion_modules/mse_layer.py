@@ -11,7 +11,9 @@ class MSELayer(CriterionModule):
         :param target: the ground truth
         :return: the cost, or loss using MSE, i.e. 1/2 * (ŷ - y)**2
         '''
-        #TODO: test if size of pred & target are the same.
+        #TODO: test if this works.
+        if prediction.size() is not target.size():
+            raise ValueError()
         return 1/2 * ((prediction - target)**2).sum()
 
     def backward(self, prediction, target):

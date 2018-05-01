@@ -32,6 +32,7 @@ Journal like, explain what I've done and why. Present examples on how to use the
     - [x] build network combining fully connected layers, tanh and relu
     - [x] run the forward and backward passes
     - [ ] optimize parameters for SGD and MSE
+    - [ ] add comments to everything
 - [x] implement a test.py that import your framework and:
     - [x] Generates a training and a test set of 1, 000 points sampled uniformly in \[0, 1\]², each with a
 label 0 if outside the disk of radius 1/√2π and 1 inside,
