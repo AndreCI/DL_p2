@@ -2,6 +2,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 from torch import FloatTensor, LongTensor
+import os
 
 
 def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
@@ -40,7 +41,7 @@ def generate_toy_data(points_number=1000, dist=0.5):
             targets[i, 1] = 1
     return examples, targets
 
-def display_data_set(examples, targets, name='dataset'):
+def display_data_set(opt, examples, targets, name='dataset'):
     '''
     Display the dataset. Save the fig under name
     :param examples: The list of examples
@@ -59,4 +60,6 @@ def display_data_set(examples, targets, name='dataset'):
     ax.plot(true_x, true_y, 'ro', false_x, false_y, 'bo')
     f.show()
     sname = str(name + '.jpg')
+    if not os.path.exists(opt['fig_dir']) : os.mkdir(opt['fig_dir'])
+    sname = os.path.join(opt['fig_dir'], sname)
     plt.savefig(sname)

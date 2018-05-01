@@ -12,7 +12,9 @@ class MSELayer(CriterionModule):
         :return: the cost, or loss using MSE, i.e. 1/2 * (ŷ - y)**2
         '''
         #TODO: test if this works.
-        if prediction.size() is not target.size():
+        if prediction.size() != target.size():
+            print(prediction.size())
+            print(target.size())
             raise ValueError()
         return 1/2 * ((prediction - target)**2).sum()
 
