@@ -1,5 +1,4 @@
 from torch import FloatTensor, LongTensor
-import numpy as np
 
 #TODO: test input size and add doc
 def linear(input, weights, bias=None):

@@ -3,7 +3,7 @@ from framework.modules.trainable_modules.trainable_module import TrainableModule
 from framework.modules.activation_modules.activation_module import ActivationModule as Activation
 from framework.modules.criterion_modules.criterion_module import CriterionModule as Criterion
 
-import numpy as np
+import torch
 
 class Sequential(Module):
     '''
@@ -29,7 +29,7 @@ class Sequential(Module):
             fwd = self.layers[i].forward(fwd)
         self.memory.append(fwd)
         fwd = self.layers[-1].forward(fwd, target)
-        return fwd #TODO: return only loss?
+        return fwd, self.memory[-1].max(1) #TODO: return only loss?
 
     def backward(self, target, learning_rate=0.05):
         '''

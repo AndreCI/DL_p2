@@ -1,9 +1,8 @@
-import numpy as np
-import math
 import matplotlib.pyplot as plt
 from torch import FloatTensor, LongTensor
 import os
-
+import math
+import numpy as np
 
 def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
     '''
@@ -13,7 +12,7 @@ def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
     :param disk_radius: the disk radius
     :return: a tuple containing the examples and their associated labels
     '''
-    examples = FloatTensor(points_number, 2).uniform_(0, 1)
+    examples = FloatTensor(points_number, 2).uniform_(-0.5, 0.5)
     targets = LongTensor(points_number, 2).zero_()
     for i,ex in enumerate(examples):
         dist = math.sqrt(ex[0]**2 + ex[1]**2)
@@ -21,6 +20,8 @@ def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
             targets[i,0] = 1
         else:
             targets[i,1] = 1
+        ex[0] += 0.5
+        ex[1] += 0.5
     return examples, targets
 
 def generate_toy_data(points_number=1000, dist=0.5):
@@ -41,14 +42,17 @@ def generate_toy_data(points_number=1000, dist=0.5):
             targets[i, 1] = 1
     return examples, targets
 
-def display_data_set(opt, examples, targets, name='dataset'):
+def display_data_set(opt, examples, targets, name='dataset', format='torch'):
     '''
     Display the dataset. Save the fig under name
     :param examples: The list of examples
     :param targets: The list of their targets
     '''
     examples = examples.numpy()
-    targets = targets.numpy()
+    if format == 'torch':
+        targets = targets.numpy()
+    elif format != 'numpy':
+        targets = np.array(targets)
     f = plt.figure(figsize=(30, 30))
     ax = f.add_subplot(111)
     condition = targets == 1
@@ -58,8 +62,12 @@ def display_data_set(opt, examples, targets, name='dataset'):
     false_x = np.extract(ncon, examples[:, 0])
     false_y = np.extract(ncon, examples[:, 1])
     ax.plot(true_x, true_y, 'ro', false_x, false_y, 'bo')
-    f.show()
+    circle = plt.Circle((0.5, 0.5), 1.0/(math.sqrt(2.0*math.pi)), color='g', fill=False)
+    ax.add_artist(circle)
     sname = str(name + '.jpg')
     if not os.path.exists(opt['fig_dir']) : os.mkdir(opt['fig_dir'])
     sname = os.path.join(opt['fig_dir'], sname)
     plt.savefig(sname)
+
+def compute_accuracy(targets, predictions):
+    return sum((targets.numpy() == predictions))/targets.size()[0]
