@@ -16,7 +16,7 @@ class MSELayer(CriterionModule):
             print(prediction.size())
             print(target.size())
             raise ValueError()
-        return 1/2 * ((prediction - target)**2).sum()
+        return 1/2 * ((target - prediction)**2).sum()
 
     def backward(self, prediction, target):
         '''
@@ -25,5 +25,5 @@ class MSELayer(CriterionModule):
         :param target: the ground truth
         :return: the derivative of MSE, i.e. ŷ - y
         '''
-        return prediction - target
+        return target - prediction
 

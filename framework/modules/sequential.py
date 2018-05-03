@@ -38,6 +38,10 @@ class Sequential(Module):
         :param learning_rate: The factor with which the gradient is multiplied before being applied to the the weights
         '''
         error = self.layers[-1].backward(self.memory[-1], target)
+        #print(self.memory[-1])
+        #print(target)
+        #print(error)
+        #exit()
         for i in range(len(self.layers) - 2, -1, -1):
             c_layer = self.layers[i]
             if isinstance(c_layer, Trainable):

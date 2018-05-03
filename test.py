@@ -23,11 +23,13 @@ relu = ReLu()
 Mse = MSE()
 
 layers = [d1, relu, h1, relu, h2, tan, h3, tan, out, tan, Mse]
+layers = [d1, tan, out, tan, Mse]
+
 model = framework.modules.sequential.Sequential(layers=layers)
 point_number = opt['point_number']
 
-train_examples, train_targets = util.data.generate_data(points_number=point_number)
-test_examples, test_targets = util.data.generate_data(points_number=point_number)
+train_examples, train_targets = util.data.generate_toy_data(opt['point_number'])# util.data.generate_data(points_number=point_number)
+test_examples, test_targets = util.data.generate_toy_data(opt['point_number']) #generate_data(points_number=point_number)
 
 util.data.display_data_set(opt, train_examples, train_targets[:, 0])
 epochs = 1
@@ -43,14 +45,14 @@ for i in range(epochs):
         target = train_targets[j]
         target = target.view(1, 2).type(FloatTensor)
         train_data = train_examples[j].view(1, 2)
-        loss, (_, prediction) = model.forward(train_data, target)
+        loss, (jack, prediction) = model.forward(train_data, target)
         predictions.append(prediction[0])
         model.backward(target, learning_rate=opt['lr'])
         total_loss+=float(loss)
         message = str('Training loss %3f - iteration %i/%i, epoch %i/%i' %(loss, j, point_number, i, epochs))
         log.info(message)
     final_tr_loss += total_loss/(j+1)
-    train_accuracy = util.data.compute_accuracy(train_targets[:, 1], predictions)
+    train_accuracy = util.data.compute_accuracy(train_targets[:, 0], predictions)
     final_tr_acc += train_accuracy
     message = str('Average Training loss %3f - epoch %i/%i' % (total_loss/(j+1), (i+1), epochs))
     message = str('Average Training accuracy %3f - epoch %i/%i' % (train_accuracy, (i+1), epochs))
@@ -61,12 +63,12 @@ for i in range(epochs):
         target = test_targets[j]
         target = target.view(1, 2).type(FloatTensor)
         test_data = test_examples[j].view(1, 2)
-        loss, (_, prediction) = model.forward(train_data, target)
+        loss, (_, prediction) = model.forward(test_data, target)
         predictions_test.append(prediction[0])
         total_loss += float(loss)
         message = str('Testing loss %3f - iteration %i/%i, epoch %i/%i' % (loss, j, point_number, i, epochs))
         log.info(message)
-    test_accuracy = util.data.compute_accuracy(test_targets[:, 1], predictions_test)
+    test_accuracy = util.data.compute_accuracy(test_targets[:, 0], predictions_test)
     final_te_acc += test_accuracy
     message = str('Average Testing loss %3f - epoch %i/%i' % (total_loss / (j + 1), (i + 1), epochs))
     message = str('Average Testing accuracy %3f - epoch %i/%i' % (test_accuracy, (i + 1), epochs))

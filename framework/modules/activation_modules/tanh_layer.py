@@ -18,4 +18,4 @@ class TanhLayer(ActivationModule):
         :param gradient: the error computed by a previous layer
         :return: the derivative of tanh, i.e. 1/cosh²(x)
         '''
-        return 1.0/(gradient.cosh()**2)
+        return 1.0/((gradient.cosh())**2)

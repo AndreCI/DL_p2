@@ -1,8 +1,11 @@
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+
 from torch import FloatTensor, LongTensor
 import os
 import math
 import numpy as np
+
 
 def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
     '''
@@ -24,7 +27,7 @@ def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
         ex[1] += 0.5
     return examples, targets
 
-def generate_toy_data(points_number=1000, dist=0.5):
+def generate_toy_data(points_number=1000, dist=1.0):
     '''
     Generate a data set of points sampled between [0, 1]² each with a label 0 if x + y < dist
     and 1 if outside
@@ -35,8 +38,8 @@ def generate_toy_data(points_number=1000, dist=0.5):
     examples = FloatTensor(points_number, 2).uniform_(0, 1)
     targets = LongTensor(points_number, 2).zero_()
     for i, ex in enumerate(examples):
-        current_dist = ex[0] + ex[1]
-        if current_dist > dist:
+        current_dist = ex[0] #+ ex[1]
+        if current_dist > dist/2:
             targets[i, 0] = 1
         else:
             targets[i, 1] = 1
@@ -67,6 +70,9 @@ def display_data_set(opt, examples, targets, name='dataset', format='torch'):
     sname = str(name + '.jpg')
     if not os.path.exists(opt['fig_dir']) : os.mkdir(opt['fig_dir'])
     sname = os.path.join(opt['fig_dir'], sname)
+    red_patch = mpatches.Patch(color='red', label='Label 1')
+    blue_patch = mpatches.Patch(color='blue', label='Label 0')
+    plt.legend(handles=[red_patch, blue_patch])
     plt.savefig(sname)
 
 def compute_accuracy(targets, predictions):
