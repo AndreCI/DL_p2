@@ -19,7 +19,7 @@ def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
     targets = LongTensor(points_number, 2).zero_()
     for i,ex in enumerate(examples):
         dist = math.sqrt(ex[0]**2 + ex[1]**2)
-        if dist>disk_radius:
+        if dist>disk_radius: #or ex[0] < 0:
             targets[i,0] = 1
         else:
             targets[i,1] = 1
@@ -27,7 +27,7 @@ def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
         ex[1] += 0.5
     return examples, targets
 
-def generate_toy_data(points_number=1000, dist=1.0):
+def generate_toy_data(points_number=1000, dist=1.0/(math.sqrt(1.0*math.pi))):
     '''
     Generate a data set of points sampled between [0, 1]² each with a label 0 if x + y < dist
     and 1 if outside
@@ -38,8 +38,8 @@ def generate_toy_data(points_number=1000, dist=1.0):
     examples = FloatTensor(points_number, 2).uniform_(0, 1)
     targets = LongTensor(points_number, 2).zero_()
     for i, ex in enumerate(examples):
-        current_dist = ex[0] #+ ex[1]
-        if current_dist > dist/2:
+        current_dist = math.sqrt(ex[0]**2 + ex[1]**2)
+        if current_dist > dist:
             targets[i, 0] = 1
         else:
             targets[i, 1] = 1
@@ -56,7 +56,7 @@ def display_data_set(opt, examples, targets, name='dataset', format='torch'):
         targets = targets.numpy()
     elif format != 'numpy':
         targets = np.array(targets)
-    f = plt.figure(figsize=(30, 30))
+    f = plt.figure(figsize=(20, 20))
     ax = f.add_subplot(111)
     condition = targets == 1
     ncon = targets == 0
@@ -65,6 +65,8 @@ def display_data_set(opt, examples, targets, name='dataset', format='torch'):
     false_x = np.extract(ncon, examples[:, 0])
     false_y = np.extract(ncon, examples[:, 1])
     ax.plot(true_x, true_y, 'ro', false_x, false_y, 'bo')
+    ax.set_xlim([0, 1])
+    ax.set_ylim([0, 1])
     circle = plt.Circle((0.5, 0.5), 1.0/(math.sqrt(2.0*math.pi)), color='g', fill=False)
     ax.add_artist(circle)
     sname = str(name + '.jpg')
@@ -74,6 +76,7 @@ def display_data_set(opt, examples, targets, name='dataset', format='torch'):
     blue_patch = mpatches.Patch(color='blue', label='Label 0')
     plt.legend(handles=[red_patch, blue_patch])
     plt.savefig(sname)
+    plt.close()
 
 def compute_accuracy(targets, predictions):
     return sum((targets.numpy() == predictions))/targets.size()[0]

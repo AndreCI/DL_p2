@@ -29,7 +29,7 @@ class Sequential(Module):
             fwd = self.layers[i].forward(fwd)
         self.memory.append(fwd)
         fwd = self.layers[-1].forward(fwd, target)
-        return fwd, self.memory[-1].max(1) #TODO: return only loss?
+        return fwd, self.memory[-1].min(1) #TODO: return only loss?
 
     def backward(self, target, learning_rate=0.05):
         '''
@@ -38,19 +38,29 @@ class Sequential(Module):
         :param learning_rate: The factor with which the gradient is multiplied before being applied to the the weights
         '''
         error = self.layers[-1].backward(self.memory[-1], target)
-        #print(self.memory[-1])
-        #print(target)
-        #print(error)
-        #exit()
+        #self.param()
         for i in range(len(self.layers) - 2, -1, -1):
             c_layer = self.layers[i]
+            #print(type(c_layer))
+
             if isinstance(c_layer, Trainable):
                 next_error = c_layer.backward(error)
+
                 c_layer.compute_gradient(self.memory[i], error)
                 c_layer.apply_gradient(learning_rate)
                 error = next_error
             elif isinstance(c_layer, Activation):
-                slope = c_layer.backward(self.memory[i])
+                slope = c_layer.backward(self.memory[i+1])
                 error = error * slope
             else:
                 raise AttributeError('The layers inside the network should be of type TrainableModule or ActivationModule.')
+            #print('lastmem',last_mem.size())
+            #print('mem', self.memory[i].size())
+
+    def param(self):
+        for i in self.memory:
+            print(i.size())
+
+    def reset(self):
+        for l in self.layers:
+            l.reset()

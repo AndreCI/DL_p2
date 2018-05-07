@@ -14,3 +14,19 @@ def xavier_initialization(in_size, out_size, use_bias=True):
         return weights, bias
     else:
         return weights, None
+
+def uniform_initialization(in_size, out_size, min=-1.0, max= 1.0, use_bias=True):
+    weights = FloatTensor(in_size, out_size).uniform_(min, max)
+    if use_bias:
+        bias = FloatTensor(out_size).uniform_(min, max)
+        return weights, bias
+    else:
+        return weights, None
+
+def gaussian_initialization(in_size, out_size, mean=0.0, std= 1.0, use_bias=True):
+    weights = FloatTensor(in_size, out_size).normal_(mean, std)
+    if use_bias:
+        bias = FloatTensor(out_size).normal_(mean, std)
+        return weights, bias
+    else:
+        return weights, None

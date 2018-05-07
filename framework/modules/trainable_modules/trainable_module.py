@@ -25,6 +25,13 @@ class TrainableModule(Module):
     def param(self):
         '''
         Utility function to see what are the parameters of this modules
-        :return: A list of couple containing (parameters, gradient)
+        :return: A list of couple containing (parameters, gradients)
         '''
         return []
+
+    def reset(self, initialization='default'):
+        '''
+        Utility function to reset the weights of the network.
+        :param initialization: The type of initalization to use, such as xavier.
+        '''
+        raise NotImplementedError()

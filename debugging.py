@@ -2,6 +2,7 @@ from framework.modules.trainable_modules.dense_layer import DenseLayer as Dense
 from framework.modules.criterion_modules.mse_layer import MSELayer as MSE
 from framework.modules.activation_modules.relu_layer import ReLuLayer as ReLu
 from framework.modules.activation_modules.tanh_layer import TanhLayer as Tanh
+from framework.modules.activation_modules.sigmoid_module import SigmoidLayer as Sigmoid
 import framework.modules.sequential
 import util.data
 from torch import FloatTensor, LongTensor
@@ -22,10 +23,11 @@ def ps(x):
     a = 1+1
     #print(x.size())
 
-d1 = Dense(2, 2)
-out = Dense(2, 2)
+d1 = Dense(2, 2, True)
+h1 = Dense(2, 2, True)
+out = Dense(2, 2, True)
 
-tan = Tanh()
+tan = Sigmoid()
 relu = ReLu()
 
 Mse = MSE()
@@ -33,65 +35,73 @@ predictions = []
 total_loss = 0.0
 final_tr_acc = 0.0
 final_tr_loss = 0.0
-learning_rate = -0.1
-
-for j in range(0, point_number):
-    target = train_targets[j]
-    target = target.view(1, 2).type(FloatTensor)
-    train_data = train_examples[j].view(1, 2)
-    m0 = train_data
-    ps(m0)
-    m1 = d1.forward(m0)
-    ps(m1)
-    a_m1 = tan.forward(m1)
-    ps(a_m1)
-    m2 = out.forward(a_m1)
-    ps(m2)
-    a_m2 = tan.forward(m2)
-    ps(a_m2)
-    loss = Mse.forward(a_m2, target)
-
-    a, prediction = a_m2.view(-1).max(0)
-
-    #print("n loss:", loss)
-    #print(a_m2)
-    e0 = Mse.backward(a_m2, target)  # M
-    ps(e0)
-    slope_out = tan.backward(m2)  # A
-    ps(slope_out)
-    c_e0 = slope_out * e0
-    ps(c_e0)
-    e1 = out.backward(c_e0)  # D
-    ps(e1)
-
-    slope_hid = tan.backward(m1)  # A
-    ps(slope_hid)
-    c_e1 = slope_hid * e1
-    ps(c_e1)
-    e2 = d1.backward(c_e1)  # D -useless-
-    ps(e2)
+learning_rate = 0.1
+for train_test in range(2):
+    predictions = []
+    total_loss = 0.0
+    final_tr_acc = 0.0
+    final_tr_loss = 0.0
+    learning_rate = 0.1
+    for j in range(0, point_number):
+        target = train_targets[j]
+        target = target.view(1, 2).type(FloatTensor)
+        train_data = train_examples[j].view(1, 2)
+        m0 = train_data
+        ps(m0)
+        m1 = d1.forward(m0)
+        ps(m1)
+        a_m1 = tan.forward(m1)
+        ps(a_m1)
 
 
-    out.compute_gradient(a_m1, c_e0)
-    out.apply_gradient(learning_rate)
+        m2 = out.forward(a_m1)
+        ps(m2)
+        a_m2 = tan.forward(m2)
+        ps(a_m2)
+        loss = Mse.forward(a_m2, target)
+        a, prediction = a_m2.view(-1).min(0)
+        #print("n loss:", loss)
+        #print(a_m2)
+        if train_test != 1:
+            e0 = Mse.backward(a_m2, target)  # M
+            ps(e0)
+            slope_out = tan.backward(a_m2)  # A
+            ps(slope_out)
+            c_e0 = e0 *slope_out
+            ps(c_e0)
+            e1 = out.backward(c_e0)  # D
+            ps(e1)
 
-    d1.compute_gradient(m0, c_e1)
-    d1.apply_gradient(learning_rate)
-    #w = a_m1.mm(c_e0)
-    #b = torch.sum(c_e0)
-    #out.apply_gradient(w, b, learning_rate)
-
-    #w = torch.t(m0).mm(c_e1)
-    #b = torch.sum(c_e1)  # sum bias??? on error? Dimension msimactch
-    #d1.apply_gradient(w, b, learning_rate)
+            slope_hid = tan.backward(a_m1)  # A
+            ps(slope_hid)
+            c_e1 = e1 * slope_hid
+            ps(c_e1)
+            e2 = d1.backward(c_e1)  # D -useless-
+            ps(e2)
 
 
-    predictions.append(prediction[0])
+            out.compute_gradient(a_m1, c_e0)
+            out.apply_gradient(learning_rate)
 
-    total_loss += float(loss)
-    message = str('Training loss %3f - iteration %i/%i, epoch %i/%i' % (loss, j, point_number, 0, 1))
-    log.info(message)
-    #exit()
+            d1.compute_gradient(m0, c_e1)
+            d1.apply_gradient(learning_rate)
+        #w = a_m1.mm(c_e0)
+        #b = torch.sum(c_e0)
+        #out.apply_gradient(w, b, learning_rate)
+
+        #w = torch.t(m0).mm(c_e1)
+        #b = torch.sum(c_e1)  # sum bias??? on error? Dimension msimactch
+        #d1.apply_gradient(w, b, learning_rate)
+
+
+        predictions.append(prediction[0])
+
+        total_loss += float(loss)
+        message = str('Training loss %3f - iteration %i/%i, epoch %i/%i' % (loss, j, point_number, train_test, 2))
+        log.info(message)
+        #exit()
+print(predictions)
+print(train_targets)
 final_tr_loss += total_loss / (j + 1)
 train_accuracy = util.data.compute_accuracy(train_targets[:, 0], predictions)
 final_tr_acc += train_accuracy

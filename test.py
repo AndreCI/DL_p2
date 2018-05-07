@@ -2,6 +2,7 @@ from framework.modules.trainable_modules.dense_layer import DenseLayer as Dense
 from framework.modules.criterion_modules.mse_layer import MSELayer as MSE
 from framework.modules.activation_modules.relu_layer import ReLuLayer as ReLu
 from framework.modules.activation_modules.tanh_layer import TanhLayer as Tanh
+from framework.modules.activation_modules.sigmoid_module import SigmoidLayer as Sigmoid
 import framework.modules.sequential
 import util.data
 from torch import FloatTensor, LongTensor
@@ -19,27 +20,29 @@ out = Dense(25, 2)
 
 tan = Tanh()
 relu = ReLu()
+sig = Sigmoid()
 
 Mse = MSE()
 
-layers = [d1, relu, h1, relu, h2, tan, h3, tan, out, tan, Mse]
-layers = [d1, tan, out, tan, Mse]
-
+layers = [d1, tan, h1, tan, h2, tan, h3, tan, out, tan, Mse]
+#layers = [d1, tan, out, tan, Mse]
+#layers = [d1, tan, h1, relu, h2, tan, h3, tan, out, tan, Mse]
 model = framework.modules.sequential.Sequential(layers=layers)
 point_number = opt['point_number']
 
-train_examples, train_targets = util.data.generate_toy_data(opt['point_number'])# util.data.generate_data(points_number=point_number)
-test_examples, test_targets = util.data.generate_toy_data(opt['point_number']) #generate_data(points_number=point_number)
+train_examples, train_targets = util.data.generate_data(points_number=point_number) #util.data.generate_toy_data(opt['point_number']) #
+test_examples, test_targets =util.data.generate_data(points_number=point_number) #util.data.generate_toy_data(opt['point_number']) #
 
-util.data.display_data_set(opt, train_examples, train_targets[:, 0])
-epochs = 1
+util.data.display_data_set(opt, train_examples, train_targets[:, 0], name='train_dataset')
+util.data.display_data_set(opt, test_examples, test_targets[:, 0], name='test_dataset')
+epochs = opt['epoch_number']
 final_tr_loss = 0.0
 final_te_loss = 0.0
 final_tr_acc = 0.0
 final_te_acc = 0.0
-predictions = []
-predictions_test = []
 for i in range(epochs):
+    predictions = []
+    predictions_test = []
     total_loss = 0.0
     for j in range(0, point_number):
         target = train_targets[j]
@@ -73,12 +76,15 @@ for i in range(epochs):
     message = str('Average Testing loss %3f - epoch %i/%i' % (total_loss / (j + 1), (i + 1), epochs))
     message = str('Average Testing accuracy %3f - epoch %i/%i' % (test_accuracy, (i + 1), epochs))
     log.info(message)
+    if test_accuracy < 0.6:
+        model.reset()
+        log.info(str('A reset has occured.'))
     final_te_loss += total_loss/(j+1)
+    util.data.display_data_set(opt, test_examples, predictions_test,name="test_predictions", format='Normal')
+    util.data.display_data_set(opt, train_examples, predictions,name="train_predictions", format='Normal')
 print("-" * 60)
 print("Average Training loss accross all the epochs: %3f" %(final_tr_loss/epochs))
 print("Average Training accuracy accross all the epochs: %3f" %(final_tr_acc/epochs))
 print("-" * 60)
 print("Average Testing loss accross all the epochs: %3f" %(final_te_loss/epochs))
 print("Average Testing accuracy accross all the epochs: %3f" %(final_te_acc/epochs))
-util.data.display_data_set(opt, test_examples, predictions_test,name="test_predictions", format='Normal')
-util.data.display_data_set(opt, train_examples, predictions,name="train_predictions", format='Normal')

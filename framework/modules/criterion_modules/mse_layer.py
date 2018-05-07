@@ -9,7 +9,7 @@ class MSELayer(CriterionModule):
         Compute the forward pass for the current example
         :param prediction: the prediction ŷ, i.e. the output of the model
         :param target: the ground truth
-        :return: the cost, or loss using MSE, i.e. 1/2 * (ŷ - y)**2
+        :return: the cost, or loss using MSE, i.e. 1/2 * (y - ŷ)**2
         '''
         #TODO: test if this works.
         if prediction.size() != target.size():
@@ -23,7 +23,7 @@ class MSELayer(CriterionModule):
         Compute the derivative of this layer.
         :param prediction: the prediction ŷ, i.e. the output of the model
         :param target: the ground truth
-        :return: the derivative of MSE, i.e. ŷ - y
+        :return: the derivative of MSE, i.e. y - ŷ
         '''
         return target - prediction
 

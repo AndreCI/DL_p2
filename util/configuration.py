@@ -17,9 +17,9 @@ def get_args(parser):
     parser.add_argument('--log_root', help="directory to save the logging journal", default=root_dir + "/logs/", type=str)
 
     #Model and data arguments
-    parser.add_argument('--epoch_number', help="Number of epoch to train.", default=1, type=int)
-    parser.add_argument('--lr', help="Learning rate to train the models.", default=0.01, type=float)
-    parser.add_argument('--point_number', help="Number of points to generate.", default=5000, type=int)
+    parser.add_argument('--epoch_number', help="Number of epoch to train.", default=100, type=int)
+    parser.add_argument('--lr', help="Learning rate to train the models.", default=0.001, type=float)
+    parser.add_argument('--point_number', help="Number of points to generate.", default=10000, type=int)
 
     return vars(parser.parse_args())
 

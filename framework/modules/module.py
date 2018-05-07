@@ -13,3 +13,6 @@ class Module(object):
     def param(self):
         '''Each module must have a param method'''
         return []
+
+    def reset(self):
+        pass
