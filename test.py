@@ -3,6 +3,7 @@ from framework.modules.criterion_modules.mse_layer import MSELayer as MSE
 from framework.modules.activation_modules.relu_layer import ReLuLayer as ReLu
 from framework.modules.activation_modules.tanh_layer import TanhLayer as Tanh
 from framework.modules.activation_modules.sigmoid_module import SigmoidLayer as Sigmoid
+from framework.optimizers.sgd_optimizer import SGD_optimizer
 from framework.modules.sequential import Sequential
 import framework.modules.sequential
 import util.data
@@ -25,11 +26,15 @@ sig = Sigmoid()
 
 Mse = MSE()
 
+
 if opt['load_best_model']:
     model = load_most_successful_model(opt['save_dir'])
 else:
     layers = [d1, tan, h1, tan, h2, tan, h3, tan, out, tan, Mse]
     model = framework.modules.sequential.Sequential(layers=layers)
+
+optimizer = SGD_optimizer(model, opt['lr'], opt['momentum'])
+
 point_number = opt['point_number']
 
 train_examples, train_targets = util.data.generate_data(points_number=point_number) #util.data.generate_toy_data(opt['point_number']) #
@@ -52,7 +57,8 @@ for i in range(epochs):
         train_data = train_examples[j].view(1, 2)
         loss, (jack, prediction) = model.forward(train_data, target)
         predictions.append(prediction[0])
-        model.backward(target, learning_rate=opt['lr'])
+        optimizer.step(target)
+        #model.backward(target, learning_rate=opt['lr'])
         total_loss+=float(loss)
         if opt['verbose'] == 'high':
             message = str('Training loss %3f - iteration %i/%i, epoch %i/%i' %(loss, j, point_number, i, epochs))
@@ -85,7 +91,7 @@ for i in range(epochs):
         log.info(str('A reset has occured.'))
     else:
         name = str('model_%i' %i)
-        model.save_model(name, opt['save_dir'], test_acc=test_accuracy)
+        #model.save_model(name, opt['save_dir'], test_acc=test_accuracy)
     final_te_loss += total_loss/(j+1)
     util.data.display_data_set(opt, test_examples, predictions_test,name="test_predictions", format='Normal')
     util.data.display_data_set(opt, train_examples, predictions,name="train_predictions", format='Normal')

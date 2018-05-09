@@ -54,7 +54,7 @@ class Sequential(Module):
                 next_error = c_layer.backward(error)
 
                 c_layer.compute_gradient(self.memory[i], error)
-                c_layer.apply_gradient(learning_rate)
+                #c_layer.apply_gradient(learning_rate)
                 error = next_error
             elif isinstance(c_layer, Activation):
                 slope = c_layer.backward(self.memory[i+1])
@@ -117,10 +117,8 @@ class Sequential(Module):
             current_layer = None
             if l['type'] == 'dense':
                 current_layer = DenseLayer(l['in_features'], l['out_features'], l['has_bias'])
-                weights = l['weights']
-                bias = l['bias']
                 current_layer.weights = FloatTensor(l['weights'])
-                current_layer.bias = FloatTensor(bias)
+                current_layer.bias = FloatTensor(l['bias'])
             elif l['type'] == 'sigmoid':
                 current_layer = SigmoidLayer()
             elif l['type'] == 'relu':

@@ -1,0 +1,85 @@
+05/09/2018 12:45:56 [Program starts.]
+05/09/2018 12:45:56 [Arg used:][{'point_number': 10000}, {'epoch_number': 100}, {'verbose': 'low'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/09/2018 12:46:01 [Program starts.]
+05/09/2018 12:46:01 [Arg used:][{'epoch_number': 100}, {'point_number': 10000}, {'verbose': 'low'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/09/2018 12:46:21 [Program starts.]
+05/09/2018 12:46:21 [Arg used:][{'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'verbose': 'low'}, {'point_number': 10000}, {'epoch_number': 100}]
+05/09/2018 12:46:55 [Program starts.]
+05/09/2018 12:46:55 [Arg used:][{'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'epoch_number': 100}, {'point_number': 10000}, {'verbose': 'low'}]
+05/09/2018 12:46:59 Average Training accuracy 0.501500 - epoch 1/100
+05/09/2018 12:46:59 Average Testing accuracy 0.501200 - epoch 1/100
+05/09/2018 12:46:59 A reset has occured.
+05/09/2018 12:47:02 Average Training accuracy 0.498100 - epoch 2/100
+05/09/2018 12:47:03 Average Testing accuracy 0.498800 - epoch 2/100
+05/09/2018 12:47:03 A reset has occured.
+05/09/2018 12:47:06 Average Training accuracy 0.492900 - epoch 3/100
+05/09/2018 12:47:06 Average Testing accuracy 0.498800 - epoch 3/100
+05/09/2018 12:47:06 A reset has occured.
+05/09/2018 12:47:09 Average Training accuracy 0.496100 - epoch 4/100
+05/09/2018 12:47:10 Average Testing accuracy 0.498800 - epoch 4/100
+05/09/2018 12:47:10 A reset has occured.
+05/09/2018 12:47:13 Average Training accuracy 0.492200 - epoch 5/100
+05/09/2018 12:47:14 Average Testing accuracy 0.498800 - epoch 5/100
+05/09/2018 12:47:14 A reset has occured.
+05/09/2018 12:47:17 Average Training accuracy 0.500700 - epoch 6/100
+05/09/2018 12:47:18 Average Testing accuracy 0.498800 - epoch 6/100
+05/09/2018 12:47:18 A reset has occured.
+05/09/2018 12:47:21 Average Training accuracy 0.504900 - epoch 7/100
+05/09/2018 12:47:22 Average Testing accuracy 0.498800 - epoch 7/100
+05/09/2018 12:47:22 A reset has occured.
+05/09/2018 12:47:25 Average Training accuracy 0.502600 - epoch 8/100
+05/09/2018 12:47:26 Average Testing accuracy 0.498800 - epoch 8/100
+05/09/2018 12:47:26 A reset has occured.
+05/09/2018 12:47:29 Average Training accuracy 0.531100 - epoch 9/100
+05/09/2018 12:47:29 Average Testing accuracy 0.519600 - epoch 9/100
+05/09/2018 12:47:29 A reset has occured.
+05/09/2018 12:47:32 Average Training accuracy 0.514300 - epoch 10/100
+05/09/2018 12:47:33 Average Testing accuracy 0.743300 - epoch 10/100
+05/09/2018 12:47:36 Average Training accuracy 0.620300 - epoch 11/100
+05/09/2018 12:47:37 Average Testing accuracy 0.501100 - epoch 11/100
+05/09/2018 12:47:37 A reset has occured.
+05/09/2018 12:47:40 Average Training accuracy 0.502700 - epoch 12/100
+05/09/2018 12:47:41 Average Testing accuracy 0.498800 - epoch 12/100
+05/09/2018 12:47:41 A reset has occured.
+05/09/2018 12:47:44 Average Training accuracy 0.498700 - epoch 13/100
+05/09/2018 12:47:45 Average Testing accuracy 0.498800 - epoch 13/100
+05/09/2018 12:47:45 A reset has occured.
+05/09/2018 12:47:48 Average Training accuracy 0.593200 - epoch 14/100
+05/09/2018 12:47:49 Average Testing accuracy 0.757500 - epoch 14/100
+05/09/2018 12:47:53 Average Training accuracy 0.796300 - epoch 15/100
+05/09/2018 12:47:53 Average Testing accuracy 0.795700 - epoch 15/100
+05/09/2018 12:47:57 Average Training accuracy 0.847100 - epoch 16/100
+05/09/2018 12:47:59 Average Testing accuracy 0.506400 - epoch 16/100
+05/09/2018 12:47:59 A reset has occured.
+05/09/2018 12:48:02 Average Training accuracy 0.498300 - epoch 17/100
+05/09/2018 12:48:03 Average Testing accuracy 0.498800 - epoch 17/100
+05/09/2018 12:48:03 A reset has occured.
+05/09/2018 12:48:07 Average Training accuracy 0.496700 - epoch 18/100
+05/09/2018 12:48:07 Average Testing accuracy 0.498800 - epoch 18/100
+05/09/2018 12:48:07 A reset has occured.
+05/09/2018 12:48:11 Average Training accuracy 0.495900 - epoch 19/100
+05/09/2018 12:48:11 Average Testing accuracy 0.498800 - epoch 19/100
+05/09/2018 12:48:11 A reset has occured.
+05/09/2018 12:48:22 [Program starts.]
+05/09/2018 12:48:22 [Arg used:][{'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'verbose': 'low'}, {'epoch_number': 100}, {'point_number': 10000}]
+05/09/2018 12:48:28 [Program starts.]
+05/09/2018 12:48:28 [Arg used:][{'verbose': 'low'}, {'point_number': 10000}, {'epoch_number': 100}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/09/2018 12:48:32 Average Training accuracy 0.501200 - epoch 1/100
+05/09/2018 12:48:32 Average Testing accuracy 0.499600 - epoch 1/100
+05/09/2018 12:48:32 A reset has occured.
+05/09/2018 12:48:36 Average Training accuracy 0.633000 - epoch 2/100
+05/09/2018 12:48:36 Average Testing accuracy 0.842300 - epoch 2/100
+05/09/2018 12:48:40 Average Training accuracy 0.827800 - epoch 3/100
+05/09/2018 12:48:41 Average Testing accuracy 0.868100 - epoch 3/100
+05/09/2018 12:48:44 Average Training accuracy 0.874000 - epoch 4/100
+05/09/2018 12:48:45 Average Testing accuracy 0.910200 - epoch 4/100
+05/09/2018 12:48:48 Average Training accuracy 0.883800 - epoch 5/100
+05/09/2018 12:48:49 Average Testing accuracy 0.814200 - epoch 5/100
+05/09/2018 12:48:52 Average Training accuracy 0.884100 - epoch 6/100
+05/09/2018 12:48:53 Average Testing accuracy 0.820400 - epoch 6/100
+05/09/2018 12:48:57 Average Training accuracy 0.869800 - epoch 7/100
+05/09/2018 12:48:57 Average Testing accuracy 0.783500 - epoch 7/100
+05/09/2018 12:49:01 Average Training accuracy 0.859400 - epoch 8/100
+05/09/2018 12:49:01 Average Testing accuracy 0.797900 - epoch 8/100
+05/09/2018 12:49:05 Average Training accuracy 0.854500 - epoch 9/100
+05/09/2018 12:49:06 Average Testing accuracy 0.856700 - epoch 9/100
