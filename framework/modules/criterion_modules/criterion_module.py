@@ -9,3 +9,7 @@ class CriterionModule(Module):
     def backward(self, prediction, target):
         '''Backward pass'''
         raise NotImplementedError()
+
+    @property
+    def type(self):
+        raise NotImplementedError()

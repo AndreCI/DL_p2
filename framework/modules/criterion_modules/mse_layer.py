@@ -27,3 +27,6 @@ class MSELayer(CriterionModule):
         '''
         return target - prediction
 
+    @property
+    def type(self):
+        return 'mse'

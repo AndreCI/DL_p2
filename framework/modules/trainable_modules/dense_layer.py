@@ -1,6 +1,6 @@
 from framework.modules.module import Module
 from framework.modules.trainable_modules.trainable_module import TrainableModule
-from framework.network_util.math_util import linear, xavier_initialization, uniform_initialization, gaussian_initialization
+from framework.network_util.math_util import linear, xavier_initialization, uniform_initialization, gaussian_initialization, he_initialization
 
 class DenseLayer(TrainableModule):
     def __init__(self, in_features, out_features, use_bias=True, initialization='xavier'):
@@ -21,6 +21,8 @@ class DenseLayer(TrainableModule):
             self.weights, self.bias = uniform_initialization(in_features, out_features, use_bias)
         elif initialization == 'gaussian':
             self.weights, self.bias = gaussian_initialization(in_features, out_features, use_bias)
+        elif initialization == 'he':
+            self.weights, self.bias = he_initialization(in_features, out_features, use_bias)
         else:
             raise NotImplementedError('This initialization %s has not been implemented yet. Please use xavier or uniform.' %initialization)
         self.weights_gradient = None
@@ -80,7 +82,12 @@ class DenseLayer(TrainableModule):
             self.weights, self.bias = uniform_initialization(self.inputs, self.units, self.use_bias)
         elif initialization == 'gaussian':
             self.weights, self.bias = gaussian_initialization(self.inputs, self.units, self.use_bias)
+        elif initialization == 'he':
+            self.weights, self.bias = he_initialization(self.inputs, self.units, self.use_bias)
         else:
             raise NotImplementedError('This initialization %s has not been implemented yet. Please use xavier or uniform.' %initialization)
         self.weights_gradient = None
 
+    @property
+    def type(self):
+        return 'dense'

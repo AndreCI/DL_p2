@@ -8,3 +8,7 @@ class SigmoidLayer(ActivationModule):
 
     def backward(self, gradient):
         return gradient.sigmoid() * (1 - gradient.sigmoid())
+
+    @property
+    def type(self):
+        return 'sigmoid'

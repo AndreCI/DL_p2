@@ -23,3 +23,7 @@ class ReLuLayer(ActivationModule):
         mask = gradient > 0
         mask = mask.type(FloatTensor)
         return mask
+
+    @property
+    def type(self):
+        return 'relu'

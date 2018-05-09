@@ -9,3 +9,7 @@ class ActivationModule(Module):
     def backward(self, gradwrtoutput):
         '''Backward pass'''
         raise NotImplementedError()
+
+    @property
+    def type(self):
+        raise NotImplementedError()

@@ -35,3 +35,7 @@ class TrainableModule(Module):
         :param initialization: The type of initalization to use, such as xavier.
         '''
         raise NotImplementedError()
+
+    @property
+    def type(self):
+        raise NotImplementedError()

@@ -2,7 +2,8 @@ import os
 import argparse
 import sys
 import logging
-
+import json
+from framework.modules.sequential import Sequential
 
 def get_args(parser):
     '''
@@ -15,11 +16,16 @@ def get_args(parser):
     #Directory arguments
     parser.add_argument('--fig_dir', help="directory to save different figures.", default=root_dir + "/figs/", type=str)
     parser.add_argument('--log_root', help="directory to save the logging journal", default=root_dir + "/logs/", type=str)
+    parser.add_argument('--save_dir', help="directory to save the different models", default=root_dir + "/save/", type=str)
 
     #Model and data arguments
     parser.add_argument('--epoch_number', help="Number of epoch to train.", default=100, type=int)
     parser.add_argument('--lr', help="Learning rate to train the models.", default=0.001, type=float)
     parser.add_argument('--point_number', help="Number of points to generate.", default=10000, type=int)
+    parser.add_argument('--load_best_model', help="If True, the model with the most testing accuracy from the save_dir will be loaded and trained.",
+                        default=False, type=bool)
+
+    parser.add_argument('--verbose', help="How much information will the log give. Options are 'high' or 'low'.", default='low', type='str')
 
     return vars(parser.parse_args())
 
@@ -56,3 +62,16 @@ def setup_log(opt):
             important_infos.append({key: opt[key]})
     log.info('[Arg used:]' + str(important_infos))
     return log
+
+def load_most_successful_model(save_dir):
+    best_acc = 0.0
+    best_file = None
+    for f in os.listdir(save_dir):
+        if not os.path.isdir(f):
+            file = os.path.join(save_dir, f)
+            with open(file, 'r', encoding='utf-8') as file:
+                data = json.load(file)
+                if data['test_accuracy'] > best_acc:
+                    best_acc = data['test_accuracy']
+                    best_file = f
+    return Sequential.load_model(best_file[:-5], save_dir)
