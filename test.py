@@ -90,8 +90,8 @@ for i in range(epochs):
         model.reset()
         log.info(str('A reset has occured.'))
     else:
-        name = str('model_%i' %i)
-        #model.save_model(name, opt['save_dir'], test_acc=test_accuracy)
+        name = str('model_%i_%.3fAcc' %(i, test_accuracy))
+        model.save_model(name, opt['save_dir'], test_acc=test_accuracy)
     final_te_loss += total_loss/(j+1)
     util.data.display_data_set(opt, test_examples, predictions_test,name="test_predictions", format='Normal')
     util.data.display_data_set(opt, train_examples, predictions,name="train_predictions", format='Normal')
