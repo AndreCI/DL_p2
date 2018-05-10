@@ -1,10 +1,5 @@
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-
 from torch import FloatTensor, LongTensor
-import os
 import math
-import numpy as np
 
 
 def generate_data(points_number=1000, disk_radius=1.0/(math.sqrt(2.0*math.pi))):
@@ -44,39 +39,6 @@ def generate_toy_data(points_number=1000, dist=1.0/(math.sqrt(1.0*math.pi))):
         else:
             targets[i, 1] = 1
     return examples, targets
-
-def display_data_set(opt, examples, targets, name='dataset', format='torch'):
-    '''
-    Display the dataset. Save the fig under name
-    :param examples: The list of examples
-    :param targets: The list of their targets
-    '''
-    examples = examples.numpy()
-    if format == 'torch':
-        targets = targets.numpy()
-    elif format != 'numpy':
-        targets = np.array(targets)
-    f = plt.figure(figsize=(20, 20))
-    ax = f.add_subplot(111)
-    condition = targets == 1
-    ncon = targets == 0
-    true_x = np.extract(condition, examples[:, 0])
-    true_y = np.extract(condition, examples[:, 1])
-    false_x = np.extract(ncon, examples[:, 0])
-    false_y = np.extract(ncon, examples[:, 1])
-    ax.plot(true_x, true_y, 'ro', false_x, false_y, 'bo')
-    ax.set_xlim([0, 1])
-    ax.set_ylim([0, 1])
-    circle = plt.Circle((0.5, 0.5), 1.0/(math.sqrt(2.0*math.pi)), color='g', fill=False)
-    ax.add_artist(circle)
-    sname = str(name + '.jpg')
-    if not os.path.exists(opt['fig_dir']) : os.mkdir(opt['fig_dir'])
-    sname = os.path.join(opt['fig_dir'], sname)
-    red_patch = mpatches.Patch(color='red', label='Label 1')
-    blue_patch = mpatches.Patch(color='blue', label='Label 0')
-    plt.legend(handles=[red_patch, blue_patch])
-    plt.savefig(sname)
-    plt.close()
 
 def compute_accuracy(targets, predictions):
     return sum((targets.numpy() == predictions))/targets.size()[0]

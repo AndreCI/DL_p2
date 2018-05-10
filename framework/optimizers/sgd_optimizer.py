@@ -1,6 +1,7 @@
 from torch import FloatTensor, LongTensor
 from framework.optimizers.optimizer import Optimizer
 from framework.modules.trainable_modules.trainable_module import TrainableModule
+import random
 
 class SGD_optimizer(Optimizer):
     '''

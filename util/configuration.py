@@ -19,12 +19,14 @@ def get_args(parser):
     parser.add_argument('--save_dir', help="directory to save the different models", default=root_dir + "/save/", type=str)
 
     #Model and data arguments
-    parser.add_argument('--epoch_number', help="Number of epoch to train.", default=100, type=int)
-    parser.add_argument('--lr', help="Learning rate to train the models.", default=0.001, type=float)
-    parser.add_argument('--momentum', help="Value for the momentum parameter in SGD", default=0.9, type=float)
-    parser.add_argument('--point_number', help="Number of points to generate.", default=10000, type=int)
+    parser.add_argument('--hidden_units', help="Number of hidden units to use.", default=25, type=int)
+    parser.add_argument('--epoch_number', help="Number of epoch to train.", default=50, type=int)
+    parser.add_argument('--lr', help="Learning rate to train the models.", default=0.01, type=float)
+    parser.add_argument('--momentum', help="Value for the momentum parameter in SGD", default=0.0, type=float)
+    parser.add_argument('--point_number', help="Number of points to generate.", default=1000, type=int)
     parser.add_argument('--load_best_model', help="If True, the model with the most testing accuracy from the save_dir will be loaded and trained.",
                         default=False, type=bool)
+    parser.add_argument('--save_best_model', help="If True, each model that beat the previous one will be saved in save_dir.", default=False, type=bool)
 
     parser.add_argument('--verbose', help="How much information will the log give. Options are 'high' or 'low'.", default='low', type=str)
 

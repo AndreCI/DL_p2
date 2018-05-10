@@ -11,7 +11,6 @@ class MSELayer(CriterionModule):
         :param target: the ground truth
         :return: the cost, or loss using MSE, i.e. 1/2 * (y - ŷ)**2
         '''
-        #TODO: test if this works.
         if prediction.size() != target.size():
             print(prediction.size())
             print(target.size())

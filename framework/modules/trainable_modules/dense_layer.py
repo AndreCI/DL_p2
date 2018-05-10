@@ -1,9 +1,9 @@
-from framework.modules.module import Module
 from framework.modules.trainable_modules.trainable_module import TrainableModule
-from framework.network_util.math_util import linear, xavier_initialization, uniform_initialization, gaussian_initialization, he_initialization
+from framework.initializers.he_initializer import HeInitializer
+
 
 class DenseLayer(TrainableModule):
-    def __init__(self, in_features, out_features, use_bias=True, initialization='xavier'):
+    def __init__(self, in_features, out_features, use_bias=True, initializer=HeInitializer()):
         '''
         A simple fully connected layer. There is no activation function, as we consider activation as a layer in and
         on itself. See tanh_layer or relu_layer.
@@ -11,27 +11,14 @@ class DenseLayer(TrainableModule):
         :param out_features: integer, the dimensionality of the output space
         :param use_bias: boolean, whether the layer uses bias
         '''
-        #TODO: could in/out_features could be something else than integer? +Add param verification.
+        # TODO: Add param verification.
         self.inputs = in_features
         self.units = out_features
         self.use_bias = use_bias
-        if initialization == 'xavier' or initialization == 'default':
-            self.weights, self.bias = xavier_initialization(in_features, out_features, use_bias)
-        elif initialization == 'uniform':
-            self.weights, self.bias = uniform_initialization(in_features, out_features, use_bias)
-        elif initialization == 'gaussian':
-            self.weights, self.bias = gaussian_initialization(in_features, out_features, use_bias)
-        elif initialization == 'he':
-            self.weights, self.bias = he_initialization(in_features, out_features, use_bias)
-        else:
-            raise NotImplementedError('This initialization %s has not been implemented yet. Please use xavier or uniform.' %initialization)
+        self.initializer = initializer
+        self.weights, self.bias = self.initializer.initialize(self.inputs, self.units, self.use_bias)
         self.weights_gradient = None
         self.bias_gradient = None
-        #self.weights = torch.randn(in_features, out_features) * 3 #T(in_features, out_features).fill_(0.5) #
-        #if use_bias:
-        #    self.bias = torch.randn(1, out_features) * 3 #T(out_features).fill_(0.5) #
-        #else:
-        #    self.bias = None
 
     def forward(self, input):
         '''
@@ -39,7 +26,10 @@ class DenseLayer(TrainableModule):
         :param input: the current example or output of the previous layer
         :return: XW (+ B)
         '''
-        return linear(input, self.weights, self.bias)
+        if self.use_bias:
+            return input.mm(self.weights) + self.bias
+        else:
+            return input.mm(self.weights)
 
     def backward(self, gradient):
         '''
@@ -75,18 +65,12 @@ class DenseLayer(TrainableModule):
         '''
         return [(self.weights, self.weights_gradient), (self.bias, self.bias_gradient)]
 
-    def reset(self, initialization='gaussian'):
-        if initialization == 'default' or initialization == 'xavier':
-            self.weights, self.bias = xavier_initialization(self.inputs, self.units, self.use_bias)
-        elif initialization == 'uniform':
-            self.weights, self.bias = uniform_initialization(self.inputs, self.units, self.use_bias)
-        elif initialization == 'gaussian':
-            self.weights, self.bias = gaussian_initialization(self.inputs, self.units, self.use_bias)
-        elif initialization == 'he':
-            self.weights, self.bias = he_initialization(self.inputs, self.units, self.use_bias)
-        else:
-            raise NotImplementedError('This initialization %s has not been implemented yet. Please use xavier or uniform.' %initialization)
+    def reset(self, initializer=None):
+        if initializer is not None:
+            self.initializer = initializer
+        self.weights, self.bias = self.initializer.initialize(self.inputs, self.units, self.use_bias)
         self.weights_gradient = None
+        self.bias_gradient = None
 
     @property
     def type(self):
