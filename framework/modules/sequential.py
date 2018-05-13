@@ -65,10 +65,19 @@ class Sequential(Module):
 
 
     def reset(self):
+        '''
+        Reset each of the layer.s
+        '''
         for l in self.layers:
             l.reset()
 
     def save_model(self, name, save_dir, test_acc = 0.0):
+        '''
+        Save the current model in a json format
+        :param name: the name of the file
+        :param save_dir: the path to which save the file
+        :param test_acc: additional info to add to the json.
+        '''
         if not os.path.exists(save_dir): os.mkdir(save_dir)
         data = {}
         data['layers'] = []
@@ -105,6 +114,12 @@ class Sequential(Module):
 
     @staticmethod
     def load_model(name, save_dir):
+        '''
+        A static method to load a model from a json file
+        :param name: The name of the file
+        :param save_dir: the path of the file
+        :return: an already build and trained network
+        '''
         file = os.path.join(save_dir, str(name + '.json'))
         with open(file, 'r', encoding='utf-8') as file:
             data = json.load(file)

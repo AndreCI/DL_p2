@@ -11,7 +11,6 @@ class DenseLayer(TrainableModule):
         :param out_features: integer, the dimensionality of the output space
         :param use_bias: boolean, whether the layer uses bias
         '''
-        # TODO: Add param verification.
         self.inputs = in_features
         self.units = out_features
         self.use_bias = use_bias
@@ -66,6 +65,11 @@ class DenseLayer(TrainableModule):
         return [(self.weights, self.weights_gradient), (self.bias, self.bias_gradient)]
 
     def reset(self, initializer=None):
+        '''
+        Reset the weights and bias if any accordingly to the initializer given as arg. If it's None, the module will use
+        the initializer used during its construction.
+        :param initializer: An initilizer object
+        '''
         if initializer is not None:
             self.initializer = initializer
         self.weights, self.bias = self.initializer.initialize(self.inputs, self.units, self.use_bias)

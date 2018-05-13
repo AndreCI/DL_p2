@@ -41,4 +41,10 @@ def generate_toy_data(points_number=1000, dist=1.0/(math.sqrt(1.0*math.pi))):
     return examples, targets
 
 def compute_accuracy(targets, predictions):
+    '''
+    Comput the accuracy between the expected targets and the predictions
+    :param targets: the targets
+    :param predictions: the predictions of the model
+    :return: a value between 0 and 1 representing the number of correct prediction
+    '''
     return sum((targets.numpy() == predictions))/targets.size()[0]

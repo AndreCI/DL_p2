@@ -98,5 +98,11 @@ def display_accuracy(train_accuracy, test_accuracy, model_type, opt, running_mea
     plt.savefig(loc)
 
 def running_mean(x, N):
+    '''
+    Compute a simple running mean
+    :param x: the data
+    :param N: the number of datapoint to average on
+    :return: smooth data
+    '''
     cumsum = np.cumsum(np.insert(x, 0, 0))
     return (cumsum[N:] - cumsum[:-N]) / float(N)

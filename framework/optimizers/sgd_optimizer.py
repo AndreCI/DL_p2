@@ -1,13 +1,17 @@
-from torch import FloatTensor, LongTensor
 from framework.optimizers.optimizer import Optimizer
 from framework.modules.trainable_modules.trainable_module import TrainableModule
-import random
 
 class SGD_optimizer(Optimizer):
     '''
     A simple class to take care of the optimization process, i.e. learning, with stochastic gradient descent.
     '''
     def __init__(self, model, learning_rate, momentum=0.0):
+        '''
+        Initialization of the SGD optimizer
+        :param model: a sequential model
+        :param learning_rate: parameter to train the model
+        :param momentum: a parameter to specify how much of the old gradient to keep
+        '''
         self.model = model
         self.learning_rate = learning_rate
         self.momentum = momentum
@@ -16,6 +20,10 @@ class SGD_optimizer(Optimizer):
         self.old_gradients = [[] for _ in range(len(self.model.layers))]
 
     def step(self, target):
+        '''
+        Modify the gradients and apply them to the model
+        :param target: the expected result
+        '''
         for i, l in enumerate(self.model.layers):
             if isinstance(l, TrainableModule):
                 current_old_grad = [l.weights_gradient, l.bias_gradient]

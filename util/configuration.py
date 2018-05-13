@@ -67,6 +67,11 @@ def setup_log(opt):
     return log
 
 def load_most_successful_model(save_dir):
+    '''
+    Load the best model based on test accuracy
+    :param save_dir: the path in where the method will look
+    :return: The best model found, if any.
+    '''
     best_acc = 0.0
     best_file = None
     for f in os.listdir(save_dir):
