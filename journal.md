@@ -28,11 +28,11 @@ Journal like, explain what I've done and why. Present examples on how to use the
 
 ## Short TODO
 
-- [ ] Your framework should provide the tools to:
+- [x] Your framework should provide the tools to:
     - [x] build network combining fully connected layers, tanh and relu
     - [x] run the forward and backward passes
-    - [ ] optimize parameters for SGD and MSE
-    - [ ] add comments to everything
+    - [x] optimize parameters for SGD and MSE
+    - [x] add comments to everything
 - [x] implement a test.py that import your framework and:
     - [x] Generates a training and a test set of 1, 000 points sampled uniformly in \[0, 1\]², each with a
 label 0 if outside the disk of radius 1/√2π and 1 inside,
@@ -41,19 +41,19 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
     - [x] computes and prints the final train and the test errors.
 
 ## Detailed TODO
-- [ ] structure:
-    - [ ] framework
-        - [ ] modules
+- [x] structure:
+    - [x] framework
+        - [x] modules
             - [x] fully_connected:
                 - [x] init
                 - [x] forward
                 - [X] backward
                 - [x] compute gradient
                 - [x] apply gradient
-            - [ ] tanh_module
+            - [x] tanh_module
                 - [x] forward
                 - [x] backward
-            - [ ] relu_module
+            - [x] relu_module
                 - [x] forward
                 - [x] backward
             - [x] fully connected handler, i.e. handles multiple layers ???
@@ -62,28 +62,26 @@ label 0 if outside the disk of radius 1/√2π and 1 inside,
             - [x] loss layers: criterion
                 - [x] fwd: loss computation
                 - [x] bwd: gradient computation
-        - [ ] network/math_util
+        - [x] network/math_util
             - [ ] Parameter: used for initalization, etc. ?
             - [x] Linear computation
             - [x] Xavier init
-            - [ ] other activation fct?
+            - [x] other activation fct?
             - [ ] other math util functions
     - [x] util
         - [x] data_generation
-        - [ ] ???
     - [x] test
         - [x] generates data
         - [x] builds a network
         - [x] trains it with MSE, logging loss
         - [x] computes and print final errors (test and train)
-    - [ ] ???
 - [ ] additional features ?
     - [ ] batch handling
     - [ ] regularization
-    - [ ] diverse data set generation
+    - [x] diverse data set generation
     - [x] data set and prediction visualization
-    - [ ] initializers
-    - [ ] other activation functions: leaky relu, sigmoid, etc.
+    - [x] initializers
+    - [x] other activation functions: leaky relu, sigmoid, etc.
 
 ### Additional infos
 following the instructions and training setup from the exercises you should be able to get less than 10% error on the test set with an MLP with tanh activations (for the 2nd miniproject). (slack)
