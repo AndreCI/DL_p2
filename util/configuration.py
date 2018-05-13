@@ -20,7 +20,7 @@ def get_args(parser):
 
     #Model and data arguments
     parser.add_argument('--hidden_units', help="Number of hidden units to use.", default=25, type=int)
-    parser.add_argument('--epoch_number', help="Number of epoch to train.", default=50, type=int)
+    parser.add_argument('--epoch_number', help="Number of epoch to train.", default=5, type=int)
     parser.add_argument('--lr', help="Learning rate to train the models.", default=0.01, type=float)
     parser.add_argument('--momentum', help="Value for the momentum parameter in SGD", default=0.0, type=float)
     parser.add_argument('--point_number', help="Number of points to generate.", default=1000, type=int)

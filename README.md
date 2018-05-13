@@ -18,6 +18,6 @@ python main.py --help
 
 Multiple parameters can be used, such as `--hidden_units` or `--load_best_model`.
 See `python main --help` for more info. Not that main uses additional packages
-such as numpy or matplotlib but those are used only for utilitaries and no
+such as logging, json or matplotlib but those are used only for utilitaries and no
 neural network usage
 

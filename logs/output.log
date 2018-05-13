@@ -10334,3 +10334,30 @@
 05/10/2018 05:09:18 Average Training accuracy 0.756000 - epoch 10/50
 05/10/2018 05:09:18 Average Testing loss 0.178689 - epoch 10/50
 05/10/2018 05:09:18 Average Testing accuracy 0.758000 - epoch 10/50
+05/13/2018 08:43:11 [Program starts.]
+05/13/2018 08:43:11 [Arg used:][{'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'point_number': 1000}, {'verbose': 'low'}, {'epoch_number': 5}, {'hidden_units': 25}]
+05/13/2018 08:43:12 ------------------------------------------------------------
+05/13/2018 08:43:12 Average Training loss 0.261186 - epoch 1/5
+05/13/2018 08:43:12 Average Training accuracy 0.508000 - epoch 1/5
+05/13/2018 08:43:12 Average Testing loss 0.265448 - epoch 1/5
+05/13/2018 08:43:12 Average Testing accuracy 0.530000 - epoch 1/5
+05/13/2018 08:43:13 ------------------------------------------------------------
+05/13/2018 08:43:13 Average Training loss 0.255067 - epoch 2/5
+05/13/2018 08:43:13 Average Training accuracy 0.507000 - epoch 2/5
+05/13/2018 08:43:13 Average Testing loss 0.259128 - epoch 2/5
+05/13/2018 08:43:13 Average Testing accuracy 0.530000 - epoch 2/5
+05/13/2018 08:43:14 ------------------------------------------------------------
+05/13/2018 08:43:14 Average Training loss 0.253188 - epoch 3/5
+05/13/2018 08:43:14 Average Training accuracy 0.502000 - epoch 3/5
+05/13/2018 08:43:14 Average Testing loss 0.255593 - epoch 3/5
+05/13/2018 08:43:14 Average Testing accuracy 0.530000 - epoch 3/5
+05/13/2018 08:43:15 ------------------------------------------------------------
+05/13/2018 08:43:15 Average Training loss 0.252027 - epoch 4/5
+05/13/2018 08:43:15 Average Training accuracy 0.510000 - epoch 4/5
+05/13/2018 08:43:15 Average Testing loss 0.253419 - epoch 4/5
+05/13/2018 08:43:15 Average Testing accuracy 0.530000 - epoch 4/5
+05/13/2018 08:43:15 ------------------------------------------------------------
+05/13/2018 08:43:16 Average Training loss 0.251201 - epoch 5/5
+05/13/2018 08:43:16 Average Training accuracy 0.511000 - epoch 5/5
+05/13/2018 08:43:16 Average Testing loss 0.251989 - epoch 5/5
+05/13/2018 08:43:16 Average Testing accuracy 0.530000 - epoch 5/5

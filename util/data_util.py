@@ -5,8 +5,6 @@ import matplotlib
 from torch import FloatTensor, LongTensor
 import os
 import math
-import numpy as np
-
 
 def display_data_set(opt, examples, targets, name='dataset', format='torch'):
     '''
@@ -42,9 +40,7 @@ def display_data_set(opt, examples, targets, name='dataset', format='torch'):
     plt.close()
 
 
-def display_losses(train_loss, test_loss, model_type, opt, running_mean_param=1):
-    if running_mean_param > len(train_loss) or running_mean_param > len(test_loss):
-        running_mean_param = 1
+def display_losses(train_loss, test_loss, model_type, opt):
     font = {'family': 'sherif',
             'size': 18}
 
@@ -53,8 +49,6 @@ def display_losses(train_loss, test_loss, model_type, opt, running_mean_param=1)
     fig_width = 10
     golden_mean = (math.sqrt(5)-1.0)/2.0
     fig_height = fig_width * golden_mean
-    train_loss = running_mean(train_loss, N=running_mean_param)
-    test_loss = running_mean(test_loss, N=running_mean_param)
     plt.figure(figsize=(fig_width, fig_height))
     title = str('Evolution of train and test loss')
     plt.title(title)
@@ -69,11 +63,7 @@ def display_losses(train_loss, test_loss, model_type, opt, running_mean_param=1)
     loc = os.path.join(opt['fig_dir'], name)
     plt.savefig(loc)
 
-def display_accuracy(train_accuracy, test_accuracy, model_type, opt, running_mean_param=1):
-    if running_mean_param > len(train_accuracy) or running_mean_param > len(test_accuracy):
-        running_mean_param = 1
-    train_accuracy = running_mean(train_accuracy, N=running_mean_param)
-    test_accuracy = running_mean(test_accuracy, N=running_mean_param)
+def display_accuracy(train_accuracy, test_accuracy, model_type, opt):
     font = {'family': 'sherif',
             'size': 18}
 
@@ -96,13 +86,3 @@ def display_accuracy(train_accuracy, test_accuracy, model_type, opt, running_mea
     name = str('%s_accuracy.png' % (model_type))
     loc = os.path.join(opt['fig_dir'], name)
     plt.savefig(loc)
-
-def running_mean(x, N):
-    '''
-    Compute a simple running mean
-    :param x: the data
-    :param N: the number of datapoint to average on
-    :return: smooth data
-    '''
-    cumsum = np.cumsum(np.insert(x, 0, 0))
-    return (cumsum[N:] - cumsum[:-N]) / float(N)

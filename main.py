@@ -104,5 +104,5 @@ print("*" * 60)
 print("Average Testing loss accross all the epochs: %3f" %(sum(final_te_loss)/epochs))
 print("Average Testing accuracy accross all the epochs: %3f" %(sum(final_te_acc)/epochs))
 
-util.data_util.display_losses(final_tr_loss, final_te_loss, 'sequential', opt, 1)
-util.data_util.display_accuracy(final_tr_acc, final_te_acc, 'sequential', opt, 1)
+util.data_util.display_losses(final_tr_loss, final_te_loss, 'sequential', opt)
+util.data_util.display_accuracy(final_tr_acc, final_te_acc, 'sequential', opt)
