@@ -1,43 +1,51 @@
-import os
-import argparse
-import sys
-import logging
 import json
+import logging
+import os
+import sys
+
 from framework.modules.sequential import Sequential
 
+
 def get_args(parser):
-    '''
+    """
     Setup different infos
     :param parser: the user inputs
     :return: the list of the infos, with default values if not specified by the user
-    '''
+    """
     root_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
-    #Directory arguments
+    # Directory arguments
     parser.add_argument('--fig_dir', help="directory to save different figures.", default=root_dir + "/figs/", type=str)
-    parser.add_argument('--log_root', help="directory to save the logging journal", default=root_dir + "/logs/", type=str)
-    parser.add_argument('--save_dir', help="directory to save the different models", default=root_dir + "/save/", type=str)
+    parser.add_argument('--log_root', help="directory to save the logging journal", default=root_dir + "/logs/",
+                        type=str)
+    parser.add_argument('--save_dir', help="directory to save the different models", default=root_dir + "/save/",
+                        type=str)
 
-    #Model and data arguments
+    # Model and data arguments
     parser.add_argument('--hidden_units', help="Number of hidden units to use.", default=25, type=int)
     parser.add_argument('--epoch_number', help="Number of epoch to train.", default=5, type=int)
     parser.add_argument('--lr', help="Learning rate to train the models.", default=0.01, type=float)
     parser.add_argument('--momentum', help="Value for the momentum parameter in SGD", default=0.0, type=float)
     parser.add_argument('--point_number', help="Number of points to generate.", default=1000, type=int)
-    parser.add_argument('--load_best_model', help="If True, the model with the most testing accuracy from the save_dir will be loaded and trained.",
+    parser.add_argument('--load_best_model',
+                        help="If True, the model with the most testing accuracy from the save_dir will be loaded and trained.",
                         default=False, type=bool)
-    parser.add_argument('--save_best_model', help="If True, each model that beat the previous one will be saved in save_dir.", default=False, type=bool)
+    parser.add_argument('--save_best_model',
+                        help="If True, each model that beat the previous one will be saved in save_dir.", default=False,
+                        type=bool)
 
-    parser.add_argument('--verbose', help="How much information will the log give. Options are 'high' or 'low'.", default='low', type=str)
+    parser.add_argument('--verbose', help="How much information will the log give. Options are 'high' or 'low'.",
+                        default='low', type=str)
 
     return vars(parser.parse_args())
 
+
 def setup_log(opt):
-    '''
+    """
     Setup a log.
     :param opt: the different options
     :return: the log, ready to use.
-    '''
+    """
     log = logging.getLogger(__name__)
     log.setLevel(logging.DEBUG)
     if not os.path.exists(opt['log_root']): os.mkdir(opt['log_root'])
@@ -66,12 +74,13 @@ def setup_log(opt):
     log.info('[Arg used:]' + str(important_infos))
     return log
 
+
 def load_most_successful_model(save_dir):
-    '''
+    """
     Load the best model based on test accuracy
     :param save_dir: the path in where the method will look
     :return: The best model found, if any.
-    '''
+    """
     best_acc = 0.0
     best_file = None
     for f in os.listdir(save_dir):
