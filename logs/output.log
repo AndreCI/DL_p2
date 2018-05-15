@@ -10361,3 +10361,1448 @@
 05/13/2018 08:43:16 Average Training accuracy 0.511000 - epoch 5/5
 05/13/2018 08:43:16 Average Testing loss 0.251989 - epoch 5/5
 05/13/2018 08:43:16 Average Testing accuracy 0.530000 - epoch 5/5
+05/15/2018 09:25:00 [Program starts.]
+05/15/2018 09:25:00 [Arg used:][{'init_type': 'xavier'}, {'epoch_number': 5}, {'verbose': 'low'}, {'hidden_units': 25}, {'point_number': 1000}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/15/2018 09:25:26 [Program starts.]
+05/15/2018 09:25:26 [Arg used:][{'epoch_number': 5}, {'point_number': 1000}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'verbose': 'low'}, {'hidden_units': 25}, {'init_type': 'xavier'}]
+05/15/2018 09:25:33 [Program starts.]
+05/15/2018 09:25:33 [Arg used:][{'verbose': 'low'}, {'point_number': 1000}, {'epoch_number': 5}, {'hidden_units': 25}, {'init_type': 'xavier'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/15/2018 09:26:28 [Program starts.]
+05/15/2018 09:26:28 [Arg used:][{'hidden_units': 25}, {'verbose': 'low'}, {'init_type': 'xavier'}, {'epoch_number': 5}, {'point_number': 1000}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/15/2018 09:26:58 [Program starts.]
+05/15/2018 09:26:58 [Arg used:][{'point_number': 1000}, {'init_type': 'xavier'}, {'epoch_number': 5}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'verbose': 'low'}, {'hidden_units': 25}]
+05/15/2018 09:28:15 [Program starts.]
+05/15/2018 09:28:15 [Arg used:][{'verbose': 'low'}, {'hidden_units': 25}, {'init_type': 'xavier'}, {'point_number': 1000}, {'epoch_number': 5}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/15/2018 09:29:33 [Program starts.]
+05/15/2018 09:29:33 [Arg used:][{'point_number': 1000}, {'epoch_number': 5}, {'init_type': 'xavier'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'hidden_units': 25}, {'verbose': 'low'}]
+05/15/2018 09:29:56 [Program starts.]
+05/15/2018 09:29:56 [Arg used:][{'epoch_number': 5}, {'point_number': 1000}, {'verbose': 'low'}, {'hidden_units': 25}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'init_type': 'xavier'}]
+05/15/2018 09:29:57 ------------------------------------------------------------
+05/15/2018 09:29:57 Average Training loss 0.256599 - epoch 1/5
+05/15/2018 09:29:57 Average Training accuracy 0.522000 - epoch 1/5
+05/15/2018 09:29:58 Average Testing loss 0.250355 - epoch 1/5
+05/15/2018 09:29:58 Average Testing accuracy 0.506000 - epoch 1/5
+05/15/2018 09:30:10 [Program starts.]
+05/15/2018 09:30:10 [Arg used:][{'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'epoch_number': 5}, {'init_type': 'xavier'}, {'hidden_units': 25}, {'verbose': 'low'}, {'point_number': 1000}]
+05/15/2018 09:30:11 ------------------------------------------------------------
+05/15/2018 09:30:11 Average Training loss 0.259374 - epoch 1/5
+05/15/2018 09:30:11 Average Training accuracy 0.507000 - epoch 1/5
+05/15/2018 09:30:11 Average Testing loss 0.250036 - epoch 1/5
+05/15/2018 09:30:11 Average Testing accuracy 0.526000 - epoch 1/5
+05/15/2018 09:30:26 [Program starts.]
+05/15/2018 09:30:26 [Arg used:][{'point_number': 1000}, {'verbose': 'low'}, {'init_type': 'xavier'}, {'hidden_units': 25}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'epoch_number': 5}]
+05/15/2018 09:30:27 ------------------------------------------------------------
+05/15/2018 09:30:27 Average Training loss 0.258148 - epoch 1/5
+05/15/2018 09:30:27 Average Training accuracy 0.502000 - epoch 1/5
+05/15/2018 09:30:27 Average Testing loss 0.250375 - epoch 1/5
+05/15/2018 09:30:27 Average Testing accuracy 0.504000 - epoch 1/5
+05/15/2018 09:30:43 [Program starts.]
+05/15/2018 09:30:43 [Arg used:][{'init_type': 'xavier'}, {'verbose': 'low'}, {'epoch_number': 5}, {'hidden_units': 25}, {'point_number': 1000}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/15/2018 09:30:44 ------------------------------------------------------------
+05/15/2018 09:30:44 Average Training loss 0.257677 - epoch 1/5
+05/15/2018 09:30:44 Average Training accuracy 0.509000 - epoch 1/5
+05/15/2018 09:30:44 Average Testing loss 0.251156 - epoch 1/5
+05/15/2018 09:30:44 Average Testing accuracy 0.492000 - epoch 1/5
+05/15/2018 09:31:52 [Program starts.]
+05/15/2018 09:31:52 [Arg used:][{'epoch_number': 5}, {'verbose': 'low'}, {'init_type': 'xavier'}, {'hidden_units': 25}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'point_number': 1000}]
+05/15/2018 09:31:53 ------------------------------------------------------------
+05/15/2018 09:31:53 Average Training loss 0.256228 - epoch 1/5
+05/15/2018 09:31:53 Average Training accuracy 0.508000 - epoch 1/5
+05/15/2018 09:31:53 Average Testing loss 0.250450 - epoch 1/5
+05/15/2018 09:31:53 Average Testing accuracy 0.494000 - epoch 1/5
+05/15/2018 09:32:10 [Program starts.]
+05/15/2018 09:32:10 [Arg used:][{'hidden_units': 25}, {'verbose': 'low'}, {'init_type': 'xavier'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'epoch_number': 5}, {'point_number': 1000}]
+05/15/2018 09:32:12 ------------------------------------------------------------
+05/15/2018 09:32:12 Average Training loss 0.255941 - epoch 1/5
+05/15/2018 09:32:12 Average Training accuracy 0.488000 - epoch 1/5
+05/15/2018 09:32:12 Average Testing loss 0.249968 - epoch 1/5
+05/15/2018 09:32:12 Average Testing accuracy 0.508000 - epoch 1/5
+05/15/2018 09:32:21 [Program starts.]
+05/15/2018 09:32:21 [Arg used:][{'point_number': 1000}, {'hidden_units': 25}, {'init_type': 'xavier'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'epoch_number': 5}, {'verbose': 'low'}]
+05/15/2018 09:32:22 ------------------------------------------------------------
+05/15/2018 09:32:22 Average Training loss 0.255510 - epoch 1/5
+05/15/2018 09:32:22 Average Training accuracy 0.495000 - epoch 1/5
+05/15/2018 09:32:22 Average Testing loss 0.249174 - epoch 1/5
+05/15/2018 09:32:22 Average Testing accuracy 0.529000 - epoch 1/5
+05/15/2018 09:32:50 [Program starts.]
+05/15/2018 09:32:50 [Arg used:][{'verbose': 'low'}, {'point_number': 1000}, {'epoch_number': 5}, {'init_type': 'xavier'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'hidden_units': 25}]
+05/15/2018 09:32:52 ------------------------------------------------------------
+05/15/2018 09:32:52 Average Training loss 0.257821 - epoch 1/5
+05/15/2018 09:32:52 Average Training accuracy 0.493000 - epoch 1/5
+05/15/2018 09:32:52 Average Testing loss 0.249987 - epoch 1/5
+05/15/2018 09:32:52 Average Testing accuracy 0.505000 - epoch 1/5
+05/15/2018 09:32:53 ------------------------------------------------------------
+05/15/2018 09:32:53 Average Training loss 0.250529 - epoch 2/5
+05/15/2018 09:32:53 Average Training accuracy 0.503000 - epoch 2/5
+05/15/2018 09:32:53 Average Testing loss 0.249977 - epoch 2/5
+05/15/2018 09:32:53 Average Testing accuracy 0.505000 - epoch 2/5
+05/15/2018 09:32:54 ------------------------------------------------------------
+05/15/2018 09:32:54 Average Training loss 0.250401 - epoch 3/5
+05/15/2018 09:32:54 Average Training accuracy 0.504000 - epoch 3/5
+05/15/2018 09:32:54 Average Testing loss 0.249976 - epoch 3/5
+05/15/2018 09:32:54 Average Testing accuracy 0.505000 - epoch 3/5
+05/15/2018 09:32:55 ------------------------------------------------------------
+05/15/2018 09:32:56 Average Training loss 0.250325 - epoch 4/5
+05/15/2018 09:32:56 Average Training accuracy 0.509000 - epoch 4/5
+05/15/2018 09:32:56 Average Testing loss 0.249976 - epoch 4/5
+05/15/2018 09:32:56 Average Testing accuracy 0.505000 - epoch 4/5
+05/15/2018 09:32:57 ------------------------------------------------------------
+05/15/2018 09:32:57 Average Training loss 0.250272 - epoch 5/5
+05/15/2018 09:32:57 Average Training accuracy 0.506000 - epoch 5/5
+05/15/2018 09:32:57 Average Testing loss 0.249977 - epoch 5/5
+05/15/2018 09:32:57 Average Testing accuracy 0.505000 - epoch 5/5
+05/15/2018 09:33:08 [Program starts.]
+05/15/2018 09:33:08 [Arg used:][{'verbose': 'low'}, {'init_type': 'xavier'}, {'epoch_number': 5}, {'point_number': 1000}, {'hidden_units': 25}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/15/2018 09:33:09 ------------------------------------------------------------
+05/15/2018 09:33:09 Average Training loss 0.256143 - epoch 1/5
+05/15/2018 09:33:09 Average Training accuracy 0.505000 - epoch 1/5
+05/15/2018 09:33:10 Average Testing loss 0.250305 - epoch 1/5
+05/15/2018 09:33:10 Average Testing accuracy 0.483000 - epoch 1/5
+05/15/2018 09:33:11 ------------------------------------------------------------
+05/15/2018 09:33:11 Average Training loss 0.250701 - epoch 2/5
+05/15/2018 09:33:11 Average Training accuracy 0.487000 - epoch 2/5
+05/15/2018 09:33:11 Average Testing loss 0.250238 - epoch 2/5
+05/15/2018 09:33:11 Average Testing accuracy 0.483000 - epoch 2/5
+05/15/2018 09:33:12 ------------------------------------------------------------
+05/15/2018 09:33:12 Average Training loss 0.250660 - epoch 3/5
+05/15/2018 09:33:12 Average Training accuracy 0.487000 - epoch 3/5
+05/15/2018 09:33:12 Average Testing loss 0.250178 - epoch 3/5
+05/15/2018 09:33:12 Average Testing accuracy 0.483000 - epoch 3/5
+05/15/2018 09:33:13 ------------------------------------------------------------
+05/15/2018 09:33:13 Average Training loss 0.250630 - epoch 4/5
+05/15/2018 09:33:13 Average Training accuracy 0.485000 - epoch 4/5
+05/15/2018 09:33:13 Average Testing loss 0.250141 - epoch 4/5
+05/15/2018 09:33:13 Average Testing accuracy 0.483000 - epoch 4/5
+05/15/2018 09:33:14 ------------------------------------------------------------
+05/15/2018 09:33:15 Average Training loss 0.250605 - epoch 5/5
+05/15/2018 09:33:15 Average Training accuracy 0.489000 - epoch 5/5
+05/15/2018 09:33:15 Average Testing loss 0.250114 - epoch 5/5
+05/15/2018 09:33:15 Average Testing accuracy 0.483000 - epoch 5/5
+05/15/2018 09:33:37 [Program starts.]
+05/15/2018 09:33:37 [Arg used:][{'init_type': 'xavier'}, {'point_number': 1000}, {'verbose': 'low'}, {'epoch_number': 50}, {'hidden_units': 25}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}]
+05/15/2018 09:33:38 ------------------------------------------------------------
+05/15/2018 09:33:38 Average Training loss 0.257137 - epoch 1/50
+05/15/2018 09:33:38 Average Training accuracy 0.457000 - epoch 1/50
+05/15/2018 09:33:38 Average Testing loss 0.250341 - epoch 1/50
+05/15/2018 09:33:38 Average Testing accuracy 0.470000 - epoch 1/50
+05/15/2018 09:33:39 ------------------------------------------------------------
+05/15/2018 09:33:39 Average Training loss 0.250743 - epoch 2/50
+05/15/2018 09:33:39 Average Training accuracy 0.484000 - epoch 2/50
+05/15/2018 09:33:40 Average Testing loss 0.250270 - epoch 2/50
+05/15/2018 09:33:40 Average Testing accuracy 0.470000 - epoch 2/50
+05/15/2018 09:33:40 ------------------------------------------------------------
+05/15/2018 09:33:41 Average Training loss 0.250588 - epoch 3/50
+05/15/2018 09:33:41 Average Training accuracy 0.480000 - epoch 3/50
+05/15/2018 09:33:41 Average Testing loss 0.250225 - epoch 3/50
+05/15/2018 09:33:41 Average Testing accuracy 0.470000 - epoch 3/50
+05/15/2018 09:33:42 ------------------------------------------------------------
+05/15/2018 09:33:42 Average Training loss 0.250493 - epoch 4/50
+05/15/2018 09:33:42 Average Training accuracy 0.485000 - epoch 4/50
+05/15/2018 09:33:42 Average Testing loss 0.250187 - epoch 4/50
+05/15/2018 09:33:42 Average Testing accuracy 0.470000 - epoch 4/50
+05/15/2018 09:33:43 ------------------------------------------------------------
+05/15/2018 09:33:43 Average Training loss 0.250428 - epoch 5/50
+05/15/2018 09:33:43 Average Training accuracy 0.478000 - epoch 5/50
+05/15/2018 09:33:44 Average Testing loss 0.250153 - epoch 5/50
+05/15/2018 09:33:44 Average Testing accuracy 0.470000 - epoch 5/50
+05/15/2018 09:33:44 ------------------------------------------------------------
+05/15/2018 09:33:45 Average Training loss 0.250379 - epoch 6/50
+05/15/2018 09:33:45 Average Training accuracy 0.472000 - epoch 6/50
+05/15/2018 09:33:45 Average Testing loss 0.250122 - epoch 6/50
+05/15/2018 09:33:45 Average Testing accuracy 0.470000 - epoch 6/50
+05/15/2018 09:33:46 ------------------------------------------------------------
+05/15/2018 09:33:46 Average Training loss 0.250338 - epoch 7/50
+05/15/2018 09:33:46 Average Training accuracy 0.463000 - epoch 7/50
+05/15/2018 09:33:46 Average Testing loss 0.250090 - epoch 7/50
+05/15/2018 09:33:46 Average Testing accuracy 0.470000 - epoch 7/50
+05/15/2018 09:33:47 ------------------------------------------------------------
+05/15/2018 09:33:47 Average Training loss 0.250300 - epoch 8/50
+05/15/2018 09:33:47 Average Training accuracy 0.470000 - epoch 8/50
+05/15/2018 09:33:48 Average Testing loss 0.250059 - epoch 8/50
+05/15/2018 09:33:48 Average Testing accuracy 0.470000 - epoch 8/50
+05/15/2018 09:33:48 ------------------------------------------------------------
+05/15/2018 09:33:49 Average Training loss 0.250266 - epoch 9/50
+05/15/2018 09:33:49 Average Training accuracy 0.473000 - epoch 9/50
+05/15/2018 09:33:49 Average Testing loss 0.250027 - epoch 9/50
+05/15/2018 09:33:49 Average Testing accuracy 0.470000 - epoch 9/50
+05/15/2018 09:33:49 ------------------------------------------------------------
+05/15/2018 09:33:50 Average Training loss 0.250234 - epoch 10/50
+05/15/2018 09:33:50 Average Training accuracy 0.488000 - epoch 10/50
+05/15/2018 09:33:50 Average Testing loss 0.249996 - epoch 10/50
+05/15/2018 09:33:50 Average Testing accuracy 0.530000 - epoch 10/50
+05/15/2018 09:33:51 ------------------------------------------------------------
+05/15/2018 09:33:51 Average Training loss 0.250204 - epoch 11/50
+05/15/2018 09:33:51 Average Training accuracy 0.492000 - epoch 11/50
+05/15/2018 09:33:51 Average Testing loss 0.249965 - epoch 11/50
+05/15/2018 09:33:51 Average Testing accuracy 0.530000 - epoch 11/50
+05/15/2018 09:33:52 ------------------------------------------------------------
+05/15/2018 09:33:52 Average Training loss 0.250178 - epoch 12/50
+05/15/2018 09:33:52 Average Training accuracy 0.498000 - epoch 12/50
+05/15/2018 09:33:52 Average Testing loss 0.249935 - epoch 12/50
+05/15/2018 09:33:52 Average Testing accuracy 0.530000 - epoch 12/50
+05/15/2018 09:33:53 ------------------------------------------------------------
+05/15/2018 09:33:53 Average Training loss 0.250154 - epoch 13/50
+05/15/2018 09:33:53 Average Training accuracy 0.507000 - epoch 13/50
+05/15/2018 09:33:53 Average Testing loss 0.249907 - epoch 13/50
+05/15/2018 09:33:53 Average Testing accuracy 0.530000 - epoch 13/50
+05/15/2018 09:33:54 ------------------------------------------------------------
+05/15/2018 09:33:54 Average Training loss 0.250134 - epoch 14/50
+05/15/2018 09:33:54 Average Training accuracy 0.507000 - epoch 14/50
+05/15/2018 09:33:55 Average Testing loss 0.249880 - epoch 14/50
+05/15/2018 09:33:55 Average Testing accuracy 0.530000 - epoch 14/50
+05/15/2018 09:33:55 ------------------------------------------------------------
+05/15/2018 09:33:56 Average Training loss 0.250116 - epoch 15/50
+05/15/2018 09:33:56 Average Training accuracy 0.507000 - epoch 15/50
+05/15/2018 09:33:56 Average Testing loss 0.249855 - epoch 15/50
+05/15/2018 09:33:56 Average Testing accuracy 0.530000 - epoch 15/50
+05/15/2018 09:33:57 ------------------------------------------------------------
+05/15/2018 09:33:57 Average Training loss 0.250102 - epoch 16/50
+05/15/2018 09:33:57 Average Training accuracy 0.507000 - epoch 16/50
+05/15/2018 09:33:57 Average Testing loss 0.249833 - epoch 16/50
+05/15/2018 09:33:57 Average Testing accuracy 0.530000 - epoch 16/50
+05/15/2018 09:33:58 ------------------------------------------------------------
+05/15/2018 09:33:58 Average Training loss 0.250090 - epoch 17/50
+05/15/2018 09:33:58 Average Training accuracy 0.507000 - epoch 17/50
+05/15/2018 09:33:58 Average Testing loss 0.249813 - epoch 17/50
+05/15/2018 09:33:58 Average Testing accuracy 0.530000 - epoch 17/50
+05/15/2018 09:33:59 ------------------------------------------------------------
+05/15/2018 09:34:00 Average Training loss 0.250081 - epoch 18/50
+05/15/2018 09:34:00 Average Training accuracy 0.507000 - epoch 18/50
+05/15/2018 09:34:00 Average Testing loss 0.249795 - epoch 18/50
+05/15/2018 09:34:00 Average Testing accuracy 0.530000 - epoch 18/50
+05/15/2018 09:34:01 ------------------------------------------------------------
+05/15/2018 09:34:01 Average Training loss 0.250074 - epoch 19/50
+05/15/2018 09:34:01 Average Training accuracy 0.507000 - epoch 19/50
+05/15/2018 09:34:01 Average Testing loss 0.249781 - epoch 19/50
+05/15/2018 09:34:01 Average Testing accuracy 0.530000 - epoch 19/50
+05/15/2018 09:34:02 ------------------------------------------------------------
+05/15/2018 09:34:03 Average Training loss 0.250068 - epoch 20/50
+05/15/2018 09:34:03 Average Training accuracy 0.507000 - epoch 20/50
+05/15/2018 09:34:03 Average Testing loss 0.249768 - epoch 20/50
+05/15/2018 09:34:03 Average Testing accuracy 0.530000 - epoch 20/50
+05/15/2018 09:34:04 ------------------------------------------------------------
+05/15/2018 09:34:04 Average Training loss 0.250064 - epoch 21/50
+05/15/2018 09:34:04 Average Training accuracy 0.507000 - epoch 21/50
+05/15/2018 09:34:04 Average Testing loss 0.249758 - epoch 21/50
+05/15/2018 09:34:04 Average Testing accuracy 0.530000 - epoch 21/50
+05/15/2018 09:34:05 ------------------------------------------------------------
+05/15/2018 09:34:06 Average Training loss 0.250060 - epoch 22/50
+05/15/2018 09:34:06 Average Training accuracy 0.507000 - epoch 22/50
+05/15/2018 09:34:06 Average Testing loss 0.249749 - epoch 22/50
+05/15/2018 09:34:06 Average Testing accuracy 0.530000 - epoch 22/50
+05/15/2018 09:34:07 ------------------------------------------------------------
+05/15/2018 09:34:07 Average Training loss 0.250057 - epoch 23/50
+05/15/2018 09:34:07 Average Training accuracy 0.507000 - epoch 23/50
+05/15/2018 09:34:07 Average Testing loss 0.249742 - epoch 23/50
+05/15/2018 09:34:07 Average Testing accuracy 0.530000 - epoch 23/50
+05/15/2018 09:34:08 ------------------------------------------------------------
+05/15/2018 09:34:09 Average Training loss 0.250055 - epoch 24/50
+05/15/2018 09:34:09 Average Training accuracy 0.507000 - epoch 24/50
+05/15/2018 09:34:09 Average Testing loss 0.249737 - epoch 24/50
+05/15/2018 09:34:09 Average Testing accuracy 0.530000 - epoch 24/50
+05/15/2018 09:34:10 ------------------------------------------------------------
+05/15/2018 09:34:10 Average Training loss 0.250053 - epoch 25/50
+05/15/2018 09:34:10 Average Training accuracy 0.507000 - epoch 25/50
+05/15/2018 09:34:10 Average Testing loss 0.249732 - epoch 25/50
+05/15/2018 09:34:10 Average Testing accuracy 0.530000 - epoch 25/50
+05/15/2018 09:34:11 ------------------------------------------------------------
+05/15/2018 09:34:12 Average Training loss 0.250052 - epoch 26/50
+05/15/2018 09:34:12 Average Training accuracy 0.507000 - epoch 26/50
+05/15/2018 09:34:12 Average Testing loss 0.249728 - epoch 26/50
+05/15/2018 09:34:12 Average Testing accuracy 0.530000 - epoch 26/50
+05/15/2018 09:34:13 ------------------------------------------------------------
+05/15/2018 09:34:13 Average Training loss 0.250051 - epoch 27/50
+05/15/2018 09:34:13 Average Training accuracy 0.507000 - epoch 27/50
+05/15/2018 09:34:13 Average Testing loss 0.249725 - epoch 27/50
+05/15/2018 09:34:13 Average Testing accuracy 0.530000 - epoch 27/50
+05/15/2018 09:34:14 ------------------------------------------------------------
+05/15/2018 09:34:14 Average Training loss 0.250050 - epoch 28/50
+05/15/2018 09:34:14 Average Training accuracy 0.507000 - epoch 28/50
+05/15/2018 09:34:14 Average Testing loss 0.249722 - epoch 28/50
+05/15/2018 09:34:14 Average Testing accuracy 0.530000 - epoch 28/50
+05/15/2018 09:34:15 ------------------------------------------------------------
+05/15/2018 09:34:15 Average Training loss 0.250049 - epoch 29/50
+05/15/2018 09:34:15 Average Training accuracy 0.507000 - epoch 29/50
+05/15/2018 09:34:15 Average Testing loss 0.249720 - epoch 29/50
+05/15/2018 09:34:15 Average Testing accuracy 0.530000 - epoch 29/50
+05/15/2018 09:34:16 ------------------------------------------------------------
+05/15/2018 09:34:17 Average Training loss 0.250048 - epoch 30/50
+05/15/2018 09:34:17 Average Training accuracy 0.507000 - epoch 30/50
+05/15/2018 09:34:17 Average Testing loss 0.249718 - epoch 30/50
+05/15/2018 09:34:17 Average Testing accuracy 0.530000 - epoch 30/50
+05/15/2018 09:34:18 ------------------------------------------------------------
+05/15/2018 09:34:18 Average Training loss 0.250047 - epoch 31/50
+05/15/2018 09:34:18 Average Training accuracy 0.507000 - epoch 31/50
+05/15/2018 09:34:18 Average Testing loss 0.249716 - epoch 31/50
+05/15/2018 09:34:18 Average Testing accuracy 0.530000 - epoch 31/50
+05/15/2018 09:34:19 ------------------------------------------------------------
+05/15/2018 09:34:19 Average Training loss 0.250047 - epoch 32/50
+05/15/2018 09:34:19 Average Training accuracy 0.507000 - epoch 32/50
+05/15/2018 09:34:19 Average Testing loss 0.249715 - epoch 32/50
+05/15/2018 09:34:19 Average Testing accuracy 0.530000 - epoch 32/50
+05/15/2018 09:34:20 ------------------------------------------------------------
+05/15/2018 09:34:21 Average Training loss 0.250046 - epoch 33/50
+05/15/2018 09:34:21 Average Training accuracy 0.507000 - epoch 33/50
+05/15/2018 09:34:21 Average Testing loss 0.249714 - epoch 33/50
+05/15/2018 09:34:21 Average Testing accuracy 0.530000 - epoch 33/50
+05/15/2018 09:34:21 ------------------------------------------------------------
+05/15/2018 09:34:22 Average Training loss 0.250045 - epoch 34/50
+05/15/2018 09:34:22 Average Training accuracy 0.507000 - epoch 34/50
+05/15/2018 09:34:22 Average Testing loss 0.249712 - epoch 34/50
+05/15/2018 09:34:22 Average Testing accuracy 0.530000 - epoch 34/50
+05/15/2018 09:34:22 ------------------------------------------------------------
+05/15/2018 09:34:23 Average Training loss 0.250045 - epoch 35/50
+05/15/2018 09:34:23 Average Training accuracy 0.507000 - epoch 35/50
+05/15/2018 09:34:23 Average Testing loss 0.249711 - epoch 35/50
+05/15/2018 09:34:23 Average Testing accuracy 0.530000 - epoch 35/50
+05/15/2018 09:34:23 ------------------------------------------------------------
+05/15/2018 09:34:24 Average Training loss 0.250045 - epoch 36/50
+05/15/2018 09:34:24 Average Training accuracy 0.507000 - epoch 36/50
+05/15/2018 09:34:24 Average Testing loss 0.249711 - epoch 36/50
+05/15/2018 09:34:24 Average Testing accuracy 0.530000 - epoch 36/50
+05/15/2018 09:34:25 ------------------------------------------------------------
+05/15/2018 09:34:25 Average Training loss 0.250044 - epoch 37/50
+05/15/2018 09:34:25 Average Training accuracy 0.507000 - epoch 37/50
+05/15/2018 09:34:25 Average Testing loss 0.249710 - epoch 37/50
+05/15/2018 09:34:25 Average Testing accuracy 0.530000 - epoch 37/50
+05/15/2018 09:34:26 ------------------------------------------------------------
+05/15/2018 09:34:26 Average Training loss 0.250044 - epoch 38/50
+05/15/2018 09:34:26 Average Training accuracy 0.507000 - epoch 38/50
+05/15/2018 09:34:26 Average Testing loss 0.249709 - epoch 38/50
+05/15/2018 09:34:26 Average Testing accuracy 0.530000 - epoch 38/50
+05/15/2018 09:34:27 ------------------------------------------------------------
+05/15/2018 09:34:27 Average Training loss 0.250043 - epoch 39/50
+05/15/2018 09:34:27 Average Training accuracy 0.507000 - epoch 39/50
+05/15/2018 09:34:28 Average Testing loss 0.249708 - epoch 39/50
+05/15/2018 09:34:28 Average Testing accuracy 0.530000 - epoch 39/50
+05/15/2018 09:34:28 ------------------------------------------------------------
+05/15/2018 09:34:29 Average Training loss 0.250043 - epoch 40/50
+05/15/2018 09:34:29 Average Training accuracy 0.507000 - epoch 40/50
+05/15/2018 09:34:29 Average Testing loss 0.249708 - epoch 40/50
+05/15/2018 09:34:29 Average Testing accuracy 0.530000 - epoch 40/50
+05/15/2018 09:34:30 ------------------------------------------------------------
+05/15/2018 09:34:30 Average Training loss 0.250043 - epoch 41/50
+05/15/2018 09:34:30 Average Training accuracy 0.507000 - epoch 41/50
+05/15/2018 09:34:30 Average Testing loss 0.249707 - epoch 41/50
+05/15/2018 09:34:30 Average Testing accuracy 0.530000 - epoch 41/50
+05/15/2018 09:34:31 ------------------------------------------------------------
+05/15/2018 09:34:31 Average Training loss 0.250042 - epoch 42/50
+05/15/2018 09:34:31 Average Training accuracy 0.507000 - epoch 42/50
+05/15/2018 09:34:31 Average Testing loss 0.249707 - epoch 42/50
+05/15/2018 09:34:31 Average Testing accuracy 0.530000 - epoch 42/50
+05/15/2018 09:34:32 ------------------------------------------------------------
+05/15/2018 09:34:33 Average Training loss 0.250042 - epoch 43/50
+05/15/2018 09:34:33 Average Training accuracy 0.507000 - epoch 43/50
+05/15/2018 09:34:33 Average Testing loss 0.249706 - epoch 43/50
+05/15/2018 09:34:33 Average Testing accuracy 0.530000 - epoch 43/50
+05/15/2018 09:34:34 ------------------------------------------------------------
+05/15/2018 09:34:34 Average Training loss 0.250042 - epoch 44/50
+05/15/2018 09:34:34 Average Training accuracy 0.507000 - epoch 44/50
+05/15/2018 09:34:34 Average Testing loss 0.249706 - epoch 44/50
+05/15/2018 09:34:34 Average Testing accuracy 0.530000 - epoch 44/50
+05/15/2018 09:34:35 ------------------------------------------------------------
+05/15/2018 09:34:36 Average Training loss 0.250042 - epoch 45/50
+05/15/2018 09:34:36 Average Training accuracy 0.507000 - epoch 45/50
+05/15/2018 09:34:36 Average Testing loss 0.249706 - epoch 45/50
+05/15/2018 09:34:36 Average Testing accuracy 0.530000 - epoch 45/50
+05/15/2018 09:34:37 ------------------------------------------------------------
+05/15/2018 09:34:37 Average Training loss 0.250042 - epoch 46/50
+05/15/2018 09:34:37 Average Training accuracy 0.507000 - epoch 46/50
+05/15/2018 09:34:37 Average Testing loss 0.249705 - epoch 46/50
+05/15/2018 09:34:37 Average Testing accuracy 0.530000 - epoch 46/50
+05/15/2018 09:34:38 ------------------------------------------------------------
+05/15/2018 09:34:38 Average Training loss 0.250041 - epoch 47/50
+05/15/2018 09:34:38 Average Training accuracy 0.507000 - epoch 47/50
+05/15/2018 09:34:38 Average Testing loss 0.249705 - epoch 47/50
+05/15/2018 09:34:38 Average Testing accuracy 0.530000 - epoch 47/50
+05/15/2018 09:34:39 ------------------------------------------------------------
+05/15/2018 09:34:40 Average Training loss 0.250041 - epoch 48/50
+05/15/2018 09:34:40 Average Training accuracy 0.507000 - epoch 48/50
+05/15/2018 09:34:40 Average Testing loss 0.249705 - epoch 48/50
+05/15/2018 09:34:40 Average Testing accuracy 0.530000 - epoch 48/50
+05/15/2018 09:34:41 ------------------------------------------------------------
+05/15/2018 09:34:41 Average Training loss 0.250041 - epoch 49/50
+05/15/2018 09:34:41 Average Training accuracy 0.507000 - epoch 49/50
+05/15/2018 09:34:41 Average Testing loss 0.249704 - epoch 49/50
+05/15/2018 09:34:41 Average Testing accuracy 0.530000 - epoch 49/50
+05/15/2018 09:34:42 ------------------------------------------------------------
+05/15/2018 09:34:42 Average Training loss 0.250041 - epoch 50/50
+05/15/2018 09:34:42 Average Training accuracy 0.507000 - epoch 50/50
+05/15/2018 09:34:42 Average Testing loss 0.249704 - epoch 50/50
+05/15/2018 09:34:42 Average Testing accuracy 0.530000 - epoch 50/50
+05/15/2018 09:34:57 [Program starts.]
+05/15/2018 09:34:57 [Arg used:][{'hidden_units': 25}, {'init_type': 'xavier'}, {'point_number': 1000}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'verbose': 'low'}, {'epoch_number': 50}]
+05/15/2018 09:34:58 ------------------------------------------------------------
+05/15/2018 09:34:58 Average Training loss 0.257052 - epoch 1/50
+05/15/2018 09:34:58 Average Training accuracy 0.514000 - epoch 1/50
+05/15/2018 09:34:58 Average Testing loss 0.251529 - epoch 1/50
+05/15/2018 09:34:58 Average Testing accuracy 0.490000 - epoch 1/50
+05/15/2018 09:34:59 ------------------------------------------------------------
+05/15/2018 09:34:59 Average Training loss 0.250670 - epoch 2/50
+05/15/2018 09:34:59 Average Training accuracy 0.511000 - epoch 2/50
+05/15/2018 09:34:59 Average Testing loss 0.251121 - epoch 2/50
+05/15/2018 09:34:59 Average Testing accuracy 0.490000 - epoch 2/50
+05/15/2018 09:35:00 ------------------------------------------------------------
+05/15/2018 09:35:01 Average Training loss 0.250638 - epoch 3/50
+05/15/2018 09:35:01 Average Training accuracy 0.511000 - epoch 3/50
+05/15/2018 09:35:01 Average Testing loss 0.251087 - epoch 3/50
+05/15/2018 09:35:01 Average Testing accuracy 0.490000 - epoch 3/50
+05/15/2018 09:35:02 ------------------------------------------------------------
+05/15/2018 09:35:02 Average Training loss 0.250605 - epoch 4/50
+05/15/2018 09:35:02 Average Training accuracy 0.512000 - epoch 4/50
+05/15/2018 09:35:02 Average Testing loss 0.251067 - epoch 4/50
+05/15/2018 09:35:02 Average Testing accuracy 0.490000 - epoch 4/50
+05/15/2018 09:35:03 ------------------------------------------------------------
+05/15/2018 09:35:04 Average Training loss 0.250572 - epoch 5/50
+05/15/2018 09:35:04 Average Training accuracy 0.513000 - epoch 5/50
+05/15/2018 09:35:04 Average Testing loss 0.251047 - epoch 5/50
+05/15/2018 09:35:04 Average Testing accuracy 0.490000 - epoch 5/50
+05/15/2018 09:35:05 ------------------------------------------------------------
+05/15/2018 09:35:05 Average Training loss 0.250539 - epoch 6/50
+05/15/2018 09:35:05 Average Training accuracy 0.513000 - epoch 6/50
+05/15/2018 09:35:05 Average Testing loss 0.251028 - epoch 6/50
+05/15/2018 09:35:05 Average Testing accuracy 0.490000 - epoch 6/50
+05/15/2018 09:35:06 ------------------------------------------------------------
+05/15/2018 09:35:06 Average Training loss 0.250505 - epoch 7/50
+05/15/2018 09:35:06 Average Training accuracy 0.514000 - epoch 7/50
+05/15/2018 09:35:06 Average Testing loss 0.251008 - epoch 7/50
+05/15/2018 09:35:06 Average Testing accuracy 0.490000 - epoch 7/50
+05/15/2018 09:35:08 ------------------------------------------------------------
+05/15/2018 09:35:08 Average Training loss 0.250472 - epoch 8/50
+05/15/2018 09:35:08 Average Training accuracy 0.514000 - epoch 8/50
+05/15/2018 09:35:08 Average Testing loss 0.250989 - epoch 8/50
+05/15/2018 09:35:08 Average Testing accuracy 0.490000 - epoch 8/50
+05/15/2018 09:35:09 ------------------------------------------------------------
+05/15/2018 09:35:10 Average Training loss 0.250438 - epoch 9/50
+05/15/2018 09:35:10 Average Training accuracy 0.514000 - epoch 9/50
+05/15/2018 09:35:10 Average Testing loss 0.250969 - epoch 9/50
+05/15/2018 09:35:10 Average Testing accuracy 0.490000 - epoch 9/50
+05/15/2018 09:35:10 ------------------------------------------------------------
+05/15/2018 09:35:11 Average Training loss 0.250404 - epoch 10/50
+05/15/2018 09:35:11 Average Training accuracy 0.514000 - epoch 10/50
+05/15/2018 09:35:11 Average Testing loss 0.250949 - epoch 10/50
+05/15/2018 09:35:11 Average Testing accuracy 0.490000 - epoch 10/50
+05/15/2018 09:35:12 ------------------------------------------------------------
+05/15/2018 09:35:13 Average Training loss 0.250369 - epoch 11/50
+05/15/2018 09:35:13 Average Training accuracy 0.514000 - epoch 11/50
+05/15/2018 09:35:13 Average Testing loss 0.250930 - epoch 11/50
+05/15/2018 09:35:13 Average Testing accuracy 0.490000 - epoch 11/50
+05/15/2018 09:35:14 ------------------------------------------------------------
+05/15/2018 09:35:14 Average Training loss 0.250335 - epoch 12/50
+05/15/2018 09:35:14 Average Training accuracy 0.514000 - epoch 12/50
+05/15/2018 09:35:14 Average Testing loss 0.250909 - epoch 12/50
+05/15/2018 09:35:14 Average Testing accuracy 0.490000 - epoch 12/50
+05/15/2018 09:35:15 ------------------------------------------------------------
+05/15/2018 09:35:15 Average Training loss 0.250300 - epoch 13/50
+05/15/2018 09:35:15 Average Training accuracy 0.514000 - epoch 13/50
+05/15/2018 09:35:15 Average Testing loss 0.250889 - epoch 13/50
+05/15/2018 09:35:15 Average Testing accuracy 0.490000 - epoch 13/50
+05/15/2018 09:35:16 ------------------------------------------------------------
+05/15/2018 09:35:16 Average Training loss 0.250266 - epoch 14/50
+05/15/2018 09:35:16 Average Training accuracy 0.514000 - epoch 14/50
+05/15/2018 09:35:16 Average Testing loss 0.250868 - epoch 14/50
+05/15/2018 09:35:16 Average Testing accuracy 0.490000 - epoch 14/50
+05/15/2018 09:35:17 ------------------------------------------------------------
+05/15/2018 09:35:18 Average Training loss 0.250232 - epoch 15/50
+05/15/2018 09:35:18 Average Training accuracy 0.514000 - epoch 15/50
+05/15/2018 09:35:18 Average Testing loss 0.250847 - epoch 15/50
+05/15/2018 09:35:18 Average Testing accuracy 0.490000 - epoch 15/50
+05/15/2018 09:35:18 ------------------------------------------------------------
+05/15/2018 09:35:19 Average Training loss 0.250199 - epoch 16/50
+05/15/2018 09:35:19 Average Training accuracy 0.514000 - epoch 16/50
+05/15/2018 09:35:19 Average Testing loss 0.250825 - epoch 16/50
+05/15/2018 09:35:19 Average Testing accuracy 0.490000 - epoch 16/50
+05/15/2018 09:35:20 ------------------------------------------------------------
+05/15/2018 09:35:20 Average Training loss 0.250168 - epoch 17/50
+05/15/2018 09:35:20 Average Training accuracy 0.514000 - epoch 17/50
+05/15/2018 09:35:20 Average Testing loss 0.250803 - epoch 17/50
+05/15/2018 09:35:20 Average Testing accuracy 0.490000 - epoch 17/50
+05/15/2018 09:35:21 ------------------------------------------------------------
+05/15/2018 09:35:21 Average Training loss 0.250138 - epoch 18/50
+05/15/2018 09:35:21 Average Training accuracy 0.514000 - epoch 18/50
+05/15/2018 09:35:21 Average Testing loss 0.250782 - epoch 18/50
+05/15/2018 09:35:21 Average Testing accuracy 0.490000 - epoch 18/50
+05/15/2018 09:35:22 ------------------------------------------------------------
+05/15/2018 09:35:22 Average Training loss 0.250111 - epoch 19/50
+05/15/2018 09:35:22 Average Training accuracy 0.514000 - epoch 19/50
+05/15/2018 09:35:22 Average Testing loss 0.250760 - epoch 19/50
+05/15/2018 09:35:22 Average Testing accuracy 0.490000 - epoch 19/50
+05/15/2018 09:35:23 ------------------------------------------------------------
+05/15/2018 09:35:24 Average Training loss 0.250087 - epoch 20/50
+05/15/2018 09:35:24 Average Training accuracy 0.514000 - epoch 20/50
+05/15/2018 09:35:24 Average Testing loss 0.250740 - epoch 20/50
+05/15/2018 09:35:24 Average Testing accuracy 0.490000 - epoch 20/50
+05/15/2018 09:35:25 ------------------------------------------------------------
+05/15/2018 09:35:25 Average Training loss 0.250066 - epoch 21/50
+05/15/2018 09:35:25 Average Training accuracy 0.514000 - epoch 21/50
+05/15/2018 09:35:25 Average Testing loss 0.250721 - epoch 21/50
+05/15/2018 09:35:25 Average Testing accuracy 0.490000 - epoch 21/50
+05/15/2018 09:35:26 ------------------------------------------------------------
+05/15/2018 09:35:26 Average Training loss 0.250048 - epoch 22/50
+05/15/2018 09:35:26 Average Training accuracy 0.514000 - epoch 22/50
+05/15/2018 09:35:26 Average Testing loss 0.250704 - epoch 22/50
+05/15/2018 09:35:26 Average Testing accuracy 0.490000 - epoch 22/50
+05/15/2018 09:35:27 ------------------------------------------------------------
+05/15/2018 09:35:28 Average Training loss 0.250033 - epoch 23/50
+05/15/2018 09:35:28 Average Training accuracy 0.514000 - epoch 23/50
+05/15/2018 09:35:28 Average Testing loss 0.250688 - epoch 23/50
+05/15/2018 09:35:28 Average Testing accuracy 0.490000 - epoch 23/50
+05/15/2018 09:35:29 ------------------------------------------------------------
+05/15/2018 09:35:29 Average Training loss 0.250020 - epoch 24/50
+05/15/2018 09:35:29 Average Training accuracy 0.514000 - epoch 24/50
+05/15/2018 09:35:29 Average Testing loss 0.250675 - epoch 24/50
+05/15/2018 09:35:29 Average Testing accuracy 0.490000 - epoch 24/50
+05/15/2018 09:35:30 ------------------------------------------------------------
+05/15/2018 09:35:31 Average Training loss 0.250009 - epoch 25/50
+05/15/2018 09:35:31 Average Training accuracy 0.514000 - epoch 25/50
+05/15/2018 09:35:31 Average Testing loss 0.250664 - epoch 25/50
+05/15/2018 09:35:31 Average Testing accuracy 0.490000 - epoch 25/50
+05/15/2018 09:35:32 ------------------------------------------------------------
+05/15/2018 09:35:33 Average Training loss 0.249999 - epoch 26/50
+05/15/2018 09:35:33 Average Training accuracy 0.514000 - epoch 26/50
+05/15/2018 09:35:33 Average Testing loss 0.250655 - epoch 26/50
+05/15/2018 09:35:33 Average Testing accuracy 0.490000 - epoch 26/50
+05/15/2018 09:35:34 ------------------------------------------------------------
+05/15/2018 09:35:34 Average Training loss 0.249991 - epoch 27/50
+05/15/2018 09:35:34 Average Training accuracy 0.514000 - epoch 27/50
+05/15/2018 09:35:34 Average Testing loss 0.250647 - epoch 27/50
+05/15/2018 09:35:34 Average Testing accuracy 0.490000 - epoch 27/50
+05/15/2018 09:35:35 ------------------------------------------------------------
+05/15/2018 09:35:35 Average Training loss 0.249983 - epoch 28/50
+05/15/2018 09:35:35 Average Training accuracy 0.514000 - epoch 28/50
+05/15/2018 09:35:35 Average Testing loss 0.250641 - epoch 28/50
+05/15/2018 09:35:35 Average Testing accuracy 0.490000 - epoch 28/50
+05/15/2018 09:35:36 ------------------------------------------------------------
+05/15/2018 09:35:37 Average Training loss 0.249975 - epoch 29/50
+05/15/2018 09:35:37 Average Training accuracy 0.514000 - epoch 29/50
+05/15/2018 09:35:37 Average Testing loss 0.250635 - epoch 29/50
+05/15/2018 09:35:37 Average Testing accuracy 0.490000 - epoch 29/50
+05/15/2018 09:35:38 ------------------------------------------------------------
+05/15/2018 09:35:38 Average Training loss 0.249968 - epoch 30/50
+05/15/2018 09:35:38 Average Training accuracy 0.514000 - epoch 30/50
+05/15/2018 09:35:38 Average Testing loss 0.250630 - epoch 30/50
+05/15/2018 09:35:38 Average Testing accuracy 0.490000 - epoch 30/50
+05/15/2018 09:35:39 ------------------------------------------------------------
+05/15/2018 09:35:39 Average Training loss 0.249962 - epoch 31/50
+05/15/2018 09:35:39 Average Training accuracy 0.514000 - epoch 31/50
+05/15/2018 09:35:40 Average Testing loss 0.250626 - epoch 31/50
+05/15/2018 09:35:40 Average Testing accuracy 0.490000 - epoch 31/50
+05/15/2018 09:35:40 ------------------------------------------------------------
+05/15/2018 09:35:41 Average Training loss 0.249955 - epoch 32/50
+05/15/2018 09:35:41 Average Training accuracy 0.514000 - epoch 32/50
+05/15/2018 09:35:41 Average Testing loss 0.250621 - epoch 32/50
+05/15/2018 09:35:41 Average Testing accuracy 0.490000 - epoch 32/50
+05/15/2018 09:35:42 ------------------------------------------------------------
+05/15/2018 09:35:42 Average Training loss 0.249949 - epoch 33/50
+05/15/2018 09:35:42 Average Training accuracy 0.514000 - epoch 33/50
+05/15/2018 09:35:42 Average Testing loss 0.250617 - epoch 33/50
+05/15/2018 09:35:42 Average Testing accuracy 0.490000 - epoch 33/50
+05/15/2018 09:35:43 ------------------------------------------------------------
+05/15/2018 09:35:44 Average Training loss 0.249943 - epoch 34/50
+05/15/2018 09:35:44 Average Training accuracy 0.514000 - epoch 34/50
+05/15/2018 09:35:44 Average Testing loss 0.250612 - epoch 34/50
+05/15/2018 09:35:44 Average Testing accuracy 0.490000 - epoch 34/50
+05/15/2018 09:35:45 ------------------------------------------------------------
+05/15/2018 09:35:45 Average Training loss 0.249936 - epoch 35/50
+05/15/2018 09:35:45 Average Training accuracy 0.514000 - epoch 35/50
+05/15/2018 09:35:45 Average Testing loss 0.250608 - epoch 35/50
+05/15/2018 09:35:45 Average Testing accuracy 0.490000 - epoch 35/50
+05/15/2018 09:35:46 ------------------------------------------------------------
+05/15/2018 09:35:46 Average Training loss 0.249931 - epoch 36/50
+05/15/2018 09:35:46 Average Training accuracy 0.514000 - epoch 36/50
+05/15/2018 09:35:46 Average Testing loss 0.250603 - epoch 36/50
+05/15/2018 09:35:46 Average Testing accuracy 0.490000 - epoch 36/50
+05/15/2018 09:35:48 ------------------------------------------------------------
+05/15/2018 09:35:48 Average Training loss 0.249925 - epoch 37/50
+05/15/2018 09:35:48 Average Training accuracy 0.514000 - epoch 37/50
+05/15/2018 09:35:48 Average Testing loss 0.250599 - epoch 37/50
+05/15/2018 09:35:48 Average Testing accuracy 0.490000 - epoch 37/50
+05/15/2018 09:35:49 ------------------------------------------------------------
+05/15/2018 09:35:49 Average Training loss 0.249919 - epoch 38/50
+05/15/2018 09:35:49 Average Training accuracy 0.514000 - epoch 38/50
+05/15/2018 09:35:50 Average Testing loss 0.250594 - epoch 38/50
+05/15/2018 09:35:50 Average Testing accuracy 0.490000 - epoch 38/50
+05/15/2018 09:35:50 ------------------------------------------------------------
+05/15/2018 09:35:51 Average Training loss 0.249914 - epoch 39/50
+05/15/2018 09:35:51 Average Training accuracy 0.514000 - epoch 39/50
+05/15/2018 09:35:51 Average Testing loss 0.250589 - epoch 39/50
+05/15/2018 09:35:51 Average Testing accuracy 0.490000 - epoch 39/50
+05/15/2018 09:35:51 ------------------------------------------------------------
+05/15/2018 09:35:52 Average Training loss 0.249909 - epoch 40/50
+05/15/2018 09:35:52 Average Training accuracy 0.514000 - epoch 40/50
+05/15/2018 09:35:52 Average Testing loss 0.250584 - epoch 40/50
+05/15/2018 09:35:52 Average Testing accuracy 0.490000 - epoch 40/50
+05/15/2018 09:35:53 ------------------------------------------------------------
+05/15/2018 09:35:54 Average Training loss 0.249904 - epoch 41/50
+05/15/2018 09:35:54 Average Training accuracy 0.514000 - epoch 41/50
+05/15/2018 09:35:54 Average Testing loss 0.250579 - epoch 41/50
+05/15/2018 09:35:54 Average Testing accuracy 0.490000 - epoch 41/50
+05/15/2018 09:35:55 ------------------------------------------------------------
+05/15/2018 09:35:55 Average Training loss 0.249899 - epoch 42/50
+05/15/2018 09:35:55 Average Training accuracy 0.514000 - epoch 42/50
+05/15/2018 09:35:56 Average Testing loss 0.250573 - epoch 42/50
+05/15/2018 09:35:56 Average Testing accuracy 0.490000 - epoch 42/50
+05/15/2018 09:35:56 ------------------------------------------------------------
+05/15/2018 09:35:57 Average Training loss 0.249895 - epoch 43/50
+05/15/2018 09:35:57 Average Training accuracy 0.514000 - epoch 43/50
+05/15/2018 09:35:57 Average Testing loss 0.250568 - epoch 43/50
+05/15/2018 09:35:57 Average Testing accuracy 0.490000 - epoch 43/50
+05/15/2018 09:35:58 ------------------------------------------------------------
+05/15/2018 09:35:58 Average Training loss 0.249891 - epoch 44/50
+05/15/2018 09:35:58 Average Training accuracy 0.514000 - epoch 44/50
+05/15/2018 09:35:58 Average Testing loss 0.250563 - epoch 44/50
+05/15/2018 09:35:58 Average Testing accuracy 0.490000 - epoch 44/50
+05/15/2018 09:35:59 ------------------------------------------------------------
+05/15/2018 09:35:59 Average Training loss 0.249888 - epoch 45/50
+05/15/2018 09:35:59 Average Training accuracy 0.514000 - epoch 45/50
+05/15/2018 09:35:59 Average Testing loss 0.250557 - epoch 45/50
+05/15/2018 09:35:59 Average Testing accuracy 0.490000 - epoch 45/50
+05/15/2018 09:36:00 ------------------------------------------------------------
+05/15/2018 09:36:01 Average Training loss 0.249884 - epoch 46/50
+05/15/2018 09:36:01 Average Training accuracy 0.514000 - epoch 46/50
+05/15/2018 09:36:01 Average Testing loss 0.250552 - epoch 46/50
+05/15/2018 09:36:01 Average Testing accuracy 0.490000 - epoch 46/50
+05/15/2018 09:36:02 ------------------------------------------------------------
+05/15/2018 09:36:02 Average Training loss 0.249881 - epoch 47/50
+05/15/2018 09:36:02 Average Training accuracy 0.514000 - epoch 47/50
+05/15/2018 09:36:03 Average Testing loss 0.250546 - epoch 47/50
+05/15/2018 09:36:03 Average Testing accuracy 0.490000 - epoch 47/50
+05/15/2018 09:36:04 ------------------------------------------------------------
+05/15/2018 09:36:04 Average Training loss 0.249878 - epoch 48/50
+05/15/2018 09:36:04 Average Training accuracy 0.514000 - epoch 48/50
+05/15/2018 09:36:04 Average Testing loss 0.250541 - epoch 48/50
+05/15/2018 09:36:04 Average Testing accuracy 0.490000 - epoch 48/50
+05/15/2018 09:36:05 ------------------------------------------------------------
+05/15/2018 09:36:05 Average Training loss 0.249876 - epoch 49/50
+05/15/2018 09:36:05 Average Training accuracy 0.514000 - epoch 49/50
+05/15/2018 09:36:05 Average Testing loss 0.250536 - epoch 49/50
+05/15/2018 09:36:05 Average Testing accuracy 0.490000 - epoch 49/50
+05/15/2018 09:36:06 ------------------------------------------------------------
+05/15/2018 09:36:06 Average Training loss 0.249874 - epoch 50/50
+05/15/2018 09:36:06 Average Training accuracy 0.514000 - epoch 50/50
+05/15/2018 09:36:06 Average Testing loss 0.250531 - epoch 50/50
+05/15/2018 09:36:06 Average Testing accuracy 0.490000 - epoch 50/50
+05/15/2018 09:46:05 [Program starts.]
+05/15/2018 09:46:05 [Arg used:][{'verbose': 'low'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'point_number': 1000}, {'epoch_number': 50}, {'hidden_units': 25}, {'init_type': 'gaussian'}]
+05/15/2018 09:46:06 ------------------------------------------------------------
+05/15/2018 09:46:06 Average Training loss 0.390195 - epoch 1/50
+05/15/2018 09:46:06 Average Training accuracy 0.582000 - epoch 1/50
+05/15/2018 09:46:06 Average Testing loss 0.334202 - epoch 1/50
+05/15/2018 09:46:06 Average Testing accuracy 0.682000 - epoch 1/50
+05/15/2018 09:46:07 ------------------------------------------------------------
+05/15/2018 09:46:07 Average Training loss 0.275788 - epoch 2/50
+05/15/2018 09:46:07 Average Training accuracy 0.669000 - epoch 2/50
+05/15/2018 09:46:07 Average Testing loss 0.225283 - epoch 2/50
+05/15/2018 09:46:07 Average Testing accuracy 0.771000 - epoch 2/50
+05/15/2018 09:46:08 ------------------------------------------------------------
+05/15/2018 09:46:08 Average Training loss 0.253441 - epoch 3/50
+05/15/2018 09:46:08 Average Training accuracy 0.745000 - epoch 3/50
+05/15/2018 09:46:08 Average Testing loss 0.140669 - epoch 3/50
+05/15/2018 09:46:08 Average Testing accuracy 0.872000 - epoch 3/50
+05/15/2018 09:46:09 ------------------------------------------------------------
+05/15/2018 09:46:09 Average Training loss 0.136559 - epoch 4/50
+05/15/2018 09:46:09 Average Training accuracy 0.870000 - epoch 4/50
+05/15/2018 09:46:09 Average Testing loss 0.212634 - epoch 4/50
+05/15/2018 09:46:09 Average Testing accuracy 0.818000 - epoch 4/50
+05/15/2018 09:46:10 ------------------------------------------------------------
+05/15/2018 09:46:10 Average Training loss 0.146828 - epoch 5/50
+05/15/2018 09:46:10 Average Training accuracy 0.859000 - epoch 5/50
+05/15/2018 09:46:10 Average Testing loss 0.127310 - epoch 5/50
+05/15/2018 09:46:10 Average Testing accuracy 0.855000 - epoch 5/50
+05/15/2018 09:46:11 ------------------------------------------------------------
+05/15/2018 09:46:12 Average Training loss 0.124011 - epoch 6/50
+05/15/2018 09:46:12 Average Training accuracy 0.860000 - epoch 6/50
+05/15/2018 09:46:12 Average Testing loss 0.122062 - epoch 6/50
+05/15/2018 09:46:12 Average Testing accuracy 0.875000 - epoch 6/50
+05/15/2018 09:46:12 ------------------------------------------------------------
+05/15/2018 09:46:13 Average Training loss 0.117118 - epoch 7/50
+05/15/2018 09:46:13 Average Training accuracy 0.866000 - epoch 7/50
+05/15/2018 09:46:13 Average Testing loss 0.113472 - epoch 7/50
+05/15/2018 09:46:13 Average Testing accuracy 0.868000 - epoch 7/50
+05/15/2018 09:46:14 ------------------------------------------------------------
+05/15/2018 09:46:14 Average Training loss 0.105121 - epoch 8/50
+05/15/2018 09:46:14 Average Training accuracy 0.877000 - epoch 8/50
+05/15/2018 09:46:14 Average Testing loss 0.183792 - epoch 8/50
+05/15/2018 09:46:14 Average Testing accuracy 0.820000 - epoch 8/50
+05/15/2018 09:46:15 ------------------------------------------------------------
+05/15/2018 09:46:15 Average Training loss 0.111883 - epoch 9/50
+05/15/2018 09:46:15 Average Training accuracy 0.871000 - epoch 9/50
+05/15/2018 09:46:15 Average Testing loss 0.104442 - epoch 9/50
+05/15/2018 09:46:15 Average Testing accuracy 0.870000 - epoch 9/50
+05/15/2018 09:46:16 ------------------------------------------------------------
+05/15/2018 09:46:16 Average Training loss 0.107869 - epoch 10/50
+05/15/2018 09:46:16 Average Training accuracy 0.884000 - epoch 10/50
+05/15/2018 09:46:16 Average Testing loss 0.065666 - epoch 10/50
+05/15/2018 09:46:16 Average Testing accuracy 0.925000 - epoch 10/50
+05/15/2018 09:46:17 ------------------------------------------------------------
+05/15/2018 09:46:18 Average Training loss 0.096500 - epoch 11/50
+05/15/2018 09:46:18 Average Training accuracy 0.894000 - epoch 11/50
+05/15/2018 09:46:18 Average Testing loss 0.095748 - epoch 11/50
+05/15/2018 09:46:18 Average Testing accuracy 0.887000 - epoch 11/50
+05/15/2018 09:46:18 ------------------------------------------------------------
+05/15/2018 09:46:19 Average Training loss 0.106517 - epoch 12/50
+05/15/2018 09:46:19 Average Training accuracy 0.888000 - epoch 12/50
+05/15/2018 09:46:19 Average Testing loss 0.063712 - epoch 12/50
+05/15/2018 09:46:19 Average Testing accuracy 0.939000 - epoch 12/50
+05/15/2018 09:46:19 ------------------------------------------------------------
+05/15/2018 09:46:20 Average Training loss 0.087564 - epoch 13/50
+05/15/2018 09:46:20 Average Training accuracy 0.900000 - epoch 13/50
+05/15/2018 09:46:20 Average Testing loss 0.104691 - epoch 13/50
+05/15/2018 09:46:20 Average Testing accuracy 0.872000 - epoch 13/50
+05/15/2018 09:46:20 ------------------------------------------------------------
+05/15/2018 09:46:21 Average Training loss 0.079754 - epoch 14/50
+05/15/2018 09:46:21 Average Training accuracy 0.901000 - epoch 14/50
+05/15/2018 09:46:21 Average Testing loss 0.071107 - epoch 14/50
+05/15/2018 09:46:21 Average Testing accuracy 0.915000 - epoch 14/50
+05/15/2018 09:46:21 ------------------------------------------------------------
+05/15/2018 09:46:22 Average Training loss 0.077654 - epoch 15/50
+05/15/2018 09:46:22 Average Training accuracy 0.903000 - epoch 15/50
+05/15/2018 09:46:22 Average Testing loss 0.049311 - epoch 15/50
+05/15/2018 09:46:22 Average Testing accuracy 0.943000 - epoch 15/50
+05/15/2018 09:46:23 ------------------------------------------------------------
+05/15/2018 09:46:23 Average Training loss 0.072174 - epoch 16/50
+05/15/2018 09:46:23 Average Training accuracy 0.924000 - epoch 16/50
+05/15/2018 09:46:23 Average Testing loss 0.079494 - epoch 16/50
+05/15/2018 09:46:23 Average Testing accuracy 0.903000 - epoch 16/50
+05/15/2018 09:46:24 ------------------------------------------------------------
+05/15/2018 09:46:24 Average Training loss 0.069595 - epoch 17/50
+05/15/2018 09:46:24 Average Training accuracy 0.924000 - epoch 17/50
+05/15/2018 09:46:24 Average Testing loss 0.086954 - epoch 17/50
+05/15/2018 09:46:24 Average Testing accuracy 0.894000 - epoch 17/50
+05/15/2018 09:46:25 ------------------------------------------------------------
+05/15/2018 09:46:25 Average Training loss 0.065406 - epoch 18/50
+05/15/2018 09:46:25 Average Training accuracy 0.920000 - epoch 18/50
+05/15/2018 09:46:25 Average Testing loss 0.044309 - epoch 18/50
+05/15/2018 09:46:25 Average Testing accuracy 0.942000 - epoch 18/50
+05/15/2018 09:46:26 ------------------------------------------------------------
+05/15/2018 09:46:26 Average Training loss 0.066385 - epoch 19/50
+05/15/2018 09:46:26 Average Training accuracy 0.923000 - epoch 19/50
+05/15/2018 09:46:26 Average Testing loss 0.063607 - epoch 19/50
+05/15/2018 09:46:26 Average Testing accuracy 0.934000 - epoch 19/50
+05/15/2018 09:46:27 ------------------------------------------------------------
+05/15/2018 09:46:27 Average Training loss 0.071758 - epoch 20/50
+05/15/2018 09:46:27 Average Training accuracy 0.912000 - epoch 20/50
+05/15/2018 09:46:28 Average Testing loss 0.058450 - epoch 20/50
+05/15/2018 09:46:28 Average Testing accuracy 0.929000 - epoch 20/50
+05/15/2018 09:46:28 ------------------------------------------------------------
+05/15/2018 09:46:29 Average Training loss 0.066244 - epoch 21/50
+05/15/2018 09:46:29 Average Training accuracy 0.926000 - epoch 21/50
+05/15/2018 09:46:29 Average Testing loss 0.064293 - epoch 21/50
+05/15/2018 09:46:29 Average Testing accuracy 0.923000 - epoch 21/50
+05/15/2018 09:46:29 ------------------------------------------------------------
+05/15/2018 09:46:30 Average Training loss 0.070653 - epoch 22/50
+05/15/2018 09:46:30 Average Training accuracy 0.916000 - epoch 22/50
+05/15/2018 09:46:30 Average Testing loss 0.083832 - epoch 22/50
+05/15/2018 09:46:30 Average Testing accuracy 0.887000 - epoch 22/50
+05/15/2018 09:46:30 ------------------------------------------------------------
+05/15/2018 09:46:31 Average Training loss 0.063352 - epoch 23/50
+05/15/2018 09:46:31 Average Training accuracy 0.929000 - epoch 23/50
+05/15/2018 09:46:31 Average Testing loss 0.089411 - epoch 23/50
+05/15/2018 09:46:31 Average Testing accuracy 0.888000 - epoch 23/50
+05/15/2018 09:46:32 ------------------------------------------------------------
+05/15/2018 09:46:32 Average Training loss 0.069269 - epoch 24/50
+05/15/2018 09:46:32 Average Training accuracy 0.918000 - epoch 24/50
+05/15/2018 09:46:32 Average Testing loss 0.046655 - epoch 24/50
+05/15/2018 09:46:32 Average Testing accuracy 0.951000 - epoch 24/50
+05/15/2018 09:46:33 ------------------------------------------------------------
+05/15/2018 09:46:33 Average Training loss 0.060466 - epoch 25/50
+05/15/2018 09:46:33 Average Training accuracy 0.923000 - epoch 25/50
+05/15/2018 09:46:33 Average Testing loss 0.056630 - epoch 25/50
+05/15/2018 09:46:33 Average Testing accuracy 0.931000 - epoch 25/50
+05/15/2018 09:46:34 ------------------------------------------------------------
+05/15/2018 09:46:34 Average Training loss 0.063765 - epoch 26/50
+05/15/2018 09:46:34 Average Training accuracy 0.921000 - epoch 26/50
+05/15/2018 09:46:34 Average Testing loss 0.055002 - epoch 26/50
+05/15/2018 09:46:34 Average Testing accuracy 0.926000 - epoch 26/50
+05/15/2018 09:46:35 ------------------------------------------------------------
+05/15/2018 09:46:35 Average Training loss 0.064301 - epoch 27/50
+05/15/2018 09:46:35 Average Training accuracy 0.924000 - epoch 27/50
+05/15/2018 09:46:35 Average Testing loss 0.039961 - epoch 27/50
+05/15/2018 09:46:35 Average Testing accuracy 0.944000 - epoch 27/50
+05/15/2018 09:46:36 ------------------------------------------------------------
+05/15/2018 09:46:37 Average Training loss 0.071815 - epoch 28/50
+05/15/2018 09:46:37 Average Training accuracy 0.919000 - epoch 28/50
+05/15/2018 09:46:37 Average Testing loss 0.038808 - epoch 28/50
+05/15/2018 09:46:37 Average Testing accuracy 0.955000 - epoch 28/50
+05/15/2018 09:46:37 ------------------------------------------------------------
+05/15/2018 09:46:38 Average Training loss 0.070505 - epoch 29/50
+05/15/2018 09:46:38 Average Training accuracy 0.913000 - epoch 29/50
+05/15/2018 09:46:38 Average Testing loss 0.064231 - epoch 29/50
+05/15/2018 09:46:38 Average Testing accuracy 0.916000 - epoch 29/50
+05/15/2018 09:46:39 ------------------------------------------------------------
+05/15/2018 09:46:39 Average Training loss 0.072033 - epoch 30/50
+05/15/2018 09:46:39 Average Training accuracy 0.922000 - epoch 30/50
+05/15/2018 09:46:39 Average Testing loss 0.051698 - epoch 30/50
+05/15/2018 09:46:39 Average Testing accuracy 0.936000 - epoch 30/50
+05/15/2018 09:46:40 ------------------------------------------------------------
+05/15/2018 09:46:40 Average Training loss 0.060856 - epoch 31/50
+05/15/2018 09:46:40 Average Training accuracy 0.932000 - epoch 31/50
+05/15/2018 09:46:41 Average Testing loss 0.071264 - epoch 31/50
+05/15/2018 09:46:41 Average Testing accuracy 0.907000 - epoch 31/50
+05/15/2018 09:46:41 ------------------------------------------------------------
+05/15/2018 09:46:41 Average Training loss 0.073397 - epoch 32/50
+05/15/2018 09:46:41 Average Training accuracy 0.914000 - epoch 32/50
+05/15/2018 09:46:41 Average Testing loss 0.044249 - epoch 32/50
+05/15/2018 09:46:41 Average Testing accuracy 0.960000 - epoch 32/50
+05/15/2018 09:46:42 ------------------------------------------------------------
+05/15/2018 09:46:42 Average Training loss 0.071397 - epoch 33/50
+05/15/2018 09:46:42 Average Training accuracy 0.911000 - epoch 33/50
+05/15/2018 09:46:42 Average Testing loss 0.047472 - epoch 33/50
+05/15/2018 09:46:42 Average Testing accuracy 0.936000 - epoch 33/50
+05/15/2018 09:46:43 ------------------------------------------------------------
+05/15/2018 09:46:43 Average Training loss 0.064801 - epoch 34/50
+05/15/2018 09:46:43 Average Training accuracy 0.924000 - epoch 34/50
+05/15/2018 09:46:44 Average Testing loss 0.061825 - epoch 34/50
+05/15/2018 09:46:44 Average Testing accuracy 0.923000 - epoch 34/50
+05/15/2018 09:46:44 ------------------------------------------------------------
+05/15/2018 09:46:45 Average Training loss 0.063029 - epoch 35/50
+05/15/2018 09:46:45 Average Training accuracy 0.924000 - epoch 35/50
+05/15/2018 09:46:45 Average Testing loss 0.040017 - epoch 35/50
+05/15/2018 09:46:45 Average Testing accuracy 0.948000 - epoch 35/50
+05/15/2018 09:46:46 ------------------------------------------------------------
+05/15/2018 09:46:46 Average Training loss 0.058950 - epoch 36/50
+05/15/2018 09:46:46 Average Training accuracy 0.931000 - epoch 36/50
+05/15/2018 09:46:46 Average Testing loss 0.060168 - epoch 36/50
+05/15/2018 09:46:46 Average Testing accuracy 0.919000 - epoch 36/50
+05/15/2018 09:46:47 ------------------------------------------------------------
+05/15/2018 09:46:47 Average Training loss 0.073035 - epoch 37/50
+05/15/2018 09:46:47 Average Training accuracy 0.914000 - epoch 37/50
+05/15/2018 09:46:47 Average Testing loss 0.046252 - epoch 37/50
+05/15/2018 09:46:47 Average Testing accuracy 0.937000 - epoch 37/50
+05/15/2018 09:46:48 ------------------------------------------------------------
+05/15/2018 09:46:49 Average Training loss 0.068107 - epoch 38/50
+05/15/2018 09:46:49 Average Training accuracy 0.917000 - epoch 38/50
+05/15/2018 09:46:49 Average Testing loss 0.069885 - epoch 38/50
+05/15/2018 09:46:49 Average Testing accuracy 0.901000 - epoch 38/50
+05/15/2018 09:46:50 ------------------------------------------------------------
+05/15/2018 09:46:50 Average Training loss 0.062245 - epoch 39/50
+05/15/2018 09:46:50 Average Training accuracy 0.929000 - epoch 39/50
+05/15/2018 09:46:50 Average Testing loss 0.043129 - epoch 39/50
+05/15/2018 09:46:50 Average Testing accuracy 0.954000 - epoch 39/50
+05/15/2018 09:46:51 ------------------------------------------------------------
+05/15/2018 09:46:51 Average Training loss 0.061101 - epoch 40/50
+05/15/2018 09:46:51 Average Training accuracy 0.924000 - epoch 40/50
+05/15/2018 09:46:51 Average Testing loss 0.042412 - epoch 40/50
+05/15/2018 09:46:51 Average Testing accuracy 0.951000 - epoch 40/50
+05/15/2018 09:46:52 ------------------------------------------------------------
+05/15/2018 09:46:52 Average Training loss 0.059267 - epoch 41/50
+05/15/2018 09:46:52 Average Training accuracy 0.924000 - epoch 41/50
+05/15/2018 09:46:52 Average Testing loss 0.136510 - epoch 41/50
+05/15/2018 09:46:52 Average Testing accuracy 0.822000 - epoch 41/50
+05/15/2018 09:46:53 ------------------------------------------------------------
+05/15/2018 09:46:53 Average Training loss 0.063786 - epoch 42/50
+05/15/2018 09:46:53 Average Training accuracy 0.917000 - epoch 42/50
+05/15/2018 09:46:54 Average Testing loss 0.082395 - epoch 42/50
+05/15/2018 09:46:54 Average Testing accuracy 0.887000 - epoch 42/50
+05/15/2018 09:46:54 ------------------------------------------------------------
+05/15/2018 09:46:55 Average Training loss 0.075957 - epoch 43/50
+05/15/2018 09:46:55 Average Training accuracy 0.908000 - epoch 43/50
+05/15/2018 09:46:55 Average Testing loss 0.058784 - epoch 43/50
+05/15/2018 09:46:55 Average Testing accuracy 0.924000 - epoch 43/50
+05/15/2018 09:46:56 ------------------------------------------------------------
+05/15/2018 09:46:56 Average Training loss 0.075501 - epoch 44/50
+05/15/2018 09:46:56 Average Training accuracy 0.912000 - epoch 44/50
+05/15/2018 09:46:56 Average Testing loss 0.048400 - epoch 44/50
+05/15/2018 09:46:56 Average Testing accuracy 0.934000 - epoch 44/50
+05/15/2018 09:46:57 ------------------------------------------------------------
+05/15/2018 09:46:57 Average Training loss 0.078770 - epoch 45/50
+05/15/2018 09:46:57 Average Training accuracy 0.894000 - epoch 45/50
+05/15/2018 09:46:58 Average Testing loss 0.084950 - epoch 45/50
+05/15/2018 09:46:58 Average Testing accuracy 0.864000 - epoch 45/50
+05/15/2018 09:46:58 ------------------------------------------------------------
+05/15/2018 09:46:59 Average Training loss 0.082196 - epoch 46/50
+05/15/2018 09:46:59 Average Training accuracy 0.900000 - epoch 46/50
+05/15/2018 09:46:59 Average Testing loss 0.045599 - epoch 46/50
+05/15/2018 09:46:59 Average Testing accuracy 0.934000 - epoch 46/50
+05/15/2018 09:47:00 ------------------------------------------------------------
+05/15/2018 09:47:00 Average Training loss 0.068921 - epoch 47/50
+05/15/2018 09:47:00 Average Training accuracy 0.914000 - epoch 47/50
+05/15/2018 09:47:00 Average Testing loss 0.058738 - epoch 47/50
+05/15/2018 09:47:00 Average Testing accuracy 0.930000 - epoch 47/50
+05/15/2018 09:47:01 ------------------------------------------------------------
+05/15/2018 09:47:01 Average Training loss 0.064347 - epoch 48/50
+05/15/2018 09:47:01 Average Training accuracy 0.921000 - epoch 48/50
+05/15/2018 09:47:01 Average Testing loss 0.065494 - epoch 48/50
+05/15/2018 09:47:01 Average Testing accuracy 0.908000 - epoch 48/50
+05/15/2018 09:47:02 ------------------------------------------------------------
+05/15/2018 09:47:02 Average Training loss 0.069971 - epoch 49/50
+05/15/2018 09:47:02 Average Training accuracy 0.919000 - epoch 49/50
+05/15/2018 09:47:02 Average Testing loss 0.082723 - epoch 49/50
+05/15/2018 09:47:02 Average Testing accuracy 0.894000 - epoch 49/50
+05/15/2018 09:47:03 ------------------------------------------------------------
+05/15/2018 09:47:03 Average Training loss 0.066856 - epoch 50/50
+05/15/2018 09:47:03 Average Training accuracy 0.912000 - epoch 50/50
+05/15/2018 09:47:04 Average Testing loss 0.038821 - epoch 50/50
+05/15/2018 09:47:04 Average Testing accuracy 0.954000 - epoch 50/50
+05/15/2018 09:50:50 [Program starts.]
+05/15/2018 09:50:50 [Arg used:][{'init_type': 'he'}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'hidden_units': 25}, {'verbose': 'low'}, {'epoch_number': 50}, {'point_number': 1000}]
+05/15/2018 09:50:51 ------------------------------------------------------------
+05/15/2018 09:50:51 Average Training loss 0.263774 - epoch 1/50
+05/15/2018 09:50:51 Average Training accuracy 0.515000 - epoch 1/50
+05/15/2018 09:50:51 Average Testing loss 0.251386 - epoch 1/50
+05/15/2018 09:50:51 Average Testing accuracy 0.499000 - epoch 1/50
+05/15/2018 09:50:52 ------------------------------------------------------------
+05/15/2018 09:50:52 Average Training loss 0.253108 - epoch 2/50
+05/15/2018 09:50:52 Average Training accuracy 0.521000 - epoch 2/50
+05/15/2018 09:50:52 Average Testing loss 0.248678 - epoch 2/50
+05/15/2018 09:50:52 Average Testing accuracy 0.610000 - epoch 2/50
+05/15/2018 09:50:53 ------------------------------------------------------------
+05/15/2018 09:50:53 Average Training loss 0.249883 - epoch 3/50
+05/15/2018 09:50:53 Average Training accuracy 0.526000 - epoch 3/50
+05/15/2018 09:50:53 Average Testing loss 0.245931 - epoch 3/50
+05/15/2018 09:50:53 Average Testing accuracy 0.601000 - epoch 3/50
+05/15/2018 09:50:54 ------------------------------------------------------------
+05/15/2018 09:50:55 Average Training loss 0.244633 - epoch 4/50
+05/15/2018 09:50:55 Average Training accuracy 0.549000 - epoch 4/50
+05/15/2018 09:50:55 Average Testing loss 0.238226 - epoch 4/50
+05/15/2018 09:50:55 Average Testing accuracy 0.580000 - epoch 4/50
+05/15/2018 09:50:56 ------------------------------------------------------------
+05/15/2018 09:50:56 Average Training loss 0.231094 - epoch 5/50
+05/15/2018 09:50:56 Average Training accuracy 0.603000 - epoch 5/50
+05/15/2018 09:50:56 Average Testing loss 0.225189 - epoch 5/50
+05/15/2018 09:50:56 Average Testing accuracy 0.659000 - epoch 5/50
+05/15/2018 09:50:57 ------------------------------------------------------------
+05/15/2018 09:50:57 Average Training loss 0.215015 - epoch 6/50
+05/15/2018 09:50:57 Average Training accuracy 0.659000 - epoch 6/50
+05/15/2018 09:50:57 Average Testing loss 0.213670 - epoch 6/50
+05/15/2018 09:50:57 Average Testing accuracy 0.661000 - epoch 6/50
+05/15/2018 09:50:58 ------------------------------------------------------------
+05/15/2018 09:50:59 Average Training loss 0.200959 - epoch 7/50
+05/15/2018 09:50:59 Average Training accuracy 0.677000 - epoch 7/50
+05/15/2018 09:50:59 Average Testing loss 0.198922 - epoch 7/50
+05/15/2018 09:50:59 Average Testing accuracy 0.698000 - epoch 7/50
+05/15/2018 09:50:59 ------------------------------------------------------------
+05/15/2018 09:51:00 Average Training loss 0.186781 - epoch 8/50
+05/15/2018 09:51:00 Average Training accuracy 0.730000 - epoch 8/50
+05/15/2018 09:51:00 Average Testing loss 0.192870 - epoch 8/50
+05/15/2018 09:51:00 Average Testing accuracy 0.707000 - epoch 8/50
+05/15/2018 09:51:01 ------------------------------------------------------------
+05/15/2018 09:51:02 Average Training loss 0.178329 - epoch 9/50
+05/15/2018 09:51:02 Average Training accuracy 0.740000 - epoch 9/50
+05/15/2018 09:51:02 Average Testing loss 0.188613 - epoch 9/50
+05/15/2018 09:51:02 Average Testing accuracy 0.718000 - epoch 9/50
+05/15/2018 09:51:03 ------------------------------------------------------------
+05/15/2018 09:51:03 Average Training loss 0.165539 - epoch 10/50
+05/15/2018 09:51:03 Average Training accuracy 0.775000 - epoch 10/50
+05/15/2018 09:51:03 Average Testing loss 0.183337 - epoch 10/50
+05/15/2018 09:51:03 Average Testing accuracy 0.739000 - epoch 10/50
+05/15/2018 09:51:04 ------------------------------------------------------------
+05/15/2018 09:51:04 Average Training loss 0.138127 - epoch 11/50
+05/15/2018 09:51:04 Average Training accuracy 0.816000 - epoch 11/50
+05/15/2018 09:51:04 Average Testing loss 0.142817 - epoch 11/50
+05/15/2018 09:51:04 Average Testing accuracy 0.818000 - epoch 11/50
+05/15/2018 09:51:05 ------------------------------------------------------------
+05/15/2018 09:51:06 Average Training loss 0.119509 - epoch 12/50
+05/15/2018 09:51:06 Average Training accuracy 0.854000 - epoch 12/50
+05/15/2018 09:51:06 Average Testing loss 0.119826 - epoch 12/50
+05/15/2018 09:51:06 Average Testing accuracy 0.851000 - epoch 12/50
+05/15/2018 09:51:07 ------------------------------------------------------------
+05/15/2018 09:51:07 Average Training loss 0.112286 - epoch 13/50
+05/15/2018 09:51:07 Average Training accuracy 0.867000 - epoch 13/50
+05/15/2018 09:51:07 Average Testing loss 0.111890 - epoch 13/50
+05/15/2018 09:51:07 Average Testing accuracy 0.862000 - epoch 13/50
+05/15/2018 09:51:08 ------------------------------------------------------------
+05/15/2018 09:51:08 Average Training loss 0.107401 - epoch 14/50
+05/15/2018 09:51:08 Average Training accuracy 0.873000 - epoch 14/50
+05/15/2018 09:51:08 Average Testing loss 0.107334 - epoch 14/50
+05/15/2018 09:51:08 Average Testing accuracy 0.872000 - epoch 14/50
+05/15/2018 09:51:09 ------------------------------------------------------------
+05/15/2018 09:51:09 Average Training loss 0.103425 - epoch 15/50
+05/15/2018 09:51:09 Average Training accuracy 0.879000 - epoch 15/50
+05/15/2018 09:51:09 Average Testing loss 0.103872 - epoch 15/50
+05/15/2018 09:51:09 Average Testing accuracy 0.882000 - epoch 15/50
+05/15/2018 09:51:10 ------------------------------------------------------------
+05/15/2018 09:51:10 Average Training loss 0.099904 - epoch 16/50
+05/15/2018 09:51:10 Average Training accuracy 0.888000 - epoch 16/50
+05/15/2018 09:51:11 Average Testing loss 0.100769 - epoch 16/50
+05/15/2018 09:51:11 Average Testing accuracy 0.888000 - epoch 16/50
+05/15/2018 09:51:11 ------------------------------------------------------------
+05/15/2018 09:51:12 Average Training loss 0.096606 - epoch 17/50
+05/15/2018 09:51:12 Average Training accuracy 0.891000 - epoch 17/50
+05/15/2018 09:51:12 Average Testing loss 0.097722 - epoch 17/50
+05/15/2018 09:51:12 Average Testing accuracy 0.889000 - epoch 17/50
+05/15/2018 09:51:13 ------------------------------------------------------------
+05/15/2018 09:51:13 Average Training loss 0.093408 - epoch 18/50
+05/15/2018 09:51:13 Average Training accuracy 0.896000 - epoch 18/50
+05/15/2018 09:51:13 Average Testing loss 0.094616 - epoch 18/50
+05/15/2018 09:51:13 Average Testing accuracy 0.895000 - epoch 18/50
+05/15/2018 09:51:14 ------------------------------------------------------------
+05/15/2018 09:51:14 Average Training loss 0.090271 - epoch 19/50
+05/15/2018 09:51:14 Average Training accuracy 0.903000 - epoch 19/50
+05/15/2018 09:51:14 Average Testing loss 0.091469 - epoch 19/50
+05/15/2018 09:51:14 Average Testing accuracy 0.897000 - epoch 19/50
+05/15/2018 09:51:15 ------------------------------------------------------------
+05/15/2018 09:51:16 Average Training loss 0.087226 - epoch 20/50
+05/15/2018 09:51:16 Average Training accuracy 0.909000 - epoch 20/50
+05/15/2018 09:51:16 Average Testing loss 0.088396 - epoch 20/50
+05/15/2018 09:51:16 Average Testing accuracy 0.903000 - epoch 20/50
+05/15/2018 09:51:16 ------------------------------------------------------------
+05/15/2018 09:51:17 Average Training loss 0.084346 - epoch 21/50
+05/15/2018 09:51:17 Average Training accuracy 0.909000 - epoch 21/50
+05/15/2018 09:51:17 Average Testing loss 0.085565 - epoch 21/50
+05/15/2018 09:51:17 Average Testing accuracy 0.911000 - epoch 21/50
+05/15/2018 09:51:18 ------------------------------------------------------------
+05/15/2018 09:51:18 Average Training loss 0.081713 - epoch 22/50
+05/15/2018 09:51:18 Average Training accuracy 0.909000 - epoch 22/50
+05/15/2018 09:51:18 Average Testing loss 0.083142 - epoch 22/50
+05/15/2018 09:51:18 Average Testing accuracy 0.917000 - epoch 22/50
+05/15/2018 09:51:19 ------------------------------------------------------------
+05/15/2018 09:51:19 Average Training loss 0.079392 - epoch 23/50
+05/15/2018 09:51:19 Average Training accuracy 0.911000 - epoch 23/50
+05/15/2018 09:51:20 Average Testing loss 0.081246 - epoch 23/50
+05/15/2018 09:51:20 Average Testing accuracy 0.917000 - epoch 23/50
+05/15/2018 09:51:20 ------------------------------------------------------------
+05/15/2018 09:51:21 Average Training loss 0.077415 - epoch 24/50
+05/15/2018 09:51:21 Average Training accuracy 0.911000 - epoch 24/50
+05/15/2018 09:51:21 Average Testing loss 0.079922 - epoch 24/50
+05/15/2018 09:51:21 Average Testing accuracy 0.917000 - epoch 24/50
+05/15/2018 09:51:22 ------------------------------------------------------------
+05/15/2018 09:51:22 Average Training loss 0.075773 - epoch 25/50
+05/15/2018 09:51:22 Average Training accuracy 0.913000 - epoch 25/50
+05/15/2018 09:51:22 Average Testing loss 0.079141 - epoch 25/50
+05/15/2018 09:51:22 Average Testing accuracy 0.916000 - epoch 25/50
+05/15/2018 09:51:23 ------------------------------------------------------------
+05/15/2018 09:51:24 Average Training loss 0.074432 - epoch 26/50
+05/15/2018 09:51:24 Average Training accuracy 0.913000 - epoch 26/50
+05/15/2018 09:51:24 Average Testing loss 0.078801 - epoch 26/50
+05/15/2018 09:51:24 Average Testing accuracy 0.914000 - epoch 26/50
+05/15/2018 09:51:25 ------------------------------------------------------------
+05/15/2018 09:51:26 Average Training loss 0.073340 - epoch 27/50
+05/15/2018 09:51:26 Average Training accuracy 0.910000 - epoch 27/50
+05/15/2018 09:51:26 Average Testing loss 0.078762 - epoch 27/50
+05/15/2018 09:51:26 Average Testing accuracy 0.913000 - epoch 27/50
+05/15/2018 09:51:27 ------------------------------------------------------------
+05/15/2018 09:51:27 Average Training loss 0.072443 - epoch 28/50
+05/15/2018 09:51:27 Average Training accuracy 0.914000 - epoch 28/50
+05/15/2018 09:51:28 Average Testing loss 0.078867 - epoch 28/50
+05/15/2018 09:51:28 Average Testing accuracy 0.913000 - epoch 28/50
+05/15/2018 09:51:29 ------------------------------------------------------------
+05/15/2018 09:51:29 Average Training loss 0.071690 - epoch 29/50
+05/15/2018 09:51:29 Average Training accuracy 0.913000 - epoch 29/50
+05/15/2018 09:51:29 Average Testing loss 0.078986 - epoch 29/50
+05/15/2018 09:51:29 Average Testing accuracy 0.912000 - epoch 29/50
+05/15/2018 09:51:30 ------------------------------------------------------------
+05/15/2018 09:51:30 Average Training loss 0.071040 - epoch 30/50
+05/15/2018 09:51:30 Average Training accuracy 0.913000 - epoch 30/50
+05/15/2018 09:51:30 Average Testing loss 0.079032 - epoch 30/50
+05/15/2018 09:51:30 Average Testing accuracy 0.907000 - epoch 30/50
+05/15/2018 09:51:31 ------------------------------------------------------------
+05/15/2018 09:51:32 Average Training loss 0.070459 - epoch 31/50
+05/15/2018 09:51:32 Average Training accuracy 0.916000 - epoch 31/50
+05/15/2018 09:51:32 Average Testing loss 0.078968 - epoch 31/50
+05/15/2018 09:51:32 Average Testing accuracy 0.905000 - epoch 31/50
+05/15/2018 09:51:33 ------------------------------------------------------------
+05/15/2018 09:51:33 Average Training loss 0.069925 - epoch 32/50
+05/15/2018 09:51:33 Average Training accuracy 0.916000 - epoch 32/50
+05/15/2018 09:51:33 Average Testing loss 0.078797 - epoch 32/50
+05/15/2018 09:51:33 Average Testing accuracy 0.906000 - epoch 32/50
+05/15/2018 09:51:34 ------------------------------------------------------------
+05/15/2018 09:51:34 Average Training loss 0.069421 - epoch 33/50
+05/15/2018 09:51:34 Average Training accuracy 0.916000 - epoch 33/50
+05/15/2018 09:51:34 Average Testing loss 0.078540 - epoch 33/50
+05/15/2018 09:51:34 Average Testing accuracy 0.906000 - epoch 33/50
+05/15/2018 09:51:35 ------------------------------------------------------------
+05/15/2018 09:51:35 Average Training loss 0.068940 - epoch 34/50
+05/15/2018 09:51:35 Average Training accuracy 0.919000 - epoch 34/50
+05/15/2018 09:51:35 Average Testing loss 0.078219 - epoch 34/50
+05/15/2018 09:51:35 Average Testing accuracy 0.905000 - epoch 34/50
+05/15/2018 09:51:36 ------------------------------------------------------------
+05/15/2018 09:51:36 Average Training loss 0.068474 - epoch 35/50
+05/15/2018 09:51:36 Average Training accuracy 0.917000 - epoch 35/50
+05/15/2018 09:51:37 Average Testing loss 0.077850 - epoch 35/50
+05/15/2018 09:51:37 Average Testing accuracy 0.906000 - epoch 35/50
+05/15/2018 09:51:38 ------------------------------------------------------------
+05/15/2018 09:51:38 Average Training loss 0.068021 - epoch 36/50
+05/15/2018 09:51:38 Average Training accuracy 0.915000 - epoch 36/50
+05/15/2018 09:51:38 Average Testing loss 0.077437 - epoch 36/50
+05/15/2018 09:51:38 Average Testing accuracy 0.906000 - epoch 36/50
+05/15/2018 09:51:39 ------------------------------------------------------------
+05/15/2018 09:51:40 Average Training loss 0.067578 - epoch 37/50
+05/15/2018 09:51:40 Average Training accuracy 0.916000 - epoch 37/50
+05/15/2018 09:51:40 Average Testing loss 0.076981 - epoch 37/50
+05/15/2018 09:51:40 Average Testing accuracy 0.905000 - epoch 37/50
+05/15/2018 09:51:40 ------------------------------------------------------------
+05/15/2018 09:51:41 Average Training loss 0.067145 - epoch 38/50
+05/15/2018 09:51:41 Average Training accuracy 0.919000 - epoch 38/50
+05/15/2018 09:51:41 Average Testing loss 0.076482 - epoch 38/50
+05/15/2018 09:51:41 Average Testing accuracy 0.907000 - epoch 38/50
+05/15/2018 09:51:42 ------------------------------------------------------------
+05/15/2018 09:51:42 Average Training loss 0.066725 - epoch 39/50
+05/15/2018 09:51:42 Average Training accuracy 0.920000 - epoch 39/50
+05/15/2018 09:51:42 Average Testing loss 0.075942 - epoch 39/50
+05/15/2018 09:51:42 Average Testing accuracy 0.906000 - epoch 39/50
+05/15/2018 09:51:43 ------------------------------------------------------------
+05/15/2018 09:51:43 Average Training loss 0.066319 - epoch 40/50
+05/15/2018 09:51:43 Average Training accuracy 0.921000 - epoch 40/50
+05/15/2018 09:51:43 Average Testing loss 0.075372 - epoch 40/50
+05/15/2018 09:51:43 Average Testing accuracy 0.906000 - epoch 40/50
+05/15/2018 09:51:44 ------------------------------------------------------------
+05/15/2018 09:51:44 Average Training loss 0.065934 - epoch 41/50
+05/15/2018 09:51:44 Average Training accuracy 0.921000 - epoch 41/50
+05/15/2018 09:51:45 Average Testing loss 0.074788 - epoch 41/50
+05/15/2018 09:51:45 Average Testing accuracy 0.906000 - epoch 41/50
+05/15/2018 09:51:45 ------------------------------------------------------------
+05/15/2018 09:51:46 Average Training loss 0.065574 - epoch 42/50
+05/15/2018 09:51:46 Average Training accuracy 0.924000 - epoch 42/50
+05/15/2018 09:51:46 Average Testing loss 0.074214 - epoch 42/50
+05/15/2018 09:51:46 Average Testing accuracy 0.907000 - epoch 42/50
+05/15/2018 09:51:46 ------------------------------------------------------------
+05/15/2018 09:51:47 Average Training loss 0.065246 - epoch 43/50
+05/15/2018 09:51:47 Average Training accuracy 0.924000 - epoch 43/50
+05/15/2018 09:51:47 Average Testing loss 0.073673 - epoch 43/50
+05/15/2018 09:51:47 Average Testing accuracy 0.907000 - epoch 43/50
+05/15/2018 09:51:48 ------------------------------------------------------------
+05/15/2018 09:51:48 Average Training loss 0.064954 - epoch 44/50
+05/15/2018 09:51:48 Average Training accuracy 0.922000 - epoch 44/50
+05/15/2018 09:51:48 Average Testing loss 0.073189 - epoch 44/50
+05/15/2018 09:51:48 Average Testing accuracy 0.908000 - epoch 44/50
+05/15/2018 09:51:49 ------------------------------------------------------------
+05/15/2018 09:51:49 Average Training loss 0.064701 - epoch 45/50
+05/15/2018 09:51:49 Average Training accuracy 0.922000 - epoch 45/50
+05/15/2018 09:51:49 Average Testing loss 0.072774 - epoch 45/50
+05/15/2018 09:51:49 Average Testing accuracy 0.907000 - epoch 45/50
+05/15/2018 09:51:50 ------------------------------------------------------------
+05/15/2018 09:51:50 Average Training loss 0.064486 - epoch 46/50
+05/15/2018 09:51:50 Average Training accuracy 0.923000 - epoch 46/50
+05/15/2018 09:51:50 Average Testing loss 0.072434 - epoch 46/50
+05/15/2018 09:51:50 Average Testing accuracy 0.907000 - epoch 46/50
+05/15/2018 09:51:51 ------------------------------------------------------------
+05/15/2018 09:51:51 Average Training loss 0.064309 - epoch 47/50
+05/15/2018 09:51:51 Average Training accuracy 0.923000 - epoch 47/50
+05/15/2018 09:51:52 Average Testing loss 0.072163 - epoch 47/50
+05/15/2018 09:51:52 Average Testing accuracy 0.908000 - epoch 47/50
+05/15/2018 09:51:53 ------------------------------------------------------------
+05/15/2018 09:51:53 Average Training loss 0.064164 - epoch 48/50
+05/15/2018 09:51:53 Average Training accuracy 0.922000 - epoch 48/50
+05/15/2018 09:51:53 Average Testing loss 0.071946 - epoch 48/50
+05/15/2018 09:51:53 Average Testing accuracy 0.909000 - epoch 48/50
+05/15/2018 09:51:54 ------------------------------------------------------------
+05/15/2018 09:51:55 Average Training loss 0.064048 - epoch 49/50
+05/15/2018 09:51:55 Average Training accuracy 0.924000 - epoch 49/50
+05/15/2018 09:51:55 Average Testing loss 0.071764 - epoch 49/50
+05/15/2018 09:51:55 Average Testing accuracy 0.908000 - epoch 49/50
+05/15/2018 09:51:56 ------------------------------------------------------------
+05/15/2018 09:51:57 Average Training loss 0.063953 - epoch 50/50
+05/15/2018 09:51:57 Average Training accuracy 0.924000 - epoch 50/50
+05/15/2018 09:51:57 Average Testing loss 0.071597 - epoch 50/50
+05/15/2018 09:51:57 Average Testing accuracy 0.909000 - epoch 50/50
+05/15/2018 09:52:18 [Program starts.]
+05/15/2018 09:52:18 [Arg used:][{'init_type': 'he'}, {'verbose': 'low'}, {'point_number': 1000}, {'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'hidden_units': 25}, {'epoch_number': 50}]
+05/15/2018 09:52:19 ------------------------------------------------------------
+05/15/2018 09:52:20 Average Training loss 0.264992 - epoch 1/50
+05/15/2018 09:52:20 Average Training accuracy 0.501000 - epoch 1/50
+05/15/2018 09:52:20 Average Testing loss 0.256326 - epoch 1/50
+05/15/2018 09:52:20 Average Testing accuracy 0.487000 - epoch 1/50
+05/15/2018 09:52:20 ------------------------------------------------------------
+05/15/2018 09:52:21 Average Training loss 0.253627 - epoch 2/50
+05/15/2018 09:52:21 Average Training accuracy 0.512000 - epoch 2/50
+05/15/2018 09:52:21 Average Testing loss 0.246224 - epoch 2/50
+05/15/2018 09:52:21 Average Testing accuracy 0.487000 - epoch 2/50
+05/15/2018 09:52:22 ------------------------------------------------------------
+05/15/2018 09:52:23 Average Training loss 0.236554 - epoch 3/50
+05/15/2018 09:52:23 Average Training accuracy 0.578000 - epoch 3/50
+05/15/2018 09:52:23 Average Testing loss 0.216895 - epoch 3/50
+05/15/2018 09:52:23 Average Testing accuracy 0.695000 - epoch 3/50
+05/15/2018 09:52:24 ------------------------------------------------------------
+05/15/2018 09:52:25 Average Training loss 0.219957 - epoch 4/50
+05/15/2018 09:52:25 Average Training accuracy 0.656000 - epoch 4/50
+05/15/2018 09:52:25 Average Testing loss 0.209015 - epoch 4/50
+05/15/2018 09:52:25 Average Testing accuracy 0.697000 - epoch 4/50
+05/15/2018 09:52:26 ------------------------------------------------------------
+05/15/2018 09:52:26 Average Training loss 0.214857 - epoch 5/50
+05/15/2018 09:52:26 Average Training accuracy 0.675000 - epoch 5/50
+05/15/2018 09:52:26 Average Testing loss 0.204217 - epoch 5/50
+05/15/2018 09:52:26 Average Testing accuracy 0.697000 - epoch 5/50
+05/15/2018 09:52:27 ------------------------------------------------------------
+05/15/2018 09:52:28 Average Training loss 0.210553 - epoch 6/50
+05/15/2018 09:52:28 Average Training accuracy 0.680000 - epoch 6/50
+05/15/2018 09:52:28 Average Testing loss 0.198287 - epoch 6/50
+05/15/2018 09:52:28 Average Testing accuracy 0.705000 - epoch 6/50
+05/15/2018 09:52:29 ------------------------------------------------------------
+05/15/2018 09:52:29 Average Training loss 0.206306 - epoch 7/50
+05/15/2018 09:52:29 Average Training accuracy 0.691000 - epoch 7/50
+05/15/2018 09:52:29 Average Testing loss 0.192814 - epoch 7/50
+05/15/2018 09:52:29 Average Testing accuracy 0.725000 - epoch 7/50
+05/15/2018 09:52:30 ------------------------------------------------------------
+05/15/2018 09:52:30 Average Training loss 0.194530 - epoch 8/50
+05/15/2018 09:52:30 Average Training accuracy 0.709000 - epoch 8/50
+05/15/2018 09:52:30 Average Testing loss 0.170119 - epoch 8/50
+05/15/2018 09:52:30 Average Testing accuracy 0.744000 - epoch 8/50
+05/15/2018 09:52:32 ------------------------------------------------------------
+05/15/2018 09:52:32 Average Training loss 0.162859 - epoch 9/50
+05/15/2018 09:52:32 Average Training accuracy 0.769000 - epoch 9/50
+05/15/2018 09:52:32 Average Testing loss 0.136236 - epoch 9/50
+05/15/2018 09:52:32 Average Testing accuracy 0.789000 - epoch 9/50
+05/15/2018 09:52:33 ------------------------------------------------------------
+05/15/2018 09:52:34 Average Training loss 0.148271 - epoch 10/50
+05/15/2018 09:52:34 Average Training accuracy 0.800000 - epoch 10/50
+05/15/2018 09:52:34 Average Testing loss 0.119713 - epoch 10/50
+05/15/2018 09:52:34 Average Testing accuracy 0.825000 - epoch 10/50
+05/15/2018 09:52:35 ------------------------------------------------------------
+05/15/2018 09:52:35 Average Training loss 0.142596 - epoch 11/50
+05/15/2018 09:52:35 Average Training accuracy 0.810000 - epoch 11/50
+05/15/2018 09:52:35 Average Testing loss 0.119501 - epoch 11/50
+05/15/2018 09:52:35 Average Testing accuracy 0.816000 - epoch 11/50
+05/15/2018 09:52:36 ------------------------------------------------------------
+05/15/2018 09:52:36 Average Training loss 0.137887 - epoch 12/50
+05/15/2018 09:52:36 Average Training accuracy 0.814000 - epoch 12/50
+05/15/2018 09:52:36 Average Testing loss 0.108900 - epoch 12/50
+05/15/2018 09:52:36 Average Testing accuracy 0.844000 - epoch 12/50
+05/15/2018 09:52:37 ------------------------------------------------------------
+05/15/2018 09:52:38 Average Training loss 0.133796 - epoch 13/50
+05/15/2018 09:52:38 Average Training accuracy 0.820000 - epoch 13/50
+05/15/2018 09:52:38 Average Testing loss 0.097953 - epoch 13/50
+05/15/2018 09:52:38 Average Testing accuracy 0.871000 - epoch 13/50
+05/15/2018 09:52:39 ------------------------------------------------------------
+05/15/2018 09:52:39 Average Training loss 0.135642 - epoch 14/50
+05/15/2018 09:52:39 Average Training accuracy 0.814000 - epoch 14/50
+05/15/2018 09:52:39 Average Testing loss 0.107953 - epoch 14/50
+05/15/2018 09:52:39 Average Testing accuracy 0.859000 - epoch 14/50
+05/15/2018 09:52:40 ------------------------------------------------------------
+05/15/2018 09:52:40 Average Training loss 0.140730 - epoch 15/50
+05/15/2018 09:52:40 Average Training accuracy 0.797000 - epoch 15/50
+05/15/2018 09:52:40 Average Testing loss 0.098968 - epoch 15/50
+05/15/2018 09:52:40 Average Testing accuracy 0.865000 - epoch 15/50
+05/15/2018 09:52:41 ------------------------------------------------------------
+05/15/2018 09:52:42 Average Training loss 0.135797 - epoch 16/50
+05/15/2018 09:52:42 Average Training accuracy 0.817000 - epoch 16/50
+05/15/2018 09:52:42 Average Testing loss 0.117054 - epoch 16/50
+05/15/2018 09:52:42 Average Testing accuracy 0.866000 - epoch 16/50
+05/15/2018 09:52:42 ------------------------------------------------------------
+05/15/2018 09:52:43 Average Training loss 0.132018 - epoch 17/50
+05/15/2018 09:52:43 Average Training accuracy 0.810000 - epoch 17/50
+05/15/2018 09:52:43 Average Testing loss 0.094224 - epoch 17/50
+05/15/2018 09:52:43 Average Testing accuracy 0.868000 - epoch 17/50
+05/15/2018 09:52:44 ------------------------------------------------------------
+05/15/2018 09:52:44 Average Training loss 0.130378 - epoch 18/50
+05/15/2018 09:52:44 Average Training accuracy 0.820000 - epoch 18/50
+05/15/2018 09:52:44 Average Testing loss 0.092064 - epoch 18/50
+05/15/2018 09:52:44 Average Testing accuracy 0.861000 - epoch 18/50
+05/15/2018 09:52:45 ------------------------------------------------------------
+05/15/2018 09:52:46 Average Training loss 0.138902 - epoch 19/50
+05/15/2018 09:52:46 Average Training accuracy 0.807000 - epoch 19/50
+05/15/2018 09:52:46 Average Testing loss 0.092107 - epoch 19/50
+05/15/2018 09:52:46 Average Testing accuracy 0.895000 - epoch 19/50
+05/15/2018 09:52:47 ------------------------------------------------------------
+05/15/2018 09:52:47 Average Training loss 0.133647 - epoch 20/50
+05/15/2018 09:52:47 Average Training accuracy 0.821000 - epoch 20/50
+05/15/2018 09:52:47 Average Testing loss 0.104287 - epoch 20/50
+05/15/2018 09:52:47 Average Testing accuracy 0.854000 - epoch 20/50
+05/15/2018 09:52:48 ------------------------------------------------------------
+05/15/2018 09:52:48 Average Training loss 0.127694 - epoch 21/50
+05/15/2018 09:52:48 Average Training accuracy 0.818000 - epoch 21/50
+05/15/2018 09:52:48 Average Testing loss 0.115230 - epoch 21/50
+05/15/2018 09:52:48 Average Testing accuracy 0.820000 - epoch 21/50
+05/15/2018 09:52:49 ------------------------------------------------------------
+05/15/2018 09:52:49 Average Training loss 0.142468 - epoch 22/50
+05/15/2018 09:52:49 Average Training accuracy 0.800000 - epoch 22/50
+05/15/2018 09:52:49 Average Testing loss 0.095456 - epoch 22/50
+05/15/2018 09:52:49 Average Testing accuracy 0.883000 - epoch 22/50
+05/15/2018 09:52:50 ------------------------------------------------------------
+05/15/2018 09:52:51 Average Training loss 0.134122 - epoch 23/50
+05/15/2018 09:52:51 Average Training accuracy 0.806000 - epoch 23/50
+05/15/2018 09:52:51 Average Testing loss 0.101114 - epoch 23/50
+05/15/2018 09:52:51 Average Testing accuracy 0.880000 - epoch 23/50
+05/15/2018 09:52:52 ------------------------------------------------------------
+05/15/2018 09:52:52 Average Training loss 0.134596 - epoch 24/50
+05/15/2018 09:52:52 Average Training accuracy 0.823000 - epoch 24/50
+05/15/2018 09:52:52 Average Testing loss 0.109848 - epoch 24/50
+05/15/2018 09:52:52 Average Testing accuracy 0.856000 - epoch 24/50
+05/15/2018 09:52:53 ------------------------------------------------------------
+05/15/2018 09:52:53 Average Training loss 0.116352 - epoch 25/50
+05/15/2018 09:52:53 Average Training accuracy 0.853000 - epoch 25/50
+05/15/2018 09:52:53 Average Testing loss 0.095604 - epoch 25/50
+05/15/2018 09:52:53 Average Testing accuracy 0.872000 - epoch 25/50
+05/15/2018 09:52:54 ------------------------------------------------------------
+05/15/2018 09:52:55 Average Training loss 0.134669 - epoch 26/50
+05/15/2018 09:52:55 Average Training accuracy 0.827000 - epoch 26/50
+05/15/2018 09:52:55 Average Testing loss 0.110723 - epoch 26/50
+05/15/2018 09:52:55 Average Testing accuracy 0.852000 - epoch 26/50
+05/15/2018 09:52:55 ------------------------------------------------------------
+05/15/2018 09:52:56 Average Training loss 0.124830 - epoch 27/50
+05/15/2018 09:52:56 Average Training accuracy 0.841000 - epoch 27/50
+05/15/2018 09:52:56 Average Testing loss 0.107595 - epoch 27/50
+05/15/2018 09:52:56 Average Testing accuracy 0.862000 - epoch 27/50
+05/15/2018 09:52:57 ------------------------------------------------------------
+05/15/2018 09:52:57 Average Training loss 0.128802 - epoch 28/50
+05/15/2018 09:52:57 Average Training accuracy 0.832000 - epoch 28/50
+05/15/2018 09:52:57 Average Testing loss 0.137782 - epoch 28/50
+05/15/2018 09:52:57 Average Testing accuracy 0.834000 - epoch 28/50
+05/15/2018 09:52:58 ------------------------------------------------------------
+05/15/2018 09:52:58 Average Training loss 0.127017 - epoch 29/50
+05/15/2018 09:52:58 Average Training accuracy 0.834000 - epoch 29/50
+05/15/2018 09:52:58 Average Testing loss 0.058867 - epoch 29/50
+05/15/2018 09:52:58 Average Testing accuracy 0.930000 - epoch 29/50
+05/15/2018 09:52:59 ------------------------------------------------------------
+05/15/2018 09:52:59 Average Training loss 0.123227 - epoch 30/50
+05/15/2018 09:52:59 Average Training accuracy 0.839000 - epoch 30/50
+05/15/2018 09:53:00 Average Testing loss 0.153117 - epoch 30/50
+05/15/2018 09:53:00 Average Testing accuracy 0.812000 - epoch 30/50
+05/15/2018 09:53:00 ------------------------------------------------------------
+05/15/2018 09:53:01 Average Training loss 0.120989 - epoch 31/50
+05/15/2018 09:53:01 Average Training accuracy 0.840000 - epoch 31/50
+05/15/2018 09:53:01 Average Testing loss 0.146948 - epoch 31/50
+05/15/2018 09:53:01 Average Testing accuracy 0.802000 - epoch 31/50
+05/15/2018 09:53:02 ------------------------------------------------------------
+05/15/2018 09:53:02 Average Training loss 0.116315 - epoch 32/50
+05/15/2018 09:53:02 Average Training accuracy 0.844000 - epoch 32/50
+05/15/2018 09:53:02 Average Testing loss 0.095961 - epoch 32/50
+05/15/2018 09:53:02 Average Testing accuracy 0.885000 - epoch 32/50
+05/15/2018 09:53:03 ------------------------------------------------------------
+05/15/2018 09:53:03 Average Training loss 0.115061 - epoch 33/50
+05/15/2018 09:53:03 Average Training accuracy 0.842000 - epoch 33/50
+05/15/2018 09:53:03 Average Testing loss 0.135133 - epoch 33/50
+05/15/2018 09:53:03 Average Testing accuracy 0.839000 - epoch 33/50
+05/15/2018 09:53:04 ------------------------------------------------------------
+05/15/2018 09:53:04 Average Training loss 0.173391 - epoch 34/50
+05/15/2018 09:53:04 Average Training accuracy 0.742000 - epoch 34/50
+05/15/2018 09:53:04 Average Testing loss 0.233383 - epoch 34/50
+05/15/2018 09:53:04 Average Testing accuracy 0.681000 - epoch 34/50
+05/15/2018 09:53:05 ------------------------------------------------------------
+05/15/2018 09:53:06 Average Training loss 0.191369 - epoch 35/50
+05/15/2018 09:53:06 Average Training accuracy 0.727000 - epoch 35/50
+05/15/2018 09:53:06 Average Testing loss 0.255183 - epoch 35/50
+05/15/2018 09:53:06 Average Testing accuracy 0.650000 - epoch 35/50
+05/15/2018 09:53:07 ------------------------------------------------------------
+05/15/2018 09:53:07 Average Training loss 0.177450 - epoch 36/50
+05/15/2018 09:53:07 Average Training accuracy 0.751000 - epoch 36/50
+05/15/2018 09:53:07 Average Testing loss 0.183340 - epoch 36/50
+05/15/2018 09:53:07 Average Testing accuracy 0.739000 - epoch 36/50
+05/15/2018 09:53:08 ------------------------------------------------------------
+05/15/2018 09:53:08 Average Training loss 0.149805 - epoch 37/50
+05/15/2018 09:53:08 Average Training accuracy 0.793000 - epoch 37/50
+05/15/2018 09:53:08 Average Testing loss 0.098372 - epoch 37/50
+05/15/2018 09:53:08 Average Testing accuracy 0.906000 - epoch 37/50
+05/15/2018 09:53:09 ------------------------------------------------------------
+05/15/2018 09:53:10 Average Training loss 0.155019 - epoch 38/50
+05/15/2018 09:53:10 Average Training accuracy 0.797000 - epoch 38/50
+05/15/2018 09:53:10 Average Testing loss 0.200395 - epoch 38/50
+05/15/2018 09:53:10 Average Testing accuracy 0.729000 - epoch 38/50
+05/15/2018 09:53:11 ------------------------------------------------------------
+05/15/2018 09:53:11 Average Training loss 0.134087 - epoch 39/50
+05/15/2018 09:53:11 Average Training accuracy 0.828000 - epoch 39/50
+05/15/2018 09:53:11 Average Testing loss 0.229888 - epoch 39/50
+05/15/2018 09:53:11 Average Testing accuracy 0.611000 - epoch 39/50
+05/15/2018 09:53:12 ------------------------------------------------------------
+05/15/2018 09:53:12 Average Training loss 0.131809 - epoch 40/50
+05/15/2018 09:53:12 Average Training accuracy 0.822000 - epoch 40/50
+05/15/2018 09:53:12 Average Testing loss 0.136616 - epoch 40/50
+05/15/2018 09:53:12 Average Testing accuracy 0.907000 - epoch 40/50
+05/15/2018 09:53:13 ------------------------------------------------------------
+05/15/2018 09:53:14 Average Training loss 0.144123 - epoch 41/50
+05/15/2018 09:53:14 Average Training accuracy 0.797000 - epoch 41/50
+05/15/2018 09:53:14 Average Testing loss 0.145002 - epoch 41/50
+05/15/2018 09:53:14 Average Testing accuracy 0.801000 - epoch 41/50
+05/15/2018 09:53:15 ------------------------------------------------------------
+05/15/2018 09:53:15 Average Training loss 0.142204 - epoch 42/50
+05/15/2018 09:53:15 Average Training accuracy 0.812000 - epoch 42/50
+05/15/2018 09:53:15 Average Testing loss 0.170475 - epoch 42/50
+05/15/2018 09:53:15 Average Testing accuracy 0.740000 - epoch 42/50
+05/15/2018 09:53:16 ------------------------------------------------------------
+05/15/2018 09:53:16 Average Training loss 0.142275 - epoch 43/50
+05/15/2018 09:53:16 Average Training accuracy 0.811000 - epoch 43/50
+05/15/2018 09:53:17 Average Testing loss 0.185877 - epoch 43/50
+05/15/2018 09:53:17 Average Testing accuracy 0.748000 - epoch 43/50
+05/15/2018 09:53:17 ------------------------------------------------------------
+05/15/2018 09:53:18 Average Training loss 0.136965 - epoch 44/50
+05/15/2018 09:53:18 Average Training accuracy 0.822000 - epoch 44/50
+05/15/2018 09:53:18 Average Testing loss 0.179474 - epoch 44/50
+05/15/2018 09:53:18 Average Testing accuracy 0.802000 - epoch 44/50
+05/15/2018 09:53:18 ------------------------------------------------------------
+05/15/2018 09:53:19 Average Training loss 0.149787 - epoch 45/50
+05/15/2018 09:53:19 Average Training accuracy 0.795000 - epoch 45/50
+05/15/2018 09:53:19 Average Testing loss 0.087250 - epoch 45/50
+05/15/2018 09:53:19 Average Testing accuracy 0.889000 - epoch 45/50
+05/15/2018 09:53:20 ------------------------------------------------------------
+05/15/2018 09:53:20 Average Training loss 0.138164 - epoch 46/50
+05/15/2018 09:53:20 Average Training accuracy 0.818000 - epoch 46/50
+05/15/2018 09:53:21 Average Testing loss 0.166562 - epoch 46/50
+05/15/2018 09:53:21 Average Testing accuracy 0.839000 - epoch 46/50
+05/15/2018 09:53:21 ------------------------------------------------------------
+05/15/2018 09:53:22 Average Training loss 0.149108 - epoch 47/50
+05/15/2018 09:53:22 Average Training accuracy 0.805000 - epoch 47/50
+05/15/2018 09:53:22 Average Testing loss 0.167561 - epoch 47/50
+05/15/2018 09:53:22 Average Testing accuracy 0.766000 - epoch 47/50
+05/15/2018 09:53:23 ------------------------------------------------------------
+05/15/2018 09:53:23 Average Training loss 0.146003 - epoch 48/50
+05/15/2018 09:53:23 Average Training accuracy 0.802000 - epoch 48/50
+05/15/2018 09:53:23 Average Testing loss 0.123223 - epoch 48/50
+05/15/2018 09:53:23 Average Testing accuracy 0.840000 - epoch 48/50
+05/15/2018 09:53:24 ------------------------------------------------------------
+05/15/2018 09:53:24 Average Training loss 0.143361 - epoch 49/50
+05/15/2018 09:53:24 Average Training accuracy 0.814000 - epoch 49/50
+05/15/2018 09:53:24 Average Testing loss 0.191965 - epoch 49/50
+05/15/2018 09:53:24 Average Testing accuracy 0.724000 - epoch 49/50
+05/15/2018 09:53:25 ------------------------------------------------------------
+05/15/2018 09:53:25 Average Training loss 0.135734 - epoch 50/50
+05/15/2018 09:53:25 Average Training accuracy 0.825000 - epoch 50/50
+05/15/2018 09:53:25 Average Testing loss 0.167577 - epoch 50/50
+05/15/2018 09:53:25 Average Testing accuracy 0.797000 - epoch 50/50
+05/15/2018 09:56:24 [Program starts.]
+05/15/2018 09:56:24 [Arg used:][{'log_root': '/home/andre/Documents/DL_p2/logs/'}, {'point_number': 1000}, {'hidden_units': 25}, {'init_type': 'he'}, {'verbose': 'low'}, {'epoch_number': 50}]
+05/15/2018 09:56:25 ------------------------------------------------------------
+05/15/2018 09:56:25 Average Training loss 0.267308 - epoch 1/50
+05/15/2018 09:56:25 Average Training accuracy 0.513000 - epoch 1/50
+05/15/2018 09:56:25 Average Testing loss 0.262265 - epoch 1/50
+05/15/2018 09:56:25 Average Testing accuracy 0.503000 - epoch 1/50
+05/15/2018 09:56:26 ------------------------------------------------------------
+05/15/2018 09:56:27 Average Training loss 0.255071 - epoch 2/50
+05/15/2018 09:56:27 Average Training accuracy 0.533000 - epoch 2/50
+05/15/2018 09:56:27 Average Testing loss 0.257994 - epoch 2/50
+05/15/2018 09:56:27 Average Testing accuracy 0.503000 - epoch 2/50
+05/15/2018 09:56:28 ------------------------------------------------------------
+05/15/2018 09:56:28 Average Training loss 0.252670 - epoch 3/50
+05/15/2018 09:56:28 Average Training accuracy 0.540000 - epoch 3/50
+05/15/2018 09:56:28 Average Testing loss 0.254204 - epoch 3/50
+05/15/2018 09:56:28 Average Testing accuracy 0.503000 - epoch 3/50
+05/15/2018 09:56:29 ------------------------------------------------------------
+05/15/2018 09:56:29 Average Training loss 0.251604 - epoch 4/50
+05/15/2018 09:56:29 Average Training accuracy 0.544000 - epoch 4/50
+05/15/2018 09:56:30 Average Testing loss 0.252546 - epoch 4/50
+05/15/2018 09:56:30 Average Testing accuracy 0.503000 - epoch 4/50
+05/15/2018 09:56:30 ------------------------------------------------------------
+05/15/2018 09:56:31 Average Training loss 0.250967 - epoch 5/50
+05/15/2018 09:56:31 Average Training accuracy 0.538000 - epoch 5/50
+05/15/2018 09:56:31 Average Testing loss 0.251824 - epoch 5/50
+05/15/2018 09:56:31 Average Testing accuracy 0.503000 - epoch 5/50
+05/15/2018 09:56:32 ------------------------------------------------------------
+05/15/2018 09:56:32 Average Training loss 0.250478 - epoch 6/50
+05/15/2018 09:56:32 Average Training accuracy 0.544000 - epoch 6/50
+05/15/2018 09:56:32 Average Testing loss 0.251389 - epoch 6/50
+05/15/2018 09:56:32 Average Testing accuracy 0.504000 - epoch 6/50
+05/15/2018 09:56:33 ------------------------------------------------------------
+05/15/2018 09:56:33 Average Training loss 0.250054 - epoch 7/50
+05/15/2018 09:56:33 Average Training accuracy 0.549000 - epoch 7/50
+05/15/2018 09:56:34 Average Testing loss 0.251019 - epoch 7/50
+05/15/2018 09:56:34 Average Testing accuracy 0.513000 - epoch 7/50
+05/15/2018 09:56:34 ------------------------------------------------------------
+05/15/2018 09:56:35 Average Training loss 0.249656 - epoch 8/50
+05/15/2018 09:56:35 Average Training accuracy 0.543000 - epoch 8/50
+05/15/2018 09:56:35 Average Testing loss 0.250637 - epoch 8/50
+05/15/2018 09:56:35 Average Testing accuracy 0.520000 - epoch 8/50
+05/15/2018 09:56:35 ------------------------------------------------------------
+05/15/2018 09:56:36 Average Training loss 0.249255 - epoch 9/50
+05/15/2018 09:56:36 Average Training accuracy 0.542000 - epoch 9/50
+05/15/2018 09:56:36 Average Testing loss 0.250207 - epoch 9/50
+05/15/2018 09:56:36 Average Testing accuracy 0.526000 - epoch 9/50
+05/15/2018 09:56:37 ------------------------------------------------------------
+05/15/2018 09:56:37 Average Training loss 0.248826 - epoch 10/50
+05/15/2018 09:56:37 Average Training accuracy 0.548000 - epoch 10/50
+05/15/2018 09:56:37 Average Testing loss 0.249691 - epoch 10/50
+05/15/2018 09:56:37 Average Testing accuracy 0.530000 - epoch 10/50
+05/15/2018 09:56:38 ------------------------------------------------------------
+05/15/2018 09:56:38 Average Training loss 0.248331 - epoch 11/50
+05/15/2018 09:56:38 Average Training accuracy 0.551000 - epoch 11/50
+05/15/2018 09:56:38 Average Testing loss 0.249032 - epoch 11/50
+05/15/2018 09:56:38 Average Testing accuracy 0.533000 - epoch 11/50
+05/15/2018 09:56:39 ------------------------------------------------------------
+05/15/2018 09:56:40 Average Training loss 0.247713 - epoch 12/50
+05/15/2018 09:56:40 Average Training accuracy 0.556000 - epoch 12/50
+05/15/2018 09:56:40 Average Testing loss 0.248127 - epoch 12/50
+05/15/2018 09:56:40 Average Testing accuracy 0.534000 - epoch 12/50
+05/15/2018 09:56:41 ------------------------------------------------------------
+05/15/2018 09:56:41 Average Training loss 0.246861 - epoch 13/50
+05/15/2018 09:56:41 Average Training accuracy 0.554000 - epoch 13/50
+05/15/2018 09:56:41 Average Testing loss 0.246771 - epoch 13/50
+05/15/2018 09:56:41 Average Testing accuracy 0.533000 - epoch 13/50
+05/15/2018 09:56:42 ------------------------------------------------------------

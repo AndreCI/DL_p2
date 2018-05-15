@@ -18,11 +18,22 @@ def display_data_set(opt, examples, targets, name='dataset'):
     f = plt.figure(figsize=(20, 20))
     ax = f.add_subplot(111)
     condition = targets == 1
-    ncon = targets == 0
-    true_x = np.extract(condition, examples[:, 0])
-    true_y = np.extract(condition, examples[:, 1])
-    false_x = np.extract(ncon, examples[:, 0])
-    false_y = np.extract(ncon, examples[:, 1])
+    if type(condition) is bool:
+        condition = [condition for _ in targets]
+    true_x = []
+    false_x = []
+    for i, temp_x in enumerate(examples[:, 0]):
+        if condition[i]:
+            true_x.append(temp_x)
+        else:
+            false_x.append(temp_x)
+    true_y = []
+    false_y = []
+    for i, temp_y in enumerate(examples[:, 1]):
+        if condition[i]:
+            true_y.append(temp_y)
+        else:
+            false_y.append(temp_y)
     ax.plot(true_x, true_y, 'ro', false_x, false_y, 'bo')
     ax.set_xlim([0, 1])
     ax.set_ylim([0, 1])

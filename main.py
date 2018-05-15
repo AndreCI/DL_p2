@@ -4,6 +4,7 @@ from torch import FloatTensor
 
 import framework.modules.sequential
 import util.data_util
+import util.data_generation
 from framework.modules.activation_modules.relu_layer import ReLuLayer as ReLu
 from framework.modules.activation_modules.sigmoid_module import SigmoidLayer as Sigmoid
 from framework.modules.activation_modules.tanh_layer import TanhLayer as Tanh
@@ -11,15 +12,29 @@ from framework.modules.criterion_modules.mse_layer import MSELayer as Mse
 from framework.modules.trainable_modules.dense_layer import DenseLayer as Dense
 from framework.optimizers.sgd_optimizer import SGDOptimizer
 from util.configuration import get_args, setup_log, load_most_successful_model
+from framework.initializers.gaussian_initializer import *
+from framework.initializers.xavier_initializer import *
+from framework.initializers.he_initializer import *
+from framework.initializers.uniform_initializer import *
+
 
 opt = get_args(argparse.ArgumentParser())
 log = setup_log(opt)
 
-d1 = Dense(2, opt['hidden_units'])
-h1 = Dense(opt['hidden_units'], opt['hidden_units'])
-h2 = Dense(opt['hidden_units'], opt['hidden_units'])
-h3 = Dense(opt['hidden_units'], opt['hidden_units'])
-out = Dense(opt['hidden_units'], 2)
+if opt['init_type'] == 'xavier':
+    initializer = XavierInitializer()
+elif opt['init_type'] == 'he':
+    initializer = HeInitializer()
+elif opt['init_type'] == 'uniform':
+    initializer = UniformInitializer()
+elif opt['init_type'] == 'gaussian':
+    initializer = GaussianInitializer()
+
+d1 = Dense(2, opt['hidden_units'], initializer=initializer)
+h1 = Dense(opt['hidden_units'], opt['hidden_units'], initializer=initializer)
+h2 = Dense(opt['hidden_units'], opt['hidden_units'], initializer=initializer)
+h3 = Dense(opt['hidden_units'], opt['hidden_units'], initializer=initializer)
+out = Dense(opt['hidden_units'], 2, initializer=initializer)
 
 tan = Tanh()
 relu = ReLu()
@@ -95,8 +110,8 @@ for i in range(epochs):
         message = str("Best model with accuracy %.3f has been saved at epoch %i." % (test_accuracy, i + 1))
         name = str('model_%i_%.3fAcc' % (i, test_accuracy))
         model.save_model(name, opt['save_dir'], test_acc=test_accuracy)
-    util.data_util.display_data_set(opt, test_examples, predictions_test, name="test_predictions", format='Normal')
-    util.data_util.display_data_set(opt, train_examples, predictions, name="train_predictions", format='Normal')
+    util.data_util.display_data_set(opt, test_examples, predictions_test, name="test_predictions")
+    util.data_util.display_data_set(opt, train_examples, predictions, name="train_predictions")
 print("*" * 60)
 print("Average Training loss accross all the epochs: %3f" % (sum(final_tr_loss) / epochs))
 print("Average Training accuracy accross all the epochs: %3f" % (sum(final_tr_acc) / epochs))
