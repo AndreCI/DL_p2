@@ -1,7 +1,5 @@
 import argparse
 
-from torch import FloatTensor
-
 import framework.modules.sequential
 import util.data_util
 import util.data_generation
